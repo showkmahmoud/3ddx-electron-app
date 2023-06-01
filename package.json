@@ -1,9 +1,10 @@
 {
-    "name": "3ddx",
-    "version": "1.0.0",
+    "name": "app",
+    "version": "1.0.1",
     "description": "3ddx app development 3ddx app development",
     "productDescription": "3ddx app development 3ddx app development",
     "main": "index.js",
+    "executableName": "3ddx",
     "repository": {
         "type": "git",
         "url": "https://github.com/alwanlab/3ddx-electron-app.git"
