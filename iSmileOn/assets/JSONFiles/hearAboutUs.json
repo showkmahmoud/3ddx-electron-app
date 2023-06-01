@@ -1,0 +1,26 @@
+[
+  {
+    "id": 26000,
+    "hearingWay": "Sales Contact"
+  },
+  {
+    "id": 26001,
+    "hearingWay": "Referred by a scanning center"
+  },
+  {
+    "id": 26002,
+    "hearingWay": "Referred by a friend"
+  },
+  {
+    "id": 26003,
+    "hearingWay": "From Web"
+  },
+  {
+    "id": 26004,
+    "hearingWay": "Advertisement"
+  },
+  {
+    "id": 26005,
+    "hearingWay": "Other"
+  }
+]

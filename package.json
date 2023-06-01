@@ -1,0 +1,51 @@
+{
+    "name": "3ddx",
+    "version": "1.0.0",
+    "description": "3ddx app development 3ddx app development",
+    "productDescription": "3ddx app development 3ddx app development",
+    "main": "index.js",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/johndyer24/electron-auto-update-example.git"
+    },
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-packager . app --platform linux --arch x64 --out dist/",
+        "deb64": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64"
+
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^24.3.1"
+    },
+    "dependencies": {
+        "easy-ftp-extra": "^1.0.9"
+    },
+    "config": {
+        "forge": {
+            "packagerConfig": {},
+            "makers": [{
+                    "name": "@electron-forge/maker-squirrel",
+                    "config": {
+                        "name": "my_electron_app"
+                    }
+                },
+                {
+                    "name": "@electron-forge/maker-zip",
+                    "platforms": [
+                        "darwin"
+                    ]
+                },
+                {
+                    "name": "@electron-forge/maker-deb",
+                    "config": {}
+                },
+                {
+                    "name": "@electron-forge/maker-rpm",
+                    "config": {}
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+  "remarks": "Whatever note",
+  "template": {
+    "FLEXIBLE": {
+      "planning": 100,
+      "aligner": 25
+    },
+    "SMART": {
+      "planning": 100,
+      "aligner": 499,
+      "extra": 25
+    },
+    "UNLIMITED": {
+      "planning": 900,
+      "aligner": 300
+    }
+  },
+  "calculated": {
+    "FLEXIBLE": {
+      "planning": 0,
+      "production": 0,
+      "shipping": 0,
+      "total": 0
+    },
+    "SMART": {
+      "planning": 0,
+      "production": 0,
+      "shipping": 0,
+      "total": 0
+    },
+    "UNLIMITED": {
+      "planning": 0,
+      "production": 0,
+      "shipping": 0,
+      "total": 0
+    }
+  }
+}
