@@ -6120,7 +6120,7 @@ class DragDropFileUploadDirective {
     dragLeave(event) {
         event.preventDefault();
         event.stopPropagation();
-        this.BorderColor = (this._done) ? this.appDNDUpload.done : this.appDNDUpload.default;
+        this.BorderColor = (this.BorderColor !== '#333') ? this.appDNDUpload.done : this.appDNDUpload.default;
         this.Color = this.BorderColor;
     }
     // Drop Event
@@ -7663,14 +7663,14 @@ function AddOrderFormElectronComponent_div_2_Template(rf, ctx) { if (rf & 1) {
 } }
 const _c1 = function () { return { default: "#888", light: "#ccc", done: "#333" }; };
 function AddOrderFormElectronComponent_div_3_div_5_Template(rf, ctx) { if (rf & 1) {
-    const _r55 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵgetCurrentView"]();
+    const _r57 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](0, "div", 78);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](1, "h3", 79);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](2, "IOS Scan (STL Files) (Upper, Lower, and Bite)");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](3, "div", 80);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("dropped", function AddOrderFormElectronComponent_div_3_div_5_Template_div_dropped_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r55); const ctx_r54 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](2); return ctx_r54.dropped($event, "stl"); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelement"](4, "i", 81);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](3, "div", 88);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("dropped", function AddOrderFormElectronComponent_div_3_div_5_Template_div_dropped_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r57); const ctx_r56 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](2); return ctx_r56.dropped($event, "stl"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelement"](4, "i", 82);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](5, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](6, "Drag and Drop here");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
@@ -7681,14 +7681,14 @@ function AddOrderFormElectronComponent_div_3_div_5_Template(rf, ctx) { if (rf & 
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("appDNDUpload", _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵpureFunction0"](1, _c1));
 } }
 function AddOrderFormElectronComponent_div_3_div_6_Template(rf, ctx) { if (rf & 1) {
-    const _r57 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵgetCurrentView"]();
+    const _r59 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](0, "div", 78);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](1, "h3", 79);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](2, "Photos");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](3, "div", 80);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("dropped", function AddOrderFormElectronComponent_div_3_div_6_Template_div_dropped_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r57); const ctx_r56 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](2); return ctx_r56.dropped($event, "photos"); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelement"](4, "i", 81);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](3, "div", 88);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("dropped", function AddOrderFormElectronComponent_div_3_div_6_Template_div_dropped_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r59); const ctx_r58 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](2); return ctx_r58.dropped($event, "photos"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelement"](4, "i", 82);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](5, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](6, "Drag and Drop here");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
@@ -7699,13 +7699,13 @@ function AddOrderFormElectronComponent_div_3_div_6_Template(rf, ctx) { if (rf & 
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("appDNDUpload", _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵpureFunction0"](1, _c1));
 } }
 function AddOrderFormElectronComponent_div_3_Template(rf, ctx) { if (rf & 1) {
-    const _r59 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵgetCurrentView"]();
+    const _r61 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](0, "div", 74);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](1, "h1", 33);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](2, " Required Files");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](3, "form", 75);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("ngSubmit", function AddOrderFormElectronComponent_div_3_Template_form_ngSubmit_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r59); const ctx_r58 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r58.submit(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("ngSubmit", function AddOrderFormElectronComponent_div_3_Template_form_ngSubmit_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r60 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r60.submit(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](4, "div", 76);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](5, AddOrderFormElectronComponent_div_3_div_5_Template, 7, 2, "div", 77);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](6, AddOrderFormElectronComponent_div_3_div_6_Template, 7, 2, "div", 77);
@@ -7713,29 +7713,32 @@ function AddOrderFormElectronComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](8, "h3", 79);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](9, "Additional Files");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](10, "div", 80);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("dropped", function AddOrderFormElectronComponent_div_3_Template_div_dropped_10_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r59); const ctx_r60 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r60.dropped($event, "additional"); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelement"](11, "i", 81);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](12, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](13, "Drag and Drop here");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](10, "div", 80, 81);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_div_click_10_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const _r55 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵreference"](16); return _r55.click(); })("dropped", function AddOrderFormElectronComponent_div_3_Template_div_dropped_10_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r63 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r63.dropped($event, "additional"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelement"](12, "i", 82);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](13, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](14, "Drag and Drop here");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](15, "input", 83, 84);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("change", function AddOrderFormElectronComponent_div_3_Template_input_change_15_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const _r54 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵreference"](11); const ctx_r64 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); ctx_r64.dropped($event.target.files[0], "additional"); _r54.style.borderColor = "#333"; return _r54.style.color = "#333"; });
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](14, "div", 82);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](15, " By clicking on \"Submit Order\" button below you are agreeing to the disclaimer ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](16, "a", 83);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_a_click_16_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r59); const ctx_r61 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r61.disclaimer(); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](17, "listed here");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](17, "div", 85);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](18, " By clicking on \"Submit Order\" button below you are agreeing to the disclaimer ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](19, "a", 86);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_a_click_19_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r65 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r65.disclaimer(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](20, "listed here");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](18, "div", 22);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](19, "button", 35);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_button_click_19_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r59); const ctx_r62 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r62.changeView("stepper"); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](20, " Back ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](21, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](22, "button", 35);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_button_click_22_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r66 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r66.changeView("stepper"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](23, " Back ");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](21, "button", 84);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](22, " Submit Order ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](24, "button", 87);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](25, " Submit Order ");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
@@ -7750,7 +7753,7 @@ function AddOrderFormElectronComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("ngIf", false);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("appDNDUpload", _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵpureFunction0"](9, _c1));
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](9);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("id", ctx_r3.htmlID.AnchorTags + "listed-here");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("id", ctx_r3.htmlID.Button + "teeth-chart-back");
@@ -7832,11 +7835,11 @@ class AddOrderFormElectronComponent extends _add_order_form_component__WEBPACK_I
     }
 }
 AddOrderFormElectronComponent.ɵfac = function AddOrderFormElectronComponent_Factory(t) { return new (t || AddOrderFormElectronComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_1__.OrderSharedService), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_13__.MatDialog), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](shared_shared_services_doctor_add_doctor_service__WEBPACK_IMPORTED_MODULE_2__.addDoctorService), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_14__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](shared_shared_services_toastr_service__WEBPACK_IMPORTED_MODULE_3__.ToastrService)); };
-AddOrderFormElectronComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineComponent"]({ type: AddOrderFormElectronComponent, selectors: [["app-add-order-form-electron"]], inputs: { patientName: "patientName" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵInheritDefinitionFeature"]], decls: 4, vars: 4, consts: [["class", "start view", 4, "ngIf"], ["class", "teeth view", 4, "ngIf"], ["class", "stepper view", 4, "ngIf"], ["class", "uploader view", 4, "ngIf"], [1, "start", "view"], [1, "start-question"], [3, "id"], ["firstStepForm", "ngForm"], [1, "row", "cases"], [1, "col-4"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "id", "disabled", "ngClass", "click"], ["src", "assets/icons/conv.png", 1, "w-100", "d-block"], ["src", "assets/icons/full.png", 1, "w-100", "d-block"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "disabled", "id", "ngClass", "click"], ["btnSG", ""], ["src", "assets/icons/sg.png", 1, "w-100", "d-block"], [1, "col-4", "d-flex", "justify-content-center"], ["src", "assets/icons/restore.png", 1, "w-100", "d-block"], ["btnTP", ""], ["src", "assets/icons/planning.png", 1, "w-100", "d-block"], ["src", "assets/icons/report.png", 1, "w-100", "d-block"], ["class", "row mt-2", 4, "ngIf"], [1, "container-form-btn"], [1, "mt-5", "native-btn", 3, "id", "disabled", "click"], [1, "row", "mt-2"], [1, "col-lg-6", "col-sm-6", 2, "width", "312px"], [1, "row"], [1, "col-lg-12", "col-sm-12", "mt-0", 2, "width", "591px"], ["aria-label", "Select an option", "aria-labelledby", "RestType", 3, "value", "change"], ["disabled", "true", 3, "id", "value"], [3, "id", "value"], [1, "mt-2", 3, "disabled", "id", "value"], [1, "teeth", "view"], [1, "header"], [1, "w-100", 2, "flex", "1", 3, "buttonOrders", "isAddAnotherOrder", "submitTeeth", "restorationForm", "restorationData", "isRestorationSelected"], [1, "native-btn", 3, "id", "click"], [1, "native-btn", 3, "id", "disabled", "click"], [1, "stepper", "view"], ["linear", "", 3, "selectionChange"], ["stepper", ""], ["matStepperIcon", "edit"], [4, "ngIf"], ["label", "3D Conv", 3, "stepControl", 4, "ngIf"], ["label", "Tx Plan", 3, "stepControl", 4, "ngIf"], ["label", "Guide", 3, "stepControl", 4, "ngIf"], ["label", "Restoration", 3, "stepControl", 4, "ngIf"], ["label", "Rad Report", 3, "stepControl", 4, "ngIf"], ["label", "Info", 3, "stepControl", 4, "ngIf"], ["label", "Info", 3, "stepControl"], [3, "id", "formGroup"], [1, "col-md-8", "col-sm-12", 2, "position", "relative"], ["appearance", "fill", 2, "width", "90%"], ["matInput", "", "formControlName", "patientName", "placeholder", "Patient Name", "required", "", "vlaue", "patientName", 3, "id"], [1, "quest"], [1, "patientHide"], [1, "col-md-4", "col-sm-12", "mt-3"], ["formControlName", "gender", "aria-label", "Select an option", "aria-labelledby", "lbl-Gender"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id"], ["label", "3D Conv", 3, "stepControl"], ["step", ""], [3, "expressSoftware", "moreThan", "checkModelScan", "maxillaAndMandible", "conversion", "surgicalGuide"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "disabled", "click"], ["label", "Tx Plan", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "surgicalGuide", "moreThan", "treatmentPlan"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "click"], ["label", "Guide", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "softwareConversion", "softwareTreatmentPlan", "restoration", "moreThan", "checkTreatmentPlanAndSurgical", "surgicalGuide"], ["label", "Restoration", 3, "stepControl"], [3, "orderDetails", "restoration", "restType"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id", "click"], ["label", "Rad Report", 3, "stepControl"], [3, "radiologyReport"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "disabled", "id", "click"], [1, "uploader", "view"], [1, "w-100", 3, "id", "formGroup", "ngSubmit"], [1, "uploader-container"], ["class", "uploader-box", 4, "ngIf"], [1, "uploader-box"], [1, "uploader-box--header"], [1, "uploader-box--drop", 3, "appDNDUpload", "dropped"], ["aria-hidden", "true", 1, "fas", "fa-cloud-upload-alt"], [1, "col-sm-12"], [3, "id", "click"], [1, "native-btn", 3, "disabled", "id"]], template: function AddOrderFormElectronComponent_Template(rf, ctx) { if (rf & 1) {
+AddOrderFormElectronComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineComponent"]({ type: AddOrderFormElectronComponent, selectors: [["app-add-order-form-electron"]], inputs: { patientName: "patientName" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵInheritDefinitionFeature"]], decls: 4, vars: 4, consts: [["class", "start view", 4, "ngIf"], ["class", "teeth view", 4, "ngIf"], ["class", "stepper view", 4, "ngIf"], ["class", "uploader view", 4, "ngIf"], [1, "start", "view"], [1, "start-question"], [3, "id"], ["firstStepForm", "ngForm"], [1, "row", "cases"], [1, "col-4"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "id", "disabled", "ngClass", "click"], ["src", "assets/icons/conv.png", 1, "w-100", "d-block"], ["src", "assets/icons/full.png", 1, "w-100", "d-block"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "disabled", "id", "ngClass", "click"], ["btnSG", ""], ["src", "assets/icons/sg.png", 1, "w-100", "d-block"], [1, "col-4", "d-flex", "justify-content-center"], ["src", "assets/icons/restore.png", 1, "w-100", "d-block"], ["btnTP", ""], ["src", "assets/icons/planning.png", 1, "w-100", "d-block"], ["src", "assets/icons/report.png", 1, "w-100", "d-block"], ["class", "row mt-2", 4, "ngIf"], [1, "container-form-btn"], [1, "mt-5", "native-btn", 3, "id", "disabled", "click"], [1, "row", "mt-2"], [1, "col-lg-6", "col-sm-6", 2, "width", "312px"], [1, "row"], [1, "col-lg-12", "col-sm-12", "mt-0", 2, "width", "591px"], ["aria-label", "Select an option", "aria-labelledby", "RestType", 3, "value", "change"], ["disabled", "true", 3, "id", "value"], [3, "id", "value"], [1, "mt-2", 3, "disabled", "id", "value"], [1, "teeth", "view"], [1, "header"], [1, "w-100", 2, "flex", "1", 3, "buttonOrders", "isAddAnotherOrder", "submitTeeth", "restorationForm", "restorationData", "isRestorationSelected"], [1, "native-btn", 3, "id", "click"], [1, "native-btn", 3, "id", "disabled", "click"], [1, "stepper", "view"], ["linear", "", 3, "selectionChange"], ["stepper", ""], ["matStepperIcon", "edit"], [4, "ngIf"], ["label", "3D Conv", 3, "stepControl", 4, "ngIf"], ["label", "Tx Plan", 3, "stepControl", 4, "ngIf"], ["label", "Guide", 3, "stepControl", 4, "ngIf"], ["label", "Restoration", 3, "stepControl", 4, "ngIf"], ["label", "Rad Report", 3, "stepControl", 4, "ngIf"], ["label", "Info", 3, "stepControl", 4, "ngIf"], ["label", "Info", 3, "stepControl"], [3, "id", "formGroup"], [1, "col-md-8", "col-sm-12", 2, "position", "relative"], ["appearance", "fill", 2, "width", "90%"], ["matInput", "", "formControlName", "patientName", "placeholder", "Patient Name", "required", "", "vlaue", "patientName", 3, "id"], [1, "quest"], [1, "patientHide"], [1, "col-md-4", "col-sm-12", "mt-3"], ["formControlName", "gender", "aria-label", "Select an option", "aria-labelledby", "lbl-Gender"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id"], ["label", "3D Conv", 3, "stepControl"], ["step", ""], [3, "expressSoftware", "moreThan", "checkModelScan", "maxillaAndMandible", "conversion", "surgicalGuide"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "disabled", "click"], ["label", "Tx Plan", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "surgicalGuide", "moreThan", "treatmentPlan"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "click"], ["label", "Guide", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "softwareConversion", "softwareTreatmentPlan", "restoration", "moreThan", "checkTreatmentPlanAndSurgical", "surgicalGuide"], ["label", "Restoration", 3, "stepControl"], [3, "orderDetails", "restoration", "restType"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id", "click"], ["label", "Rad Report", 3, "stepControl"], [3, "radiologyReport"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "disabled", "id", "click"], [1, "uploader", "view"], [1, "w-100", 3, "id", "formGroup", "ngSubmit"], [1, "uploader-container"], ["class", "uploader-box", 4, "ngIf"], [1, "uploader-box"], [1, "uploader-box--header"], [1, "uploader-box--drop", 3, "appDNDUpload", "click", "dropped"], ["box", ""], ["aria-hidden", "true", 1, "fas", "fa-cloud-upload-alt"], ["type", "file", "hidden", "", 3, "change"], ["inputFile", ""], [1, "col-sm-12"], [3, "id", "click"], [1, "native-btn", 3, "disabled", "id"], [1, "uploader-box--drop", 3, "appDNDUpload", "dropped"]], template: function AddOrderFormElectronComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](0, AddOrderFormElectronComponent_div_0_Template, 37, 32, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](1, AddOrderFormElectronComponent_div_1_Template, 9, 9, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](2, AddOrderFormElectronComponent_div_2_Template, 12, 7, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](3, AddOrderFormElectronComponent_div_3_Template, 23, 10, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](3, AddOrderFormElectronComponent_div_3_Template, 26, 10, "div", 3);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("ngIf", ctx.currentView === "start");
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](1);
@@ -22354,4 +22357,4 @@ module.exports = webpackEmptyAsyncContext;
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.404025c2701e47282da6.js.map
+//# sourceMappingURL=main.877af85fb680e3ad460d.js.map
