@@ -20,13 +20,14 @@
         "electron": "^24.3.1"
     },
     "dependencies": {
-        "easy-ftp-extra": "^1.0.9",
-        "electron-updater": "^5.3.0"
+        "electron-updater": "^5.3.0",
+        "request": "^2.88.2"
     },
     "config": {
         "forge": {
             "packagerConfig": {},
-            "makers": [{
+            "makers": [
+                {
                     "name": "@electron-forge/maker-squirrel",
                     "config": {
                         "name": "my_electron_app"
