@@ -22,7 +22,7 @@ function createWindow() {
         }),
     );
     // Open the DevTools.
-    // mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
 
     mainWindow.on('closed', function() {
         mainWindow = null;
@@ -78,6 +78,20 @@ const server = http.createServer((req, res) => {
                 }
             },
         );
+    } else if (req.url == '/saveConfig') {
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        let body = [];
+        req.on('data', (chunk) => {
+            body.push(chunk);
+        }).on('end', () => {
+            body = Buffer.concat(body).toString();
+            const data = fs.writeFileSync(path.join(__dirname, '/config.json'), body, 'utf8');
+
+            res.end(body);
+        });
+        // res.end(data);
+
     } else {
         res.statusCode = 200;
         res.write('Hello World!'); //write a response to the client
