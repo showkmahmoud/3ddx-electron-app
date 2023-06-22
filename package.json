@@ -16,12 +16,13 @@
         "buildmac": "electron-packager . app --platform darwin --arch x64 --out dist/",
         "deb64": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64",
         "exe": "electron-installer-windows --src dist/app-win32-x64/ --dest dist/installers/",
-        "mac": "electron-installer-windows --src dist/app-win32-x64/ --dest dist/installers/"
+        "mac": "electron-installer-dmg ./dist/app-darwin-x64/app.app app --out dist/installers/"
     },
     "author": "3ddx",
     "license": "ISC",
     "devDependencies": {
         "electron": "^24.3.1",
+        "electron-installer-dmg": "^4.0.0",
         "electron-installer-windows": "^3.0.0"
     },
     "dependencies": {
