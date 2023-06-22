@@ -11,33 +11,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AddOrderPageComponent": () => (/* binding */ AddOrderPageComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common/http */ 3882);
-/* harmony import */ var projects_connect_src_app_Models_Enums_RequestTypes_RequestTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! projects/connect/src/app/Models/Enums/RequestTypes/RequestTypes */ 987);
-/* harmony import */ var projects_connect_src_app_Pages_ConnectModules_connect_pages_add_order_pages_add_order_add_order_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! projects/connect/src/app/Pages/ConnectModules/connect-pages/add-order-pages/add-order/add-order.component */ 6832);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! rxjs/operators */ 3927);
-/* harmony import */ var shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../shared/shared-components/shared-forms/add-order-form/add-order-form-electron/add-order-form-electron.component */ 8683);
-/* harmony import */ var shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! shared/shared-enums/ResponseCodeEnum */ 1580);
-/* harmony import */ var shared_shared_enums_ServiceNameEnum__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! shared/shared-enums/ServiceNameEnum */ 4946);
-/* harmony import */ var shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! shared/shared-static-data/SubOrderType */ 3337);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/core */ 2316);
-/* harmony import */ var shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! shared/shared-services/order-shared.service */ 9026);
-/* harmony import */ var projects_connect_src_app_Services_OrderServices_AddOrderService_add_order_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/AddOrderService/add-order.service */ 235);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/router */ 1258);
-/* harmony import */ var shared_shared_services_toastr_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! shared/shared-services/toastr.service */ 5325);
-/* harmony import */ var projects_connect_src_app_Services_UploadService_upload_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! projects/connect/src/app/Services/UploadService/upload.service */ 1273);
-/* harmony import */ var projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/OrderListService/order-list.service */ 6540);
-/* harmony import */ var shared_shared_services_upload_progress_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! shared/shared-services/upload-progress.service */ 3479);
-/* harmony import */ var shared_shared_services_generate_order_data_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! shared/shared-services/generate-order-data.service */ 8348);
-/* harmony import */ var shared_shared_services_date_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! shared/shared-services/date.service */ 7652);
-/* harmony import */ var projects_connect_src_app_Services_OrderServices_actions_actions_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/actions/actions.service */ 3615);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/common */ 4364);
-/* harmony import */ var _progress_bar_progress_bar_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../progress-bar/progress-bar.component */ 6260);
-
-
-
-
-
-
+/* harmony import */ var projects_connect_src_app_Pages_ConnectModules_connect_pages_add_order_pages_add_order_add_order_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! projects/connect/src/app/Pages/ConnectModules/connect-pages/add-order-pages/add-order/add-order.component */ 6832);
+/* harmony import */ var shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../shared/shared-components/shared-forms/add-order-form/add-order-form-electron/add-order-form-electron.component */ 8683);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/core */ 2316);
+/* harmony import */ var shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! shared/shared-services/order-shared.service */ 9026);
+/* harmony import */ var projects_connect_src_app_Services_OrderServices_AddOrderService_add_order_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/AddOrderService/add-order.service */ 235);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/router */ 1258);
+/* harmony import */ var shared_shared_services_toastr_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! shared/shared-services/toastr.service */ 5325);
+/* harmony import */ var projects_connect_src_app_Services_UploadService_upload_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! projects/connect/src/app/Services/UploadService/upload.service */ 1273);
+/* harmony import */ var projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/OrderListService/order-list.service */ 6540);
+/* harmony import */ var shared_shared_services_upload_progress_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! shared/shared-services/upload-progress.service */ 3479);
+/* harmony import */ var shared_shared_services_generate_order_data_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! shared/shared-services/generate-order-data.service */ 8348);
+/* harmony import */ var shared_shared_services_date_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! shared/shared-services/date.service */ 7652);
+/* harmony import */ var projects_connect_src_app_Services_OrderServices_actions_actions_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/actions/actions.service */ 3615);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common */ 4364);
+/* harmony import */ var _progress_bar_progress_bar_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../progress-bar/progress-bar.component */ 6260);
 
 
 
@@ -55,46 +43,46 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function AddOrderPageComponent_app_add_order_form_electron_0_Template(rf, ctx) { if (rf & 1) {
-    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](0, "app-add-order-form-electron", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵlistener"]("ordersOBJ", function AddOrderPageComponent_app_add_order_form_electron_0_Template_app_add_order_form_electron_ordersOBJ_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵnextContext"](); return ctx_r2.onSubmit($event); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](0, "app-add-order-form-electron", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵlistener"]("ordersOBJ", function AddOrderPageComponent_app_add_order_form_electron_0_Template_app_add_order_form_electron_ordersOBJ_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵnextContext"](); return ctx_r2.onSubmit($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("buttonOrders", ctx_r0.buttonOrders)("patientName", ctx_r0.patientName);
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("buttonOrders", ctx_r0.buttonOrders)("patientName", ctx_r0.patientName);
 } }
 function AddOrderPageComponent_div_1_div_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](0, "div", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelement"](1, "app-progress-bar", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](2, "h3");
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelement"](1, "app-progress-bar", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](2, "h3");
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const progress_r5 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("progress", progress_r5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtextInterpolate"](progress_r5 < 100 ? "uploading " + progress_r5 + "%" : progress_r5 === 100 ? "Upload Successful!" : "Submitted");
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("progress", progress_r5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtextInterpolate"](progress_r5 < 100 ? "uploading " + progress_r5 + "%" : progress_r5 === 100 ? "Upload Successful!" : "Submitted");
 } }
 function AddOrderPageComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](0, "div", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](1, "h1", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](2, " Uploading Case ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtemplate"](3, AddOrderPageComponent_div_1_div_3_Template, 4, 2, "div", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](4, "div", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](5, "button", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](6, " Done ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](1, "h1", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtext"](2, " Uploading Case ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtemplate"](3, AddOrderPageComponent_div_1_div_3_Template, 4, 2, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](4, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](5, "button", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtext"](6, " Done ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("ngForOf", ctx_r1.uploadProgress);
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("ngForOf", ctx_r1.uploadProgress);
 } }
-class AddOrderPageComponent extends projects_connect_src_app_Pages_ConnectModules_connect_pages_add_order_pages_add_order_add_order_component__WEBPACK_IMPORTED_MODULE_1__.AddOrderComponent {
+class AddOrderPageComponent extends projects_connect_src_app_Pages_ConnectModules_connect_pages_add_order_pages_add_order_add_order_component__WEBPACK_IMPORTED_MODULE_0__.AddOrderComponent {
     constructor(orderService, addOrderService, route, toastService, uploadService, orderServices, uploadProgressService, generateOrderDataService, router, dateService, orderListService, actionsService) {
         super(orderService, addOrderService, route, toastService, uploadService, orderServices, uploadProgressService, generateOrderDataService, router, dateService, orderListService, actionsService);
         this.orderService = orderService;
@@ -126,292 +114,345 @@ class AddOrderPageComponent extends projects_connect_src_app_Pages_ConnectModule
      * @return void
      */
     onSubmit(event) {
-        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
         this.currentView = 'upload';
         let idx = this.uploadProgress.length;
         const uploadFiles = this.addForm.uploadFiles;
-        if (uploadFiles.additional) {
-            this.uploadProgress.push(0);
+        this.uploadProgress.push(0);
+        this.uploadProgress[0];
+        const interval = setInterval(() => {
+            if (this.uploadProgress[0] === 100) {
+                clearInterval(interval);
+            }
+            else {
+                this.uploadProgress[0] += 1;
+            }
+        }, 100);
+        /*
+    
+        let idx = this.uploadProgress.length;
+        const uploadFiles = this.addForm.uploadFiles
+        if(uploadFiles.additional){
+          this.uploadProgress.push(0)
         }
         let generalComments = '';
-        let orderService = {
-            ConditionsAnded: false,
-            columns: [
-                'orderId',
-                'orderCommonId',
-                'orderEnum',
-                'patientName',
-                'operatorId',
-                'doctorLastName',
-                'scanningCenterFirstName',
-                'isLaserScan',
-                'orderEnumId',
-                'statusId',
-                'hasIntraoralScans',
-                'clientToBeBilled',
-                'portableFileName',
-                'restorationType'
-            ],
-            abutmentSites: this.orderService.teethChart.abutmentSites,
-            clientComment: this.createGeneralComment(event),
-            crownSites: this.orderService.teethChart.crownSites,
-            implantSites: this.orderService.teethChart.implantSites,
-            missingTeeth: this.orderService.teethChart.missingTeeth,
-            teethToBeExtracted: this.orderService.teethChart.teethToBeExtracted,
-            isPortable: this.checkPortable(event),
-            modelScan: this.checkModelScan(event),
-            patientName: event.basicInfoFormGroup.patientName,
-            scanningCenterId: this.getScanningCenterId(),
-            serviceName: shared_shared_enums_ServiceNameEnum__WEBPACK_IMPORTED_MODULE_4__.ServiceNameEnum.VIEW_ORDER_ALL,
-            softwareEnumId: this.checkSoftware(event),
-            isExpress: this.checkExpress(event),
-            doctorId: this.getDocotrId(event),
-            timeSurgery: event.surgicalGuideForm ? ((_a = this.dateService.timeStampToEST(event.surgicalGuideForm.scheduledSurgeryData, event.surgicalGuideForm.scheduledSurgeryTime)) === null || _a === void 0 ? void 0 : _a.getTime()) / 1000 : 0,
-            formatEnumId: event.conversionForm ? event.conversionForm.format : this.getFormatId(event)
+        let orderService: OrderService = {
+          ConditionsAnded: false,
+          columns: [
+            'orderId',
+            'orderCommonId',
+            'orderEnum',
+            'patientName',
+            'operatorId',
+            'doctorLastName',
+            'scanningCenterFirstName',
+            'isLaserScan',
+            'orderEnumId',
+            'statusId',
+            'hasIntraoralScans',
+            'clientToBeBilled',
+            'portableFileName',
+            'restorationType'
+          ],
+          abutmentSites: this.orderService.teethChart.abutmentSites,
+          clientComment: this.createGeneralComment(event),
+          crownSites: this.orderService.teethChart.crownSites,
+          implantSites: this.orderService.teethChart.implantSites,
+          missingTeeth: this.orderService.teethChart.missingTeeth,
+          teethToBeExtracted: this.orderService.teethChart.teethToBeExtracted,
+          isPortable: this.checkPortable(event),
+          modelScan: this.checkModelScan(event),
+          patientName: event.basicInfoFormGroup.patientName,
+          scanningCenterId: this.getScanningCenterId(),
+          serviceName: ServiceNameEnum.VIEW_ORDER_ALL,
+          softwareEnumId: this.checkSoftware(event),
+          isExpress: this.checkExpress(event),
+          doctorId: this.getDocotrId(event),
+          timeSurgery: event.surgicalGuideForm ? this.dateService.timeStampToEST(event.surgicalGuideForm.scheduledSurgeryData, event.surgicalGuideForm.scheduledSurgeryTime)?.getTime() / 1000 : 0,
+          formatEnumId: event.conversionForm ? event.conversionForm.format : this.getFormatId(event)
         };
         if (this.orderId) {
-            orderService.orderId = this.orderId;
-            orderService.doctorId = this.orderDetails.doctorId;
-            orderService.scanningCenterId = this.orderDetails.scanningCenterId;
+          orderService.orderId = this.orderId;
+          orderService.doctorId = this.orderDetails.doctorId;
+          orderService.scanningCenterId = this.orderDetails.scanningCenterId;
         }
-        let orderServiceObj = Object.assign({}, orderService);
+        let orderServiceObj = { ...orderService };
         if (event.conversionForm) {
-            let conversionData = {
-                currency: this.getCurrency(),
-                clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
-                separateDoubleArchOrder: (event.conversionForm.mandible !== 20 && event.conversionForm.maxilla !== 20 && event.conversionForm.modelScan !== 1) ? event.conversionForm.separateDoubleArchOrder : true,
-                softwareFormat: [],
-                isRush: false,
-                mandibleConversionEnumId: event.conversionForm.mandible,
-                mandibleSegmentationEnumId: event.conversionForm.typeMandible,
-                maxillaConversionEnumId: event.conversionForm.maxilla,
-                maxillaSegmentationEnumId: event.conversionForm.typeMaxilla
-            };
-            orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
-                conversionData: conversionData
-            });
-        }
-        const uploadRest = ((_b = event.restorationForm) === null || _b === void 0 ? void 0 : _b.lowerFile) && ((_c = event.restorationForm) === null || _c === void 0 ? void 0 : _c.upperFile) && ((_d = event.restorationForm) === null || _d === void 0 ? void 0 : _d.biteFile);
-        if (((_e = event.surgicalGuideForm) === null || _e === void 0 ? void 0 : _e.guided) === 1 || ((_f = event.conversionForm) === null || _f === void 0 ? void 0 : _f.modelScan) === 1 || uploadRest) {
-            let applianceData = {
-                applinceDestenationAddress: "USA",
-                clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
-                currency: this.getCurrency(),
-                hasIntraoralScans: ((_g = event.surgicalGuideForm) === null || _g === void 0 ? void 0 : _g.intraoralScan) === 2 || uploadRest || ((_h = event.conversionForm) === null || _h === void 0 ? void 0 : _h.oral) === 2 ? true : false,
-                isForMandible: false,
-                isForMaxilla: false,
-                isLaserScan: ((_j = event.conversionForm) === null || _j === void 0 ? void 0 : _j.modelScan) === 1 || ((_k = event.surgicalGuideForm) === null || _k === void 0 ? void 0 : _k.guided) === 1 || uploadRest ? true : false,
-                isPartiallyEdentulous: false,
-                isRush: false,
-                isTotallyEdentulous: false,
-                sendPVSImpression: false,
-                softwareFormat: []
-            };
-            if (!this.hasLaserScan) {
-                orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
-                    applianceData: applianceData
-                });
+          let conversionData: ConversionData = {
+            currency: this.getCurrency(),
+            clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
+            separateDoubleArchOrder: (event.conversionForm.mandible !== 20 && event.conversionForm.maxilla !== 20 && event.conversionForm.modelScan !== 1) ? event.conversionForm.separateDoubleArchOrder : true,
+            softwareFormat: [],
+            isRush: false,
+            mandibleConversionEnumId: event.conversionForm.mandible,
+            mandibleSegmentationEnumId: event.conversionForm.typeMandible,
+            maxillaConversionEnumId: event.conversionForm.maxilla,
+            maxillaSegmentationEnumId: event.conversionForm.typeMaxilla
+          };
+          orderServiceObj = {
+            ...orderServiceObj, ...{
+              conversionData: conversionData
             }
+          };
         }
+    
+        const uploadRest = event.restorationForm?.lowerFile && event.restorationForm?.upperFile && event.restorationForm?.biteFile;
+    
+        if (event.surgicalGuideForm?.guided === 1 || event.conversionForm?.modelScan === 1 || uploadRest) {
+          let applianceData = {
+            applinceDestenationAddress: "USA",
+            clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
+            currency: this.getCurrency(),
+            hasIntraoralScans: event.surgicalGuideForm?.intraoralScan === 2 || uploadRest || event.conversionForm?.oral === 2 ? true : false,
+            isForMandible: false,
+            isForMaxilla: false,
+            isLaserScan: event.conversionForm?.modelScan === 1 || event.surgicalGuideForm?.guided === 1 || uploadRest ? true : false,
+            isPartiallyEdentulous: false,
+            isRush: false,
+            isTotallyEdentulous: false,
+            sendPVSImpression: false,
+            softwareFormat: []
+          }
+          if(!this.hasLaserScan){
+            orderServiceObj = {
+              ...orderServiceObj, ...{
+                applianceData: applianceData
+              }
+            }
+          }
+    
+        }
+    
         if (event.treatmentPlanForm) {
-            let treatmentPlanData = {
-                currency: this.getCurrency(),
-                isReview: event.treatmentPlanForm.isReviewTP,
-                clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
-                prosthesis: event.treatmentPlanForm.prosthesisType,
-                isRush: false,
-                softwareFormat: [],
-                surgicalProcedures: event.treatmentPlanForm.surgicalPlan,
-                typeofImplant: event.treatmentPlanForm.implantType,
-            };
-            orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
-                treatmentPlanData: treatmentPlanData
-            });
+          let treatmentPlanData: TreatmentPlanData = {
+            currency: this.getCurrency(),
+            isReview: event.treatmentPlanForm.isReviewTP,
+            clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
+            prosthesis: event.treatmentPlanForm.prosthesisType,
+            isRush: false,
+            softwareFormat: [],
+            surgicalProcedures: event.treatmentPlanForm.surgicalPlan,
+            typeofImplant: event.treatmentPlanForm.implantType,
+          };
+          orderServiceObj = {
+            ...orderServiceObj,
+            ...{
+              treatmentPlanData: treatmentPlanData
+            }
+          };
         }
         if (event.surgicalGuideForm) {
-            let surgicalguideData = {
-                clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
-                currency: this.getCurrency(),
-                fixationFunctionality: event.surgicalGuideForm.fixationPinsDrills,
-                ordersGuideKitEnumId: event.surgicalGuideForm.typeofGuide != 5 ? event.surgicalGuideForm.typeofGuide : event.surgicalGuideForm.guidedSurgeryKitType,
-                rushIfPossible: event.surgicalGuideForm.rush === 1 ? false : true,
-                softwareFormat: [],
-                sleeveDiameter: 0,
-                timeSurgery: event.surgicalGuideForm ? ((_l = this.dateService.timeStampToEST(event.surgicalGuideForm.scheduledSurgeryData, event.surgicalGuideForm.scheduledSurgeryTime)) === null || _l === void 0 ? void 0 : _l.getTime()) / 1000 : 0,
-                ordersGuideSoftwareSupportEnum: {
-                    ordersGuideSupportEnumId: event.surgicalGuideForm.guided,
-                    ordersSoftwareEnumId: event.surgicalGuideForm.software
-                },
-                selectedExtraComponents: event.surgicalGuideForm.extracomponents
-                    ? event.surgicalGuideForm.extracomponents.map((e) => ({ id: +e, comment: event.surgicalGuideForm.otherDesc }))
-                    : []
-            };
-            orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
-                surgicalguideData: surgicalguideData
-            });
+          let surgicalguideData: SurgicalguideData = {
+            clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
+            currency: this.getCurrency(),
+            fixationFunctionality: event.surgicalGuideForm.fixationPinsDrills,
+            ordersGuideKitEnumId: event.surgicalGuideForm.typeofGuide != 5 ? event.surgicalGuideForm.typeofGuide : event.surgicalGuideForm.guidedSurgeryKitType,
+            rushIfPossible: event.surgicalGuideForm.rush === 1 ? false : true,
+            softwareFormat: [],
+            sleeveDiameter: 0,
+            timeSurgery: event.surgicalGuideForm ? this.dateService.timeStampToEST(event.surgicalGuideForm.scheduledSurgeryData, event.surgicalGuideForm.scheduledSurgeryTime)?.getTime() / 1000 : 0,
+            ordersGuideSoftwareSupportEnum: {
+              ordersGuideSupportEnumId: event.surgicalGuideForm.guided,
+              ordersSoftwareEnumId: event.surgicalGuideForm.software
+            },
+            selectedExtraComponents: event.surgicalGuideForm.extracomponents
+              ? event.surgicalGuideForm.extracomponents.map((e: any) => ({ id: +e, comment: event.surgicalGuideForm.otherDesc }))
+              : []
+          };
+          orderServiceObj = {
+            ...orderServiceObj,
+            ...{
+              surgicalguideData: surgicalguideData
+            }
+          };
         }
         if (event.restorationForm) {
-            let restorationData = {
-                softwareFormat: [],
-                restorationType: event.restorationForm.restType,
-                shadeSys: event.restorationForm.shade,
-                shadeValue: event.restorationForm.teeth,
-                shadeSysOther: event.restorationForm.shadeOther,
-                abutmentMaterial: event.restorationForm.abutment,
-                crownMaterial: event.restorationForm.crown,
-                isPouring: event.restorationForm.pouring,
-                isRushRes: event.restorationForm.isRush,
-                retentionType: event.restorationForm.retentionType,
-                hasIntraOralScan: event.restorationForm.oral == 1 ? false : true,
-                archOfInterest: event.restorationForm.archOfInterest,
-                chairSideAssistance: event.restorationForm.chairSideAssistance,
-                userCNComment: '',
-                toBeBilled: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor
-            };
-            if (event.restorationForm.retentionTypeSpecify) {
-                restorationData.retentionTypeComment = event.restorationForm.retentionTypeSpecify;
+          let restorationData: RestorationData = {
+            softwareFormat: [],
+            restorationType: event.restorationForm.restType,
+            shadeSys: event.restorationForm.shade,
+            shadeValue: event.restorationForm.teeth,
+            shadeSysOther: event.restorationForm.shadeOther,
+            abutmentMaterial: event.restorationForm.abutment,
+            crownMaterial: event.restorationForm.crown,
+            isPouring: event.restorationForm.pouring,
+            isRushRes: event.restorationForm.isRush,
+            retentionType: event.restorationForm.retentionType,
+            hasIntraOralScan: event.restorationForm.oral == 1 ? false : true,
+            archOfInterest: event.restorationForm.archOfInterest,
+            chairSideAssistance: event.restorationForm.chairSideAssistance,
+            userCNComment: '',
+            toBeBilled: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor
+          };
+          if (event.restorationForm.retentionTypeSpecify) {
+            restorationData.retentionTypeComment = event.restorationForm.retentionTypeSpecify;
+          }
+          if (event.restorationForm.abutmentSpecify) {
+            restorationData.abutmentMaterialComment = event.restorationForm.abutmentSpecify;
+          }
+          orderServiceObj = {
+            ...orderServiceObj, ...{
+              restorationData: restorationData
             }
-            if (event.restorationForm.abutmentSpecify) {
-                restorationData.abutmentMaterialComment = event.restorationForm.abutmentSpecify;
-            }
-            orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
-                restorationData: restorationData
-            });
+          };
         }
         if (event.radiologyReportForm) {
-            let reportData = {
-                isImplantPlanned: event.radiologyReportForm.implantPlanned == 1 ? false : true,
-                ReportSmallFieldOfView: false,
-                currency: this.getCurrency(),
-                softwareFormat: [],
-                isRuleOutPathology: event.radiologyReportForm.ruleOutPathology == 1 ? false : true,
-                isAirWayEvaluation: event.radiologyReportForm.airWayEvaluation == 1 ? false : true,
-                isEvaluateTMJ: event.radiologyReportForm.tmjevaluation == 1 ? false : true,
-                isEvaluateSinus: event.radiologyReportForm.sinusEvaluation == 1 ? false : true,
-                isEvaluateExistingImplant: event.radiologyReportForm.evaluateExistingImplant == 1 ? false : true,
-                isRush: event.radiologyReportForm.rushCase == 1 ? false : true,
-                relevantHistory: event.radiologyReportForm.relevant,
-                genderEnumId: event.basicInfoFormGroup.gender,
-                basicReport: event.radiologyReportForm.BasicReport == 1 ? false : true,
-                userCNComment: event.radiologyReportForm.generalComment ? event.radiologyReportForm.generalComment : '',
-                DOB: (((_m = this.dateService.timeStampToEST(event.radiologyReportForm.birthdate)) === null || _m === void 0 ? void 0 : _m.getTime()) / 1000).toString(),
-                dateImageAcquisition: ((_o = this.dateService.timeStampToEST(event.radiologyReportForm.imagedate)) === null || _o === void 0 ? void 0 : _o.getTime()) / 1000,
-                clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor
-            };
-            orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
-                reportData: reportData
-            });
-        }
-        let apiData = { services: [orderServiceObj], requestType: projects_connect_src_app_Models_Enums_RequestTypes_RequestTypes__WEBPACK_IMPORTED_MODULE_0__.ERequestTypes.ADD };
-        this.addOrderService.addOrder(apiData).subscribe(res => {
-            var _a, _b, _c, _d, _e, _f, _g;
-            if (res.responsCode === shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_3__.ResponseCodeEnum.OK) {
-                const orderArr = this.generateOrderDataService.onGenerateArrUpload(res.data.VIEW_ORDER_ALL);
-                if (uploadFiles.additional) {
-                    this.orderServices.uploadingId.add(JSON.stringify({ id: res.data.VIEW_ORDER_ALL[0].orderId, type: shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.CONVERSION.uploadType }));
-                    let uploadFormData = this.GenerateOrderFormData(uploadFiles.additional, orderArr[0].uploadType, res.data.VIEW_ORDER_ALL[0].orderId, (_b = (_a = res.data) === null || _a === void 0 ? void 0 : _a.VIEW_ORDER_ALL[1]) === null || _b === void 0 ? void 0 : _b.orderId);
-                    let currentIndex = ++this.uploadService.index;
-                    let subscribeUpload = this.uploadService.onUploadFile(uploadFormData, Number(localStorage.getItem('userCNId')), res.data.VIEW_ORDER_ALL[0].orderId, orderArr[0].orderStatus, uploadFiles.additional.name, (_c = res.data.VIEW_ORDER_ALL[1]) === null || _c === void 0 ? void 0 : _c.orderId).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_17__.map)((ev) => {
-                        if (ev.type === _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpEventType.UploadProgress) {
-                            this.uploadProgress[idx] =
-                                Math.floor(this.uploadProgressService.returnProgress(ev.loaded, ev.total));
-                        }
-                        else if (ev instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpResponse) {
-                            if (ev.body.responsCode === shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_3__.ResponseCodeEnum.OK) {
-                                this.uploadProgress[idx] = 100;
-                                this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
-                                this.orderServices.onReload();
-                                this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.CONVERSION.uploadType);
-                            }
-                        }
-                    })).subscribe(res => { }, error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.CONVERSION.uploadType));
-                    this.uploadService.uploadDataNew[currentIndex].subScribe = subscribeUpload;
-                }
-                else {
-                    this.uploadProgress.push(102);
-                }
-                if (this.orderService.buttons.restorations) {
-                    if (event.restorationForm.upperFile || event.restorationForm.lowerFile || event.restorationForm.biteFile) {
-                        this.orderServices.uploadingId.add(JSON.stringify({ id: res.data.VIEW_ORDER_ALL[0].orderId, type: shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.GFMR.uploadType }));
-                    }
-                    const orderData = orderArr[0].subOrders.find((e) => e.subOrderType.includes('Restoration'));
-                    if (event.restorationForm.upperFile) {
-                        const uploadFormData = this.GenerateOrderFormData(event.restorationForm.upperFile, (_d = orderData.subOrderStatus) === null || _d === void 0 ? void 0 : _d.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, (_f = (_e = res.data) === null || _e === void 0 ? void 0 : _e.VIEW_ORDER_ALL[1]) === null || _f === void 0 ? void 0 : _f.orderId, "upper", false);
-                        const currentIndex = ++this.uploadService.index;
-                        const upperFileSub = this.uploadService.onUploadFile(uploadFormData, Number(localStorage.getItem('userCNId')), res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.upperFile.name, (_g = res.data.VIEW_ORDER_ALL[1]) === null || _g === void 0 ? void 0 : _g.orderId).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_17__.map)((ev) => {
-                            var _a, _b, _c;
-                            if (ev.type === _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpEventType.UploadProgress) {
-                                this.uploadService.uploadDataNew[currentIndex].calculatedTime =
-                                    this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.upperFile.size);
-                                this.uploadService.uploadDataNew[currentIndex].progress =
-                                    this.uploadProgressService.returnProgress(ev.loaded, ev.total);
-                                this.uploadService.uploadDataNew[currentIndex].subScribe = upperFileSub;
-                            }
-                            else if (ev instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpResponse) {
-                                if (ev.body.responsCode === shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_3__.ResponseCodeEnum.OK) {
-                                    this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
-                                    if (event.restorationForm.lowerFile) {
-                                        let uploadFormData = this.GenerateOrderFormData(event.restorationForm.lowerFile, orderData.subOrderStatus.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, (_b = (_a = res.data) === null || _a === void 0 ? void 0 : _a.VIEW_ORDER_ALL[1]) === null || _b === void 0 ? void 0 : _b.orderId, "lower", false);
-                                        let currentIndex = ++this.uploadService.index;
-                                        let lowerFileSub = this.uploadService.onUploadFile(uploadFormData, Number(localStorage.getItem('userCNId')), res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.lowerFile.name, (_c = res.data.VIEW_ORDER_ALL[1]) === null || _c === void 0 ? void 0 : _c.orderId).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_17__.map)((ev) => {
-                                            var _a, _b, _c;
-                                            if (ev.type === _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpEventType.UploadProgress) {
-                                                this.uploadService.uploadDataNew[currentIndex].calculatedTime =
-                                                    this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.lowerFile.size);
-                                                this.uploadService.uploadDataNew[currentIndex].progress =
-                                                    this.uploadProgressService.returnProgress(ev.loaded, ev.total);
-                                                this.uploadService.uploadDataNew[currentIndex].subScribe = lowerFileSub;
-                                            }
-                                            else if (ev instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpResponse) {
-                                                if (ev.body.responsCode === shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_3__.ResponseCodeEnum.OK) {
-                                                    this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
-                                                    if (event.restorationForm.biteFile) {
-                                                        let uploadFormData = this.GenerateOrderFormData(event.restorationForm.biteFile, orderData.subOrderStatus.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, (_b = (_a = res.data) === null || _a === void 0 ? void 0 : _a.VIEW_ORDER_ALL[1]) === null || _b === void 0 ? void 0 : _b.orderId, "bite", true);
-                                                        let currentIndex = ++this.uploadService.index;
-                                                        let biteFileSub = this.uploadService.onUploadFile(uploadFormData, Number(localStorage.getItem('userCNId')), res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.biteFile.name, (_c = res.data.VIEW_ORDER_ALL[1]) === null || _c === void 0 ? void 0 : _c.orderId).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_17__.map)((ev) => {
-                                                            if (ev.type === _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpEventType.UploadProgress) {
-                                                                this.uploadService.uploadDataNew[currentIndex].calculatedTime =
-                                                                    this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.biteFile.size);
-                                                                this.uploadService.uploadDataNew[currentIndex].progress =
-                                                                    this.uploadProgressService.returnProgress(ev.loaded, ev.total);
-                                                                this.uploadService.uploadDataNew[currentIndex].subScribe = biteFileSub;
-                                                            }
-                                                            else if (ev instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_18__.HttpResponse) {
-                                                                if (ev.body.responsCode === shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_3__.ResponseCodeEnum.OK) {
-                                                                    this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
-                                                                    this.orderServices.onReload();
-                                                                    this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.GFMR.uploadType);
-                                                                }
-                                                            }
-                                                        })).subscribe(res => { }, error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.GFMR.uploadType));
-                                                    }
-                                                }
-                                            }
-                                        })).subscribe(res => { }, error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.GFMR.uploadType));
-                                    }
-                                }
-                            }
-                        })).subscribe(res => { }, error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.GFMR.uploadType));
-                    }
-                }
+          let reportData: ReportData = {
+            isImplantPlanned: event.radiologyReportForm.implantPlanned == 1 ? false : true,
+            ReportSmallFieldOfView: false,
+            currency: this.getCurrency(),
+            softwareFormat: [],
+            isRuleOutPathology: event.radiologyReportForm.ruleOutPathology == 1 ? false : true,
+            isAirWayEvaluation: event.radiologyReportForm.airWayEvaluation == 1 ? false : true,
+            isEvaluateTMJ: event.radiologyReportForm.tmjevaluation == 1 ? false : true,
+            isEvaluateSinus: event.radiologyReportForm.sinusEvaluation == 1 ? false : true,
+            isEvaluateExistingImplant: event.radiologyReportForm.evaluateExistingImplant == 1 ? false : true,
+            isRush: event.radiologyReportForm.rushCase == 1 ? false : true,
+            relevantHistory: event.radiologyReportForm.relevant,
+            genderEnumId: event.basicInfoFormGroup.gender,
+            basicReport: event.radiologyReportForm.BasicReport == 1 ? false : true,
+            userCNComment: event.radiologyReportForm.generalComment ? event.radiologyReportForm.generalComment : '',
+            DOB: (this.dateService.timeStampToEST(event.radiologyReportForm.birthdate)?.getTime() / 1000 ).toString(),
+            dateImageAcquisition: this.dateService.timeStampToEST(event.radiologyReportForm.imagedate)?.getTime() / 1000,
+            clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor
+          };
+    
+          orderServiceObj = {
+            ...orderServiceObj, ...{
+              reportData: reportData
             }
+          };
+    
+        }
+    
+        let apiData = { services: [orderServiceObj], requestType: ERequestTypes.ADD };
+    
+        this.addOrderService.addOrder(apiData).subscribe(res => {
+          if (res.responsCode === ResponseCodeEnum.OK) {
+            const orderArr = this.generateOrderDataService.onGenerateArrUpload(res.data.VIEW_ORDER_ALL);
+            if(uploadFiles.additional) {
+              this.orderServices.uploadingId.add(JSON.stringify({id: res.data.VIEW_ORDER_ALL[0].orderId, type: SubOrderType.CONVERSION.uploadType}));
+              let uploadFormData = this.GenerateOrderFormData(uploadFiles.additional,
+                orderArr[0].uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId);
+              let currentIndex = ++this.uploadService.index;
+    
+    
+    
+              let subscribeUpload = this.uploadService.onUploadFile(uploadFormData
+                , Number(localStorage.getItem('userCNId'))
+                , res.data.VIEW_ORDER_ALL[0].orderId, orderArr[0].orderStatus, uploadFiles.additional.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
+                  if (ev.type === HttpEventType.UploadProgress) {
+                    this.uploadProgress[idx] =
+                      Math.floor(this.uploadProgressService.returnProgress(ev.loaded, ev.total));
+                  } else if (ev instanceof HttpResponse) {
+                    if (ev.body.responsCode === ResponseCodeEnum.OK) {
+                      this.uploadProgress[idx] = 100;
+                      this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
+                      this.orderServices.onReload();
+                      this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.CONVERSION.uploadType);
+                    }
+                  }
+                })).subscribe(res => {},
+                error =>  this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.CONVERSION.uploadType)
+              );
+              this.uploadService.uploadDataNew[currentIndex].subScribe = subscribeUpload;
+    
+            }else{
+              this.uploadProgress.push(102);
+            }
+            if (this.orderService.buttons.restorations) {
+              if (event.restorationForm.upperFile || event.restorationForm.lowerFile || event.restorationForm.biteFile){
+                this.orderServices.uploadingId.add(JSON.stringify({id: res.data.VIEW_ORDER_ALL[0].orderId, type: SubOrderType.GFMR.uploadType}));
+              }
+              const orderData = orderArr[0].subOrders.find((e: any) => e.subOrderType.includes('Restoration'));
+              if (event.restorationForm.upperFile) {
+                const uploadFormData = this.GenerateOrderFormData(event.restorationForm.upperFile
+                  , orderData.subOrderStatus?.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId, "upper", false);
+                const currentIndex = ++this.uploadService.index;
+                const upperFileSub = this.uploadService.onUploadFile(uploadFormData
+                  , Number(localStorage.getItem('userCNId'))
+                  , res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.upperFile.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
+                    if (ev.type === HttpEventType.UploadProgress) {
+                      this.uploadService.uploadDataNew[currentIndex].calculatedTime =
+                        this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.upperFile.size);
+                      this.uploadService.uploadDataNew[currentIndex].progress =
+                        this.uploadProgressService.returnProgress(ev.loaded, ev.total);
+                      this.uploadService.uploadDataNew[currentIndex].subScribe = upperFileSub;
+                    } else if (ev instanceof HttpResponse) {
+                      if (ev.body.responsCode === ResponseCodeEnum.OK) {
+                        this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
+                        if (event.restorationForm.lowerFile) {
+                          let uploadFormData = this.GenerateOrderFormData(event.restorationForm.lowerFile
+                            , orderData.subOrderStatus.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId, "lower", false);
+                          let currentIndex = ++this.uploadService.index;
+                          let lowerFileSub = this.uploadService.onUploadFile(uploadFormData
+                            , Number(localStorage.getItem('userCNId'))
+                            , res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.lowerFile.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
+                            if (ev.type === HttpEventType.UploadProgress) {
+                              this.uploadService.uploadDataNew[currentIndex].calculatedTime =
+                                this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.lowerFile.size);
+                              this.uploadService.uploadDataNew[currentIndex].progress =
+                                this.uploadProgressService.returnProgress(ev.loaded, ev.total);
+                              this.uploadService.uploadDataNew[currentIndex].subScribe = lowerFileSub;
+                            } else if (ev instanceof HttpResponse) {
+                              if (ev.body.responsCode === ResponseCodeEnum.OK) {
+                                this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
+                                if (event.restorationForm.biteFile) {
+                                  let uploadFormData = this.GenerateOrderFormData(event.restorationForm.biteFile
+                                    , orderData.subOrderStatus.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId, "bite", true);
+                                  let currentIndex = ++this.uploadService.index;
+                                  let biteFileSub = this.uploadService.onUploadFile(uploadFormData
+                                    , Number(localStorage.getItem('userCNId'))
+                                    , res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.biteFile.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
+                                    if (ev.type === HttpEventType.UploadProgress) {
+                                      this.uploadService.uploadDataNew[currentIndex].calculatedTime =
+                                        this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.biteFile.size);
+                                      this.uploadService.uploadDataNew[currentIndex].progress =
+                                        this.uploadProgressService.returnProgress(ev.loaded, ev.total);
+                                      this.uploadService.uploadDataNew[currentIndex].subScribe = biteFileSub;
+                                    } else if (ev instanceof HttpResponse) {
+                                      if (ev.body.responsCode === ResponseCodeEnum.OK) {
+                                        this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
+                                        this.orderServices.onReload();
+                                        this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType);
+                                      }
+                                    }
+                                  })).subscribe(res => {},
+                                    error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType)
+                                  );
+                                }
+                              }
+                            }
+                          })).subscribe(res => {},
+                            error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType)
+                          );
+                        }
+                      }
+                    }
+                  })).subscribe(res => {},
+                  error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType)
+                );
+    
+              }
+            }
+          }
         });
+        */
     }
 }
-AddOrderPageComponent.ɵfac = function AddOrderPageComponent_Factory(t) { return new (t || AddOrderPageComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_6__.OrderSharedService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_AddOrderService_add_order_service__WEBPACK_IMPORTED_MODULE_7__.AddOrderService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_19__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](shared_shared_services_toastr_service__WEBPACK_IMPORTED_MODULE_8__.ToastrService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](projects_connect_src_app_Services_UploadService_upload_service__WEBPACK_IMPORTED_MODULE_9__.UploadService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_10__.OrderListService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](shared_shared_services_upload_progress_service__WEBPACK_IMPORTED_MODULE_11__.UploadProgressService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](shared_shared_services_generate_order_data_service__WEBPACK_IMPORTED_MODULE_12__.GenerateOrderDataService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_19__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](shared_shared_services_date_service__WEBPACK_IMPORTED_MODULE_13__.DateService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_10__.OrderListService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_actions_actions_service__WEBPACK_IMPORTED_MODULE_14__.ActionsService)); };
-AddOrderPageComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineComponent"]({ type: AddOrderPageComponent, selectors: [["app-add-order-page"]], viewQuery: function AddOrderPageComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵviewQuery"](shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_2__.AddOrderFormElectronComponent, 5);
+AddOrderPageComponent.ɵfac = function AddOrderPageComponent_Factory(t) { return new (t || AddOrderPageComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_2__.OrderSharedService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_AddOrderService_add_order_service__WEBPACK_IMPORTED_MODULE_3__.AddOrderService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](shared_shared_services_toastr_service__WEBPACK_IMPORTED_MODULE_4__.ToastrService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](projects_connect_src_app_Services_UploadService_upload_service__WEBPACK_IMPORTED_MODULE_5__.UploadService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_6__.OrderListService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](shared_shared_services_upload_progress_service__WEBPACK_IMPORTED_MODULE_7__.UploadProgressService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](shared_shared_services_generate_order_data_service__WEBPACK_IMPORTED_MODULE_8__.GenerateOrderDataService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](shared_shared_services_date_service__WEBPACK_IMPORTED_MODULE_9__.DateService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_6__.OrderListService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_actions_actions_service__WEBPACK_IMPORTED_MODULE_10__.ActionsService)); };
+AddOrderPageComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineComponent"]({ type: AddOrderPageComponent, selectors: [["app-add-order-page"]], viewQuery: function AddOrderPageComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵviewQuery"](shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_1__.AddOrderFormElectronComponent, 5);
     } if (rf & 2) {
         let _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵloadQuery"]()) && (ctx.addForm = _t.first);
-    } }, inputs: { patientName: "patientName" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵInheritDefinitionFeature"]], decls: 2, vars: 2, consts: [[3, "buttonOrders", "patientName", "ordersOBJ", 4, "ngIf"], ["class", "view", 4, "ngIf"], [3, "buttonOrders", "patientName", "ordersOBJ"], [1, "view"], [1, "header"], ["class", "progress-box", 4, "ngFor", "ngForOf"], [1, "container-form-btn"], ["id", "btn-done ", 1, "native-btn"], [1, "progress-box"], [3, "progress"]], template: function AddOrderPageComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtemplate"](0, AddOrderPageComponent_app_add_order_form_electron_0_Template, 1, 2, "app-add-order-form-electron", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtemplate"](1, AddOrderPageComponent_div_1_Template, 7, 1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵloadQuery"]()) && (ctx.addForm = _t.first);
+    } }, inputs: { patientName: "patientName" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵInheritDefinitionFeature"]], decls: 2, vars: 2, consts: [[3, "buttonOrders", "patientName", "ordersOBJ", 4, "ngIf"], ["class", "view", 4, "ngIf"], [3, "buttonOrders", "patientName", "ordersOBJ"], [1, "view"], [1, "header"], ["class", "progress-box", 4, "ngFor", "ngForOf"], [1, "container-form-btn"], ["id", "btn-done ", 1, "native-btn"], [1, "progress-box"], [3, "progress"]], template: function AddOrderPageComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtemplate"](0, AddOrderPageComponent_app_add_order_form_electron_0_Template, 1, 2, "app-add-order-form-electron", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtemplate"](1, AddOrderPageComponent_div_1_Template, 7, 1, "div", 1);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("ngIf", ctx.currentView === "addForm");
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("ngIf", ctx.currentView === "upload");
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_20__.NgIf, shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_2__.AddOrderFormElectronComponent, _angular_common__WEBPACK_IMPORTED_MODULE_20__.NgForOf, _progress_bar_progress_bar_component__WEBPACK_IMPORTED_MODULE_15__.ProgressBarComponent], styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-top: 2vh;\n}\n\n.view[_ngcontent-%COMP%] {\n  width: 95vw;\n  min-height: 93vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  position: relative;\n}\n\n.header[_ngcontent-%COMP%] {\n  color: var(--primary-color);\n  margin-bottom: 25px;\n  align-self: start;\n}\n\n.container-form-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  bottom: -30px;\n  margin: 0 20px;\n  display: flex;\n  grid-gap: 10px;\n  gap: 10px;\n  transition: none !important;\n}\n\n.container-form-btn[_ngcontent-%COMP%]    > *[_ngcontent-%COMP%] {\n  transition: none !important;\n}\n\n.progress-box[_ngcontent-%COMP%] {\n  width: 90%;\n  margin: auto 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZC1vcmRlci1wYWdlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBQTtFQUNBLFdBQUE7RUFFQSxhQUFBO0VBQ0Esc0JBQUE7RUFFQSxtQkFBQTtFQUNBLGdCQUFBO0FBREY7O0FBR0E7RUFDRSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0Esa0JBQUE7QUFBRjs7QUFHQTtFQUNFLDJCQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtBQUFGOztBQUdBO0VBQ0Usa0JBQUE7RUFDQSxRQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7RUFDQSxhQUFBO0VBQ0EsY0FBQTtFQUFBLFNBQUE7RUFDQSwyQkFBQTtBQUFGOztBQUVBO0VBQ0UsMkJBQUE7QUFDRjs7QUFFQTtFQUNFLFVBQUE7RUFDQSxjQUFBO0FBQ0YiLCJmaWxlIjoiYWRkLW9yZGVyLXBhZ2UuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdCB7XG4gIGhlaWdodDogMTAwJTtcbiAgd2lkdGg6IDEwMCU7XG5cbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgLy8ganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHBhZGRpbmctdG9wOiAydmg7XG59XG4udmlldyB7XG4gIHdpZHRoOiA5NXZ3O1xuICBtaW4taGVpZ2h0OiA5M3ZoO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmhlYWRlciB7XG4gIGNvbG9yOiB2YXIoLS1wcmltYXJ5LWNvbG9yKTtcbiAgbWFyZ2luLWJvdHRvbTogMjVweDtcbiAgYWxpZ24tc2VsZjogc3RhcnQ7XG59XG5cbi5jb250YWluZXItZm9ybS1idG4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IC0zMHB4O1xuICBtYXJnaW46IDAgMjBweDtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiAxMHB4O1xuICB0cmFuc2l0aW9uOiBub25lICFpbXBvcnRhbnQ7XG59XG4uY29udGFpbmVyLWZvcm0tYnRuID4gKiB7XG4gIHRyYW5zaXRpb246IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLnByb2dyZXNzLWJveHtcbiAgd2lkdGg6IDkwJTtcbiAgbWFyZ2luOiBhdXRvIDA7XG59XG4iXX0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("ngIf", ctx.currentView === "addForm");
+        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("ngIf", ctx.currentView === "upload");
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_14__.NgIf, shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_1__.AddOrderFormElectronComponent, _angular_common__WEBPACK_IMPORTED_MODULE_14__.NgForOf, _progress_bar_progress_bar_component__WEBPACK_IMPORTED_MODULE_11__.ProgressBarComponent], styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-top: 2vh;\n}\n\n.view[_ngcontent-%COMP%] {\n  width: 95vw;\n  min-height: 93vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  position: relative;\n}\n\n.header[_ngcontent-%COMP%] {\n  color: var(--primary-color);\n  margin-bottom: 25px;\n  align-self: start;\n}\n\n.container-form-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  bottom: -30px;\n  margin: 0 20px;\n  display: flex;\n  grid-gap: 10px;\n  gap: 10px;\n  transition: none !important;\n}\n\n.container-form-btn[_ngcontent-%COMP%]    > *[_ngcontent-%COMP%] {\n  transition: none !important;\n}\n\n.progress-box[_ngcontent-%COMP%] {\n  width: 90%;\n  margin: auto 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZC1vcmRlci1wYWdlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBQTtFQUNBLFdBQUE7RUFFQSxhQUFBO0VBQ0Esc0JBQUE7RUFFQSxtQkFBQTtFQUNBLGdCQUFBO0FBREY7O0FBR0E7RUFDRSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0Esa0JBQUE7QUFBRjs7QUFHQTtFQUNFLDJCQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtBQUFGOztBQUdBO0VBQ0Usa0JBQUE7RUFDQSxRQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7RUFDQSxhQUFBO0VBQ0EsY0FBQTtFQUFBLFNBQUE7RUFDQSwyQkFBQTtBQUFGOztBQUVBO0VBQ0UsMkJBQUE7QUFDRjs7QUFFQTtFQUNFLFVBQUE7RUFDQSxjQUFBO0FBQ0YiLCJmaWxlIjoiYWRkLW9yZGVyLXBhZ2UuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdCB7XG4gIGhlaWdodDogMTAwJTtcbiAgd2lkdGg6IDEwMCU7XG5cbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgLy8ganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHBhZGRpbmctdG9wOiAydmg7XG59XG4udmlldyB7XG4gIHdpZHRoOiA5NXZ3O1xuICBtaW4taGVpZ2h0OiA5M3ZoO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmhlYWRlciB7XG4gIGNvbG9yOiB2YXIoLS1wcmltYXJ5LWNvbG9yKTtcbiAgbWFyZ2luLWJvdHRvbTogMjVweDtcbiAgYWxpZ24tc2VsZjogc3RhcnQ7XG59XG5cbi5jb250YWluZXItZm9ybS1idG4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IC0zMHB4O1xuICBtYXJnaW46IDAgMjBweDtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiAxMHB4O1xuICB0cmFuc2l0aW9uOiBub25lICFpbXBvcnRhbnQ7XG59XG4uY29udGFpbmVyLWZvcm0tYnRuID4gKiB7XG4gIHRyYW5zaXRpb246IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLnByb2dyZXNzLWJveHtcbiAgd2lkdGg6IDkwJTtcbiAgbWFyZ2luOiBhdXRvIDA7XG59XG4iXX0= */"] });
 
 
 /***/ }),
@@ -454,16 +495,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppComponent": () => (/* binding */ AppComponent)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! tslib */ 3786);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ 3786);
 /* harmony import */ var projects_connect_src_app_Models_Enums_RequestTypes_RequestTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! projects/connect/src/app/Models/Enums/RequestTypes/RequestTypes */ 987);
-/* harmony import */ var shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! shared/shared-enums/ResponseCodeEnum */ 1580);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../environments/environment */ 1017);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 2316);
-/* harmony import */ var projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! projects/connect/src/app/Services/AuthServices/LoginService/login.service */ 9020);
-/* harmony import */ var projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! projects/connect/src/app/Services/LocalStorageService/local-storage.service */ 1931);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 4364);
-/* harmony import */ var _add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./add-order-page/add-order-page.component */ 1760);
-
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../environments/environment */ 1017);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 2316);
+/* harmony import */ var projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! projects/connect/src/app/Services/AuthServices/LoginService/login.service */ 9020);
+/* harmony import */ var projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! projects/connect/src/app/Services/LocalStorageService/local-storage.service */ 1931);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ 4364);
+/* harmony import */ var _add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./add-order-page/add-order-page.component */ 1760);
 
 
 
@@ -473,10 +512,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function AppComponent_app_add_order_page_0_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](0, "app-add-order-page", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](0, "app-add-order-page", 1);
 } if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("patientName", ctx_r0.patientName);
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("patientName", ctx_r0.patientName);
 } }
 class AppComponent {
     constructor(loginService, localStorageService) {
@@ -485,40 +524,41 @@ class AppComponent {
         this.loginObj = { requestType: projects_connect_src_app_Models_Enums_RequestTypes_RequestTypes__WEBPACK_IMPORTED_MODULE_0__.ERequestTypes.ADD, services: [{}] };
     }
     ngOnInit() {
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_7__.__awaiter)(this, void 0, void 0, function* () {
-            const { emailAddress, password, name } = yield this.getObject();
-            this.patientName = name;
+        return (0,tslib__WEBPACK_IMPORTED_MODULE_6__.__awaiter)(this, void 0, void 0, function* () {
+            // const{emailAddress, password, name} = await this.getObject();
+            this.patientName = 'test patient name';
+            /*
             this.loginObj.services[0] = {
-                userName: emailAddress,
-                password: password,
-                serviceName: '',
-                columns: [],
-                ConditionsAnded: false
+              userName: emailAddress,
+              password: password,
+              serviceName: '',
+              columns: [],
+              ConditionsAnded: false
             };
             // @ts-expect-error
-            this.loginService.login(this.loginObj).subscribe(res => {
-                if (res.responsCode === shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_1__.ResponseCodeEnum.OK) {
-                    const responseOBJ = JSON.parse(res.responsString);
-                    if (!responseOBJ.needChange) {
-                        this.localStorageService.setLocalStorageGDBR(responseOBJ);
-                    }
+            this.loginService.login(this.loginObj).subscribe(res =>
+              {if (res.responsCode === ResponseCodeEnum.OK) {
+                const responseOBJ = JSON.parse(res.responsString);
+                if (!responseOBJ.needChange) {
+                  this.localStorageService.setLocalStorageGDBR(responseOBJ);
                 }
-            });
+              }})
+            */
         });
     }
     getObject() {
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_7__.__awaiter)(this, void 0, void 0, function* () {
-            const data = yield fetch(_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.jsonURL).then(res => res.json());
+        return (0,tslib__WEBPACK_IMPORTED_MODULE_6__.__awaiter)(this, void 0, void 0, function* () {
+            const data = yield fetch(_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.jsonURL).then(res => res.json());
             return data;
         });
     }
 }
-AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_3__.LoginService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_4__.LocalStorageService)); };
-AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 1, vars: 1, consts: [[3, "patientName", 4, "ngIf"], [3, "patientName"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtemplate"](0, AppComponent_app_add_order_page_0_Template, 1, 1, "app-add-order-page", 0);
+AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_2__.LoginService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_3__.LocalStorageService)); };
+AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 1, vars: 1, consts: [[3, "patientName", 4, "ngIf"], [3, "patientName"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](0, AppComponent_app_add_order_page_0_Template, 1, 1, "app-add-order-page", 0);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("ngIf", ctx.patientName);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgIf, _add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_5__.AddOrderPageComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.patientName);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.NgIf, _add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_4__.AddOrderPageComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */"] });
 
 
 /***/ }),
@@ -7849,7 +7889,7 @@ AddOrderFormElectronComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPOR
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("ngIf", ctx.currentView === "stepper");
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("ngIf", ctx.currentView === "uploader");
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_15__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_12__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.NgForm, _angular_material_button__WEBPACK_IMPORTED_MODULE_16__.MatButton, _angular_common__WEBPACK_IMPORTED_MODULE_15__.NgClass, _angular_material_radio__WEBPACK_IMPORTED_MODULE_17__.MatRadioGroup, _angular_material_radio__WEBPACK_IMPORTED_MODULE_17__.MatRadioButton, _teeth_chart_teeth_chart_component__WEBPACK_IMPORTED_MODULE_4__.TeethChartComponent, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__.MatStepper, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__.MatStepperIcon, _angular_material_icon__WEBPACK_IMPORTED_MODULE_19__.MatIcon, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__.MatStep, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormGroupDirective, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_20__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_20__.MatLabel, _angular_material_input__WEBPACK_IMPORTED_MODULE_21__.MatInput, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormControlName, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.RequiredValidator, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__.MatStepperNext, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_20__.MatError, _conversion_form_conversion_form_component__WEBPACK_IMPORTED_MODULE_5__.ConversionFormComponent, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__.MatStepperPrevious, _treatment_plan_form_treatment_plan_form_component__WEBPACK_IMPORTED_MODULE_6__.TreatmentPlanFormComponent, _surgical_guide_surgical_guide_component__WEBPACK_IMPORTED_MODULE_7__.SurgicalGuideComponent, _restoration_form_restoration_form_component__WEBPACK_IMPORTED_MODULE_8__.RestorationFormComponent, _radiology_report_form_radiology_report_form_component__WEBPACK_IMPORTED_MODULE_9__.RadiologyReportFormComponent, _shared_directives_drag_drop_file_upload_directive__WEBPACK_IMPORTED_MODULE_10__.DragDropFileUploadDirective], styles: [".cases[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n.container-form-btn[_ngcontent-%COMP%] {\n  text-align: right;\n}\n\n  .mat-horizontal-stepper-header {\n  pointer-events: none !important;\n}\n\na[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n}\n\n.input-file[_ngcontent-%COMP%] {\n  margin-top: 15px;\n}\n\nmat-form-field[_ngcontent-%COMP%] {\n  margin-bottom: 20px;\n}\n\n.select-doctor[_ngcontent-%COMP%] {\n  margin-bottom: 20px;\n}\n\n.patientHide[_ngcontent-%COMP%] {\n  display: none;\n}\n\n.doctorHide[_ngcontent-%COMP%] {\n  display: none;\n}\n\n.quest[_ngcontent-%COMP%]:hover    + .patientHide[_ngcontent-%COMP%] {\n  display: block;\n  position: absolute;\n  color: white;\n  top: 41px;\n  right: 0;\n  background: black;\n  padding: 5px 10px;\n  border-radius: 6px;\n}\n\n.questDoctor[_ngcontent-%COMP%]:hover    + .doctorHide[_ngcontent-%COMP%] {\n  display: block;\n  position: absolute;\n  color: white;\n  top: 41px;\n  right: 0;\n  background: black;\n  padding: 5px 10px;\n  border-radius: 6px;\n}\n\n.gfmr[_ngcontent-%COMP%] {\n  margin-left: 105px;\n}\n\n.suborderwidth[_ngcontent-%COMP%] {\n  width: 155px !important;\n}\n\n\n\n[_nghost-%COMP%] {\n  height: 100%;\n  width: 100%;\n\n  display: flex;\n  flex-direction: column;\n  \n  align-items: center;\n  \n}\n\n.view[_ngcontent-%COMP%] {\n  width: 95vw;\n  min-height: 93vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  position: relative;\n}\n\n.start[_ngcontent-%COMP%] {\n  justify-content: space-between;\n  grid-gap: 5px;\n  gap: 5px;\n}\n\n#frm-sub-order[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-top: 20px;\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.start-question[_ngcontent-%COMP%] {\n  color: var(--primary-color);\n  margin-bottom: 25px;\n  text-align: center;\n}\n\n.container-form-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  bottom: -30px;\n  margin: 0 20px;\n  display: flex;\n  grid-gap: 10px;\n  gap: 10px;\n  transition: none !important;\n}\n\n.container-form-btn[_ngcontent-%COMP%]    > *[_ngcontent-%COMP%] {\n  transition: none !important;\n}\n\n.teeth[_ngcontent-%COMP%]     .teethChart {\n  width: 100%;\n  height: 100%;\n  justify-content: space-between;\n  grid-gap: 10px;\n  gap: 10px;\n}\n\n.teeth[_ngcontent-%COMP%]     .teethChart .teethTable {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.teeth[_ngcontent-%COMP%]     .teethChart .teethTable table td button {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 0 auto;\n  padding: 0 !important;\n}\n\n.header[_ngcontent-%COMP%] {\n  color: var(--primary-color);\n  margin-bottom: 25px;\n  align-self: start;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-stepper-horizontal {\n  width: 100%;\n  height: 100%;\n\n  display: flex;\n  flex-direction: column;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-horizontal-content-container {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-step-icon, .stepper[_ngcontent-%COMP%]     .mat-step-icon-state-edit {\n  background-color: #fff !important;\n  border: 1px solid var(--primary-color);\n  color: var(--primary-color);\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-step-icon-content {\n  display: none !important;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-step-icon-state-edit .mat-step-icon-content {\n  display: block !important;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-stepper-horizontal-line {\n  display: none;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-horizontal-stepper-header {\n  flex: 1;\n  border-bottom: 2px solid #ccc;\n  border-top: 2px solid #ccc;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.stepper[_ngcontent-%COMP%]    \n  .mat-horizontal-stepper-header:has(\n    .mat-step-label.mat-step-label-active.mat-step-label-selected\n  ) {\n  background-color: #377fae24;\n\n  border-bottom: 2px solid var(--primary-color);\n}\n\n.uploader[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n\n[_nghost-%COMP%]     .ngx-file-drop__drop-zone {\n  border: none !important;\n}\n\n.uploader-container[_ngcontent-%COMP%] {\n  width: 100%;\n}\n\n.uploader-box[_ngcontent-%COMP%] {\n  margin: 10px;\n  width: 100%;\n}\n\n.uploader-box--header[_ngcontent-%COMP%] {\n  color: #000 !important;\n}\n\n.uploader-box--drop[_ngcontent-%COMP%] {\n  height: 150px;\n  color: #888;\n  border: #888 2px solid;\n\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n\n  font-size: 24px;\n}\n\n\n\n.native-btn[_ngcontent-%COMP%] {\n  outline: none;\n  background-color: rgb(225, 225, 225);\n  padding: 3px 10px;\n  margin: 2px;\n  border: 0;\n  box-shadow: 0px 0px 0px 1px rgb(225, 225, 225),\n    0px 0px 0px 2px rgb(173, 173, 173);\n  border: 1px dotted transparent;\n  color: black;\n}\n\n.native-btn[_ngcontent-%COMP%]:focus {\n  background-color: rgb(225, 225, 225);\n  box-shadow: 0px 0px 0px 0px rgb(225, 225, 225),\n    0px 0px 0px 2px rgb(0, 120, 215);\n  border: 1px dotted rgb(17, 17, 17);\n}\n\n.native-btn[_ngcontent-%COMP%]:hover {\n  box-shadow: 0px 0px 0px 1px rgb(225, 225, 225),\n    0px 0px 0px 2px rgb(0, 120, 215);\n  background-color: rgb(229, 241, 251);\n}\n\n.native-btn[_ngcontent-%COMP%]:active {\n  transition: background-color 0s;\n  background-color: rgb(204, 228, 247);\n  box-shadow: 0px 0px 0px 1px rgb(225, 225, 225),\n    0px 0px 0px 2px rgb(0, 120, 215);\n}\n\n.native-btn[_ngcontent-%COMP%]:disabled, .native-btn[_ngcontent-%COMP%]:disabled:active {\n  background-color: rgb(204, 204, 204);\n  box-shadow: 0px 0px 0px 1px rgb(204, 204, 204),\n    0px 0px 0px 2px rgb(173, 173, 173);\n  color: rgb(135, 135, 135);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZC1vcmRlci1mb3JtLWVsZWN0cm9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBQ0E7RUFDRSwrQkFBK0I7QUFDakM7O0FBQ0E7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osU0FBUztFQUNULFFBQVE7RUFDUixpQkFBaUI7RUFDakIsaUJBQWlCO0VBQ2pCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLFNBQVM7RUFDVCxRQUFRO0VBQ1IsaUJBQWlCO0VBQ2pCLGlCQUFpQjtFQUNqQixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSx1QkFBdUI7QUFDekI7O0FBRUEsMkNBQTJDOztBQUUzQztFQUNFLFlBQVk7RUFDWixXQUFXOztFQUVYLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsNkJBQTZCO0VBQzdCLG1CQUFtQjtFQUNuQixzQkFBc0I7QUFDeEI7O0FBQ0E7RUFDRSxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLGtCQUFrQjtBQUNwQjs7QUFDQTtFQUNFLDhCQUE4QjtFQUM5QixhQUFRO0VBQVIsUUFBUTtBQUNWOztBQUVBO0VBQ0UsV0FBVztFQUNYLGlCQUFpQjtFQUNqQixPQUFPO0VBQ1AsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSwyQkFBMkI7RUFDM0IsbUJBQW1CO0VBQ25CLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsYUFBYTtFQUNiLGNBQWM7RUFDZCxhQUFhO0VBQ2IsY0FBUztFQUFULFNBQVM7RUFDVCwyQkFBMkI7QUFDN0I7O0FBQ0E7RUFDRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLDhCQUE4QjtFQUM5QixjQUFTO0VBQVQsU0FBUztBQUNYOztBQUVBO0VBQ0UsT0FBTztFQUNQLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsY0FBYztFQUNkLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQixtQkFBbUI7RUFDbkIsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7O0VBRVosYUFBYTtFQUNiLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLE9BQU87RUFDUCxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtBQUN6Qjs7QUFFQTs7RUFFRSxpQ0FBaUM7RUFDakMsc0NBQXNDO0VBQ3RDLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLHdCQUF3QjtBQUMxQjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLE9BQU87RUFDUCw2QkFBNkI7RUFDN0IsMEJBQTBCO0VBQzFCLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCOztBQUVBOzs7OztFQUtFLDJCQUEyQjs7RUFFM0IsNkNBQTZDO0FBQy9DOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFDQTtFQUNFLFlBQVk7RUFDWixXQUFXO0FBQ2I7O0FBQ0E7RUFDRSxzQkFBc0I7QUFDeEI7O0FBQ0E7RUFDRSxhQUFhO0VBQ2IsV0FBVztFQUNYLHNCQUFzQjs7RUFFdEIsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIsbUJBQW1COztFQUVuQixlQUFlO0FBQ2pCOztBQUVBLFdBQVc7O0FBQ1g7RUFDRSxhQUFhO0VBQ2Isb0NBQW9DO0VBQ3BDLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsU0FBUztFQUNUO3NDQUNvQztFQUNwQyw4QkFBOEI7RUFDOUIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usb0NBQW9DO0VBQ3BDO29DQUNrQztFQUNsQyxrQ0FBa0M7QUFDcEM7O0FBRUE7RUFDRTtvQ0FDa0M7RUFDbEMsb0NBQW9DO0FBQ3RDOztBQUVBO0VBQ0UsK0JBQStCO0VBQy9CLG9DQUFvQztFQUNwQztvQ0FDa0M7QUFDcEM7O0FBRUE7O0VBRUUsb0NBQW9DO0VBQ3BDO3NDQUNvQztFQUNwQyx5QkFBeUI7QUFDM0IiLCJmaWxlIjoiYWRkLW9yZGVyLWZvcm0tZWxlY3Ryb24uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXNlcyB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmNvbnRhaW5lci1mb3JtLWJ0biB7XG4gIHRleHQtYWxpZ246IHJpZ2h0O1xufVxuOjpuZy1kZWVwIC5tYXQtaG9yaXpvbnRhbC1zdGVwcGVyLWhlYWRlciB7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lICFpbXBvcnRhbnQ7XG59XG5hOmhvdmVyIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4uaW5wdXQtZmlsZSB7XG4gIG1hcmdpbi10b3A6IDE1cHg7XG59XG5cbm1hdC1mb3JtLWZpZWxkIHtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cblxuLnNlbGVjdC1kb2N0b3Ige1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xufVxuXG4ucGF0aWVudEhpZGUge1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4uZG9jdG9ySGlkZSB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5xdWVzdDpob3ZlciArIC5wYXRpZW50SGlkZSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgdG9wOiA0MXB4O1xuICByaWdodDogMDtcbiAgYmFja2dyb3VuZDogYmxhY2s7XG4gIHBhZGRpbmc6IDVweCAxMHB4O1xuICBib3JkZXItcmFkaXVzOiA2cHg7XG59XG5cbi5xdWVzdERvY3Rvcjpob3ZlciArIC5kb2N0b3JIaWRlIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgY29sb3I6IHdoaXRlO1xuICB0b3A6IDQxcHg7XG4gIHJpZ2h0OiAwO1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgcGFkZGluZzogNXB4IDEwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDZweDtcbn1cblxuLmdmbXIge1xuICBtYXJnaW4tbGVmdDogMTA1cHg7XG59XG5cbi5zdWJvcmRlcndpZHRoIHtcbiAgd2lkdGg6IDE1NXB4ICFpbXBvcnRhbnQ7XG59XG5cbi8qIC8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vICovXG5cbjpob3N0IHtcbiAgaGVpZ2h0OiAxMDAlO1xuICB3aWR0aDogMTAwJTtcblxuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgLyogcGFkZGluZy10b3A6IDJ2aDsgKi9cbn1cbi52aWV3IHtcbiAgd2lkdGg6IDk1dnc7XG4gIG1pbi1oZWlnaHQ6IDkzdmg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cbi5zdGFydCB7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgZ2FwOiA1cHg7XG59XG5cbiNmcm0tc3ViLW9yZGVyIHtcbiAgd2lkdGg6IDEwMCU7XG4gIHBhZGRpbmctdG9wOiAyMHB4O1xuICBmbGV4OiAxO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxuLnN0YXJ0LXF1ZXN0aW9uIHtcbiAgY29sb3I6IHZhcigtLXByaW1hcnktY29sb3IpO1xuICBtYXJnaW4tYm90dG9tOiAyNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250YWluZXItZm9ybS1idG4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IC0zMHB4O1xuICBtYXJnaW46IDAgMjBweDtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiAxMHB4O1xuICB0cmFuc2l0aW9uOiBub25lICFpbXBvcnRhbnQ7XG59XG4uY29udGFpbmVyLWZvcm0tYnRuID4gKiB7XG4gIHRyYW5zaXRpb246IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLnRlZXRoIDo6bmctZGVlcCAudGVldGhDaGFydCB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgZ2FwOiAxMHB4O1xufVxuXG4udGVldGggOjpuZy1kZWVwIC50ZWV0aENoYXJ0IC50ZWV0aFRhYmxlIHtcbiAgZmxleDogMTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi50ZWV0aCA6Om5nLWRlZXAgLnRlZXRoQ2hhcnQgLnRlZXRoVGFibGUgdGFibGUgdGQgYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbjogMCBhdXRvO1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG59XG5cbi5oZWFkZXIge1xuICBjb2xvcjogdmFyKC0tcHJpbWFyeS1jb2xvcik7XG4gIG1hcmdpbi1ib3R0b206IDI1cHg7XG4gIGFsaWduLXNlbGY6IHN0YXJ0O1xufVxuXG4uc3RlcHBlciA6Om5nLWRlZXAgLm1hdC1zdGVwcGVyLWhvcml6b250YWwge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG5cbi5zdGVwcGVyIDo6bmctZGVlcCAubWF0LWhvcml6b250YWwtY29udGVudC1jb250YWluZXIge1xuICBmbGV4OiAxO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxuLnN0ZXBwZXIgOjpuZy1kZWVwIC5tYXQtc3RlcC1pY29uLFxuLnN0ZXBwZXIgOjpuZy1kZWVwIC5tYXQtc3RlcC1pY29uLXN0YXRlLWVkaXQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmICFpbXBvcnRhbnQ7XG4gIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLXByaW1hcnktY29sb3IpO1xuICBjb2xvcjogdmFyKC0tcHJpbWFyeS1jb2xvcik7XG59XG5cbi5zdGVwcGVyIDo6bmctZGVlcCAubWF0LXN0ZXAtaWNvbi1jb250ZW50IHtcbiAgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50O1xufVxuXG4uc3RlcHBlciA6Om5nLWRlZXAgLm1hdC1zdGVwLWljb24tc3RhdGUtZWRpdCAubWF0LXN0ZXAtaWNvbi1jb250ZW50IHtcbiAgZGlzcGxheTogYmxvY2sgIWltcG9ydGFudDtcbn1cblxuLnN0ZXBwZXIgOjpuZy1kZWVwIC5tYXQtc3RlcHBlci1ob3Jpem9udGFsLWxpbmUge1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4uc3RlcHBlciA6Om5nLWRlZXAgLm1hdC1ob3Jpem9udGFsLXN0ZXBwZXItaGVhZGVyIHtcbiAgZmxleDogMTtcbiAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkICNjY2M7XG4gIGJvcmRlci10b3A6IDJweCBzb2xpZCAjY2NjO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLnN0ZXBwZXJcbiAgOjpuZy1kZWVwXG4gIC5tYXQtaG9yaXpvbnRhbC1zdGVwcGVyLWhlYWRlcjpoYXMoXG4gICAgLm1hdC1zdGVwLWxhYmVsLm1hdC1zdGVwLWxhYmVsLWFjdGl2ZS5tYXQtc3RlcC1sYWJlbC1zZWxlY3RlZFxuICApIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzM3N2ZhZTI0O1xuXG4gIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCB2YXIoLS1wcmltYXJ5LWNvbG9yKTtcbn1cblxuLnVwbG9hZGVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIC5uZ3gtZmlsZS1kcm9wX19kcm9wLXpvbmUge1xuICBib3JkZXI6IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLnVwbG9hZGVyLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xufVxuLnVwbG9hZGVyLWJveCB7XG4gIG1hcmdpbjogMTBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG4udXBsb2FkZXItYm94LS1oZWFkZXIge1xuICBjb2xvcjogIzAwMCAhaW1wb3J0YW50O1xufVxuLnVwbG9hZGVyLWJveC0tZHJvcCB7XG4gIGhlaWdodDogMTUwcHg7XG4gIGNvbG9yOiAjODg4O1xuICBib3JkZXI6ICM4ODggMnB4IHNvbGlkO1xuXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gIGZvbnQtc2l6ZTogMjRweDtcbn1cblxuLyogQnV0dG9uICovXG4ubmF0aXZlLWJ0biB7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjUsIDIyNSwgMjI1KTtcbiAgcGFkZGluZzogM3B4IDEwcHg7XG4gIG1hcmdpbjogMnB4O1xuICBib3JkZXI6IDA7XG4gIGJveC1zaGFkb3c6IDBweCAwcHggMHB4IDFweCByZ2IoMjI1LCAyMjUsIDIyNSksXG4gICAgMHB4IDBweCAwcHggMnB4IHJnYigxNzMsIDE3MywgMTczKTtcbiAgYm9yZGVyOiAxcHggZG90dGVkIHRyYW5zcGFyZW50O1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi5uYXRpdmUtYnRuOmZvY3VzIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNSwgMjI1LCAyMjUpO1xuICBib3gtc2hhZG93OiAwcHggMHB4IDBweCAwcHggcmdiKDIyNSwgMjI1LCAyMjUpLFxuICAgIDBweCAwcHggMHB4IDJweCByZ2IoMCwgMTIwLCAyMTUpO1xuICBib3JkZXI6IDFweCBkb3R0ZWQgcmdiKDE3LCAxNywgMTcpO1xufVxuXG4ubmF0aXZlLWJ0bjpob3ZlciB7XG4gIGJveC1zaGFkb3c6IDBweCAwcHggMHB4IDFweCByZ2IoMjI1LCAyMjUsIDIyNSksXG4gICAgMHB4IDBweCAwcHggMnB4IHJnYigwLCAxMjAsIDIxNSk7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjksIDI0MSwgMjUxKTtcbn1cblxuLm5hdGl2ZS1idG46YWN0aXZlIHtcbiAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAwcztcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIwNCwgMjI4LCAyNDcpO1xuICBib3gtc2hhZG93OiAwcHggMHB4IDBweCAxcHggcmdiKDIyNSwgMjI1LCAyMjUpLFxuICAgIDBweCAwcHggMHB4IDJweCByZ2IoMCwgMTIwLCAyMTUpO1xufVxuXG4ubmF0aXZlLWJ0bjpkaXNhYmxlZCxcbi5uYXRpdmUtYnRuOmRpc2FibGVkOmFjdGl2ZSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMDQsIDIwNCwgMjA0KTtcbiAgYm94LXNoYWRvdzogMHB4IDBweCAwcHggMXB4IHJnYigyMDQsIDIwNCwgMjA0KSxcbiAgICAwcHggMHB4IDBweCAycHggcmdiKDE3MywgMTczLCAxNzMpO1xuICBjb2xvcjogcmdiKDEzNSwgMTM1LCAxMzUpO1xufVxuIl19 */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_15__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_12__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.NgForm, _angular_material_button__WEBPACK_IMPORTED_MODULE_16__.MatButton, _angular_common__WEBPACK_IMPORTED_MODULE_15__.NgClass, _angular_material_radio__WEBPACK_IMPORTED_MODULE_17__.MatRadioGroup, _angular_material_radio__WEBPACK_IMPORTED_MODULE_17__.MatRadioButton, _teeth_chart_teeth_chart_component__WEBPACK_IMPORTED_MODULE_4__.TeethChartComponent, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__.MatStepper, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__.MatStepperIcon, _angular_material_icon__WEBPACK_IMPORTED_MODULE_19__.MatIcon, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__.MatStep, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormGroupDirective, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_20__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_20__.MatLabel, _angular_material_input__WEBPACK_IMPORTED_MODULE_21__.MatInput, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormControlName, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.RequiredValidator, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__.MatStepperNext, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_20__.MatError, _conversion_form_conversion_form_component__WEBPACK_IMPORTED_MODULE_5__.ConversionFormComponent, _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__.MatStepperPrevious, _treatment_plan_form_treatment_plan_form_component__WEBPACK_IMPORTED_MODULE_6__.TreatmentPlanFormComponent, _surgical_guide_surgical_guide_component__WEBPACK_IMPORTED_MODULE_7__.SurgicalGuideComponent, _restoration_form_restoration_form_component__WEBPACK_IMPORTED_MODULE_8__.RestorationFormComponent, _radiology_report_form_radiology_report_form_component__WEBPACK_IMPORTED_MODULE_9__.RadiologyReportFormComponent, _shared_directives_drag_drop_file_upload_directive__WEBPACK_IMPORTED_MODULE_10__.DragDropFileUploadDirective], styles: [".cases[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\n.container-form-btn[_ngcontent-%COMP%] {\n  text-align: right;\n}\n\n  .mat-horizontal-stepper-header {\n  pointer-events: none !important;\n}\n\na[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n}\n\n.input-file[_ngcontent-%COMP%] {\n  margin-top: 15px;\n}\n\nmat-form-field[_ngcontent-%COMP%] {\n  margin-bottom: 20px;\n}\n\n.select-doctor[_ngcontent-%COMP%] {\n  margin-bottom: 20px;\n}\n\n.patientHide[_ngcontent-%COMP%] {\n  display: none;\n}\n\n.doctorHide[_ngcontent-%COMP%] {\n  display: none;\n}\n\n.quest[_ngcontent-%COMP%]:hover    + .patientHide[_ngcontent-%COMP%] {\n  display: block;\n  position: absolute;\n  color: white;\n  top: 41px;\n  right: 0;\n  background: black;\n  padding: 5px 10px;\n  border-radius: 6px;\n}\n\n.questDoctor[_ngcontent-%COMP%]:hover    + .doctorHide[_ngcontent-%COMP%] {\n  display: block;\n  position: absolute;\n  color: white;\n  top: 41px;\n  right: 0;\n  background: black;\n  padding: 5px 10px;\n  border-radius: 6px;\n}\n\n.gfmr[_ngcontent-%COMP%] {\n  margin-left: 105px;\n}\n\n.suborderwidth[_ngcontent-%COMP%] {\n  width: 155px !important;\n}\n\n\n\n[_nghost-%COMP%] {\n  height: 100%;\n  width: 100%;\n\n  display: flex;\n  flex-direction: column;\n  \n  align-items: center;\n  \n}\n\n.view[_ngcontent-%COMP%] {\n  width: 95vw;\n  min-height: 93vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  position: relative;\n}\n\n.start[_ngcontent-%COMP%] {\n  justify-content: space-between;\n  grid-gap: 5px;\n  gap: 5px;\n}\n\n#frm-sub-order[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-top: 20px;\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.start-question[_ngcontent-%COMP%] {\n  color: var(--primary-color);\n  margin-bottom: 25px;\n  text-align: center;\n}\n\n.container-form-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  bottom: -30px;\n  margin: 0 20px;\n  display: flex;\n  grid-gap: 10px;\n  gap: 10px;\n  transition: none !important;\n}\n\n.container-form-btn[_ngcontent-%COMP%]    > *[_ngcontent-%COMP%] {\n  transition: none !important;\n}\n\n.teeth[_ngcontent-%COMP%]     .teethChart {\n  width: 100%;\n  height: 100%;\n  justify-content: space-between;\n  grid-gap: 10px;\n  gap: 10px;\n}\n\n.teeth[_ngcontent-%COMP%]     .teethChart .teethTable {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.teeth[_ngcontent-%COMP%]     .teethChart .teethTable table td button {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 0 auto;\n  padding: 0 !important;\n}\n\n.header[_ngcontent-%COMP%] {\n  color: var(--primary-color);\n  margin-bottom: 25px;\n  align-self: start;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-stepper-horizontal {\n  width: 100%;\n  height: 100%;\n\n  display: flex;\n  flex-direction: column;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-horizontal-content-container {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-step-icon, .stepper[_ngcontent-%COMP%]     .mat-step-icon-state-edit {\n  background-color: #fff !important;\n  border: 1px solid var(--primary-color);\n  color: var(--primary-color);\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-step-icon-content {\n  display: none !important;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-step-icon-state-edit .mat-step-icon-content {\n  display: block !important;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-stepper-horizontal-line {\n  display: none;\n}\n\n.stepper[_ngcontent-%COMP%]     .mat-horizontal-stepper-header {\n  flex: 1;\n  border-bottom: 2px solid #ccc;\n  border-top: 2px solid #ccc;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.stepper[_ngcontent-%COMP%]    \n  .mat-horizontal-stepper-header:has(\n    .mat-step-label.mat-step-label-active.mat-step-label-selected\n  ) {\n  background-color: #377fae24;\n\n  border-bottom: 2px solid var(--primary-color);\n}\n\n.uploader[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n\n[_nghost-%COMP%]     .ngx-file-drop__drop-zone {\n  border: none !important;\n}\n\n.uploader-container[_ngcontent-%COMP%] {\n  width: 100%;\n}\n\n.uploader-box[_ngcontent-%COMP%] {\n  margin: 10px;\n  width: 100%;\n}\n\n.uploader-box--header[_ngcontent-%COMP%] {\n  color: #000 !important;\n}\n\n.uploader-box--drop[_ngcontent-%COMP%] {\n  height: 150px;\n  color: #888;\n  border: #888 2px solid;\n\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n\n  font-size: 24px;\n}\n\n\n\n.native-btn[_ngcontent-%COMP%] {\n  outline: none;\n  background-color: rgb(225, 225, 225);\n  padding: 3px 10px;\n  margin: 2px;\n  border: 0;\n  box-shadow: 0px 0px 0px 1px rgb(225, 225, 225),\n    0px 0px 0px 2px rgb(173, 173, 173);\n  border: 1px dotted transparent;\n  color: black;\n}\n\n.native-btn[_ngcontent-%COMP%]:focus {\n  background-color: rgb(225, 225, 225);\n  box-shadow: 0px 0px 0px 0px rgb(225, 225, 225),\n    0px 0px 0px 2px rgb(0, 120, 215);\n  border: 1px dotted rgb(17, 17, 17);\n}\n\n.native-btn[_ngcontent-%COMP%]:hover {\n  box-shadow: 0px 0px 0px 1px rgb(225, 225, 225),\n    0px 0px 0px 2px rgb(0, 120, 215);\n  background-color: rgb(229, 241, 251);\n}\n\n.native-btn[_ngcontent-%COMP%]:active {\n  transition: background-color 0s;\n  background-color: rgb(204, 228, 247);\n  box-shadow: 0px 0px 0px 1px rgb(225, 225, 225),\n    0px 0px 0px 2px rgb(0, 120, 215);\n}\n\n.native-btn[_ngcontent-%COMP%]:disabled, .native-btn[_ngcontent-%COMP%]:disabled:active {\n  background-color: rgb(204, 204, 204);\n  box-shadow: 0px 0px 0px 1px rgb(204, 204, 204),\n    0px 0px 0px 2px rgb(173, 173, 173);\n  color: rgb(135, 135, 135);\n}\n\n[_nghost-%COMP%]     #chk-review-TP{\n  display: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZC1vcmRlci1mb3JtLWVsZWN0cm9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBQ0E7RUFDRSwrQkFBK0I7QUFDakM7O0FBQ0E7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osU0FBUztFQUNULFFBQVE7RUFDUixpQkFBaUI7RUFDakIsaUJBQWlCO0VBQ2pCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLFNBQVM7RUFDVCxRQUFRO0VBQ1IsaUJBQWlCO0VBQ2pCLGlCQUFpQjtFQUNqQixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSx1QkFBdUI7QUFDekI7O0FBRUEsMkNBQTJDOztBQUUzQztFQUNFLFlBQVk7RUFDWixXQUFXOztFQUVYLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsNkJBQTZCO0VBQzdCLG1CQUFtQjtFQUNuQixzQkFBc0I7QUFDeEI7O0FBQ0E7RUFDRSxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLGtCQUFrQjtBQUNwQjs7QUFDQTtFQUNFLDhCQUE4QjtFQUM5QixhQUFRO0VBQVIsUUFBUTtBQUNWOztBQUVBO0VBQ0UsV0FBVztFQUNYLGlCQUFpQjtFQUNqQixPQUFPO0VBQ1AsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSwyQkFBMkI7RUFDM0IsbUJBQW1CO0VBQ25CLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsYUFBYTtFQUNiLGNBQWM7RUFDZCxhQUFhO0VBQ2IsY0FBUztFQUFULFNBQVM7RUFDVCwyQkFBMkI7QUFDN0I7O0FBQ0E7RUFDRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLDhCQUE4QjtFQUM5QixjQUFTO0VBQVQsU0FBUztBQUNYOztBQUVBO0VBQ0UsT0FBTztFQUNQLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsY0FBYztFQUNkLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQixtQkFBbUI7RUFDbkIsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7O0VBRVosYUFBYTtFQUNiLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLE9BQU87RUFDUCxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtBQUN6Qjs7QUFFQTs7RUFFRSxpQ0FBaUM7RUFDakMsc0NBQXNDO0VBQ3RDLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLHdCQUF3QjtBQUMxQjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLE9BQU87RUFDUCw2QkFBNkI7RUFDN0IsMEJBQTBCO0VBQzFCLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCOztBQUVBOzs7OztFQUtFLDJCQUEyQjs7RUFFM0IsNkNBQTZDO0FBQy9DOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFDQTtFQUNFLFlBQVk7RUFDWixXQUFXO0FBQ2I7O0FBQ0E7RUFDRSxzQkFBc0I7QUFDeEI7O0FBQ0E7RUFDRSxhQUFhO0VBQ2IsV0FBVztFQUNYLHNCQUFzQjs7RUFFdEIsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIsbUJBQW1COztFQUVuQixlQUFlO0FBQ2pCOztBQUVBLFdBQVc7O0FBQ1g7RUFDRSxhQUFhO0VBQ2Isb0NBQW9DO0VBQ3BDLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsU0FBUztFQUNUO3NDQUNvQztFQUNwQyw4QkFBOEI7RUFDOUIsWUFBWTtBQUNkOztBQUVBO0VBQ0Usb0NBQW9DO0VBQ3BDO29DQUNrQztFQUNsQyxrQ0FBa0M7QUFDcEM7O0FBRUE7RUFDRTtvQ0FDa0M7RUFDbEMsb0NBQW9DO0FBQ3RDOztBQUVBO0VBQ0UsK0JBQStCO0VBQy9CLG9DQUFvQztFQUNwQztvQ0FDa0M7QUFDcEM7O0FBRUE7O0VBRUUsb0NBQW9DO0VBQ3BDO3NDQUNvQztFQUNwQyx5QkFBeUI7QUFDM0I7O0FBR0E7RUFDRSxhQUFhO0FBQ2YiLCJmaWxlIjoiYWRkLW9yZGVyLWZvcm0tZWxlY3Ryb24uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXNlcyB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmNvbnRhaW5lci1mb3JtLWJ0biB7XG4gIHRleHQtYWxpZ246IHJpZ2h0O1xufVxuOjpuZy1kZWVwIC5tYXQtaG9yaXpvbnRhbC1zdGVwcGVyLWhlYWRlciB7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lICFpbXBvcnRhbnQ7XG59XG5hOmhvdmVyIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4uaW5wdXQtZmlsZSB7XG4gIG1hcmdpbi10b3A6IDE1cHg7XG59XG5cbm1hdC1mb3JtLWZpZWxkIHtcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cblxuLnNlbGVjdC1kb2N0b3Ige1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xufVxuXG4ucGF0aWVudEhpZGUge1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4uZG9jdG9ySGlkZSB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5xdWVzdDpob3ZlciArIC5wYXRpZW50SGlkZSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgdG9wOiA0MXB4O1xuICByaWdodDogMDtcbiAgYmFja2dyb3VuZDogYmxhY2s7XG4gIHBhZGRpbmc6IDVweCAxMHB4O1xuICBib3JkZXItcmFkaXVzOiA2cHg7XG59XG5cbi5xdWVzdERvY3Rvcjpob3ZlciArIC5kb2N0b3JIaWRlIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgY29sb3I6IHdoaXRlO1xuICB0b3A6IDQxcHg7XG4gIHJpZ2h0OiAwO1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgcGFkZGluZzogNXB4IDEwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDZweDtcbn1cblxuLmdmbXIge1xuICBtYXJnaW4tbGVmdDogMTA1cHg7XG59XG5cbi5zdWJvcmRlcndpZHRoIHtcbiAgd2lkdGg6IDE1NXB4ICFpbXBvcnRhbnQ7XG59XG5cbi8qIC8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vICovXG5cbjpob3N0IHtcbiAgaGVpZ2h0OiAxMDAlO1xuICB3aWR0aDogMTAwJTtcblxuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgLyogcGFkZGluZy10b3A6IDJ2aDsgKi9cbn1cbi52aWV3IHtcbiAgd2lkdGg6IDk1dnc7XG4gIG1pbi1oZWlnaHQ6IDkzdmg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cbi5zdGFydCB7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgZ2FwOiA1cHg7XG59XG5cbiNmcm0tc3ViLW9yZGVyIHtcbiAgd2lkdGg6IDEwMCU7XG4gIHBhZGRpbmctdG9wOiAyMHB4O1xuICBmbGV4OiAxO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxuLnN0YXJ0LXF1ZXN0aW9uIHtcbiAgY29sb3I6IHZhcigtLXByaW1hcnktY29sb3IpO1xuICBtYXJnaW4tYm90dG9tOiAyNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jb250YWluZXItZm9ybS1idG4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IC0zMHB4O1xuICBtYXJnaW46IDAgMjBweDtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiAxMHB4O1xuICB0cmFuc2l0aW9uOiBub25lICFpbXBvcnRhbnQ7XG59XG4uY29udGFpbmVyLWZvcm0tYnRuID4gKiB7XG4gIHRyYW5zaXRpb246IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLnRlZXRoIDo6bmctZGVlcCAudGVldGhDaGFydCB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgZ2FwOiAxMHB4O1xufVxuXG4udGVldGggOjpuZy1kZWVwIC50ZWV0aENoYXJ0IC50ZWV0aFRhYmxlIHtcbiAgZmxleDogMTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi50ZWV0aCA6Om5nLWRlZXAgLnRlZXRoQ2hhcnQgLnRlZXRoVGFibGUgdGFibGUgdGQgYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbjogMCBhdXRvO1xuICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XG59XG5cbi5oZWFkZXIge1xuICBjb2xvcjogdmFyKC0tcHJpbWFyeS1jb2xvcik7XG4gIG1hcmdpbi1ib3R0b206IDI1cHg7XG4gIGFsaWduLXNlbGY6IHN0YXJ0O1xufVxuXG4uc3RlcHBlciA6Om5nLWRlZXAgLm1hdC1zdGVwcGVyLWhvcml6b250YWwge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG5cbi5zdGVwcGVyIDo6bmctZGVlcCAubWF0LWhvcml6b250YWwtY29udGVudC1jb250YWluZXIge1xuICBmbGV4OiAxO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxuLnN0ZXBwZXIgOjpuZy1kZWVwIC5tYXQtc3RlcC1pY29uLFxuLnN0ZXBwZXIgOjpuZy1kZWVwIC5tYXQtc3RlcC1pY29uLXN0YXRlLWVkaXQge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmICFpbXBvcnRhbnQ7XG4gIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLXByaW1hcnktY29sb3IpO1xuICBjb2xvcjogdmFyKC0tcHJpbWFyeS1jb2xvcik7XG59XG5cbi5zdGVwcGVyIDo6bmctZGVlcCAubWF0LXN0ZXAtaWNvbi1jb250ZW50IHtcbiAgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50O1xufVxuXG4uc3RlcHBlciA6Om5nLWRlZXAgLm1hdC1zdGVwLWljb24tc3RhdGUtZWRpdCAubWF0LXN0ZXAtaWNvbi1jb250ZW50IHtcbiAgZGlzcGxheTogYmxvY2sgIWltcG9ydGFudDtcbn1cblxuLnN0ZXBwZXIgOjpuZy1kZWVwIC5tYXQtc3RlcHBlci1ob3Jpem9udGFsLWxpbmUge1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4uc3RlcHBlciA6Om5nLWRlZXAgLm1hdC1ob3Jpem9udGFsLXN0ZXBwZXItaGVhZGVyIHtcbiAgZmxleDogMTtcbiAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkICNjY2M7XG4gIGJvcmRlci10b3A6IDJweCBzb2xpZCAjY2NjO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLnN0ZXBwZXJcbiAgOjpuZy1kZWVwXG4gIC5tYXQtaG9yaXpvbnRhbC1zdGVwcGVyLWhlYWRlcjpoYXMoXG4gICAgLm1hdC1zdGVwLWxhYmVsLm1hdC1zdGVwLWxhYmVsLWFjdGl2ZS5tYXQtc3RlcC1sYWJlbC1zZWxlY3RlZFxuICApIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzM3N2ZhZTI0O1xuXG4gIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCB2YXIoLS1wcmltYXJ5LWNvbG9yKTtcbn1cblxuLnVwbG9hZGVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cblxuOmhvc3QgOjpuZy1kZWVwIC5uZ3gtZmlsZS1kcm9wX19kcm9wLXpvbmUge1xuICBib3JkZXI6IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLnVwbG9hZGVyLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xufVxuLnVwbG9hZGVyLWJveCB7XG4gIG1hcmdpbjogMTBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG4udXBsb2FkZXItYm94LS1oZWFkZXIge1xuICBjb2xvcjogIzAwMCAhaW1wb3J0YW50O1xufVxuLnVwbG9hZGVyLWJveC0tZHJvcCB7XG4gIGhlaWdodDogMTUwcHg7XG4gIGNvbG9yOiAjODg4O1xuICBib3JkZXI6ICM4ODggMnB4IHNvbGlkO1xuXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gIGZvbnQtc2l6ZTogMjRweDtcbn1cblxuLyogQnV0dG9uICovXG4ubmF0aXZlLWJ0biB7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjUsIDIyNSwgMjI1KTtcbiAgcGFkZGluZzogM3B4IDEwcHg7XG4gIG1hcmdpbjogMnB4O1xuICBib3JkZXI6IDA7XG4gIGJveC1zaGFkb3c6IDBweCAwcHggMHB4IDFweCByZ2IoMjI1LCAyMjUsIDIyNSksXG4gICAgMHB4IDBweCAwcHggMnB4IHJnYigxNzMsIDE3MywgMTczKTtcbiAgYm9yZGVyOiAxcHggZG90dGVkIHRyYW5zcGFyZW50O1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi5uYXRpdmUtYnRuOmZvY3VzIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNSwgMjI1LCAyMjUpO1xuICBib3gtc2hhZG93OiAwcHggMHB4IDBweCAwcHggcmdiKDIyNSwgMjI1LCAyMjUpLFxuICAgIDBweCAwcHggMHB4IDJweCByZ2IoMCwgMTIwLCAyMTUpO1xuICBib3JkZXI6IDFweCBkb3R0ZWQgcmdiKDE3LCAxNywgMTcpO1xufVxuXG4ubmF0aXZlLWJ0bjpob3ZlciB7XG4gIGJveC1zaGFkb3c6IDBweCAwcHggMHB4IDFweCByZ2IoMjI1LCAyMjUsIDIyNSksXG4gICAgMHB4IDBweCAwcHggMnB4IHJnYigwLCAxMjAsIDIxNSk7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjksIDI0MSwgMjUxKTtcbn1cblxuLm5hdGl2ZS1idG46YWN0aXZlIHtcbiAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAwcztcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIwNCwgMjI4LCAyNDcpO1xuICBib3gtc2hhZG93OiAwcHggMHB4IDBweCAxcHggcmdiKDIyNSwgMjI1LCAyMjUpLFxuICAgIDBweCAwcHggMHB4IDJweCByZ2IoMCwgMTIwLCAyMTUpO1xufVxuXG4ubmF0aXZlLWJ0bjpkaXNhYmxlZCxcbi5uYXRpdmUtYnRuOmRpc2FibGVkOmFjdGl2ZSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMDQsIDIwNCwgMjA0KTtcbiAgYm94LXNoYWRvdzogMHB4IDBweCAwcHggMXB4IHJnYigyMDQsIDIwNCwgMjA0KSxcbiAgICAwcHggMHB4IDBweCAycHggcmdiKDE3MywgMTczLCAxNzMpO1xuICBjb2xvcjogcmdiKDEzNSwgMTM1LCAxMzUpO1xufVxuXG5cbjpob3N0IDo6bmctZGVlcCAjY2hrLXJldmlldy1UUHtcbiAgZGlzcGxheTogbm9uZTtcbn1cbiJdfQ== */"] });
 
 
 /***/ }),
@@ -22358,4 +22398,4 @@ module.exports = webpackEmptyAsyncContext;
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.f74775eaa32e0f0947ea.js.map
+//# sourceMappingURL=main.88fabae2ccf4e74beff9.js.map
