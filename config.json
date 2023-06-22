@@ -1,7 +1,6 @@
 {
-    "name": "test name",
-    "email": "test@gmail.com",
+    "name": "test name2",
     "filePath": "/home/mohamedfarraj/Desktop/data/555.zip",
-    "emailAddress": "electron@3ddx.com",
-    "password": "Test@1234"
+    "emailAddress": "sample@3ddx.com",
+    "password": "Sam1@234"
 }

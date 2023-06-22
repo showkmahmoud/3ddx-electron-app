@@ -22,7 +22,7 @@ function createWindow() {
         }),
     );
     // Open the DevTools.
-    // mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
 
     mainWindow.on('closed', function() {
         mainWindow = null;
@@ -46,15 +46,8 @@ const port = 3000;
 
 const fs = require('fs');
 
-var EasyFtp = require('easy-ftp-extra');
-var ftp = new EasyFtp();
-var config = {
-    host: 'ftp.alwanlab.com',
-    port: '22',
-    username: 'alwanlab',
-    password: 'pYlscziHoS2S',
-    type: 'sftp',
-};
+
+var request = require('request');
 
 const server = http.createServer((req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -65,20 +58,40 @@ const server = http.createServer((req, res) => {
         res.setHeader('Content-Type', 'application/json');
         res.end(data);
     } else if (req.url == '/upload') {
-        ftp.connect(config);
+        // ftp.connect(config);
         const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
         console.log(JSON.parse(data).filePath);
-        ftp
-            .upload(
-                JSON.parse(data).filePath,
-                '/home/alwanlab/public_html/' + uniqueSuffix + '.zip',
-            )
-            .then((r) => {
-                res.statusCode = 200;
-                res.write('Done'); //write a response to the client
-                res.end();
-            })
-            .catch(console.error);
+
+        const formData = {
+            myfile: fs.createReadStream(JSON.parse(data).filePath),
+        };
+        request.post({ url: 'http://localhost:2000/uploadjavatpoint', formData: formData },
+            function(error, response, body) {
+                if (!error && response.statusCode == 200) {
+                    res.statusCode = 200;
+                    res.write('Done'); //write a response to the client
+                    res.end();
+                } else {
+                    res.statusCode = 200;
+                    res.write(error); //write a response to the client
+                    res.end();
+                }
+            },
+        );
+    } else if (req.url == '/saveConfig') {
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        let body = [];
+        req.on('data', (chunk) => {
+            body.push(chunk);
+        }).on('end', () => {
+            body = Buffer.concat(body).toString();
+            const data = fs.writeFileSync(path.join(__dirname, '/config.json'), body, 'utf8');
+
+            res.end(body);
+        });
+        // res.end(data);
+
     } else {
         res.statusCode = 200;
         res.write('Hello World!'); //write a response to the client

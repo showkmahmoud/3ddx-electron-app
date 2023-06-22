@@ -12,21 +12,25 @@
     "scripts": {
         "start": "electron .",
         "build": "electron-packager . app --platform linux --arch x64 --out dist/",
-        "deb64": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64"
+        "buildwin": "electron-packager . app --platform win32 --arch x64 --out dist/",
+        "deb64": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64",
+        "exe": "electron-installer-windows --src dist/app-win32-x64/ --dest dist/installers/"
     },
-    "author": "",
+    "author": "3ddx",
     "license": "ISC",
     "devDependencies": {
-        "electron": "^24.3.1"
+        "electron": "^24.3.1",
+        "electron-installer-windows": "^3.0.0"
     },
     "dependencies": {
-        "easy-ftp-extra": "^1.0.9",
-        "electron-updater": "^5.3.0"
+        "electron-updater": "^5.3.0",
+        "request": "^2.88.2"
     },
     "config": {
         "forge": {
             "packagerConfig": {},
-            "makers": [{
+            "makers": [
+                {
                     "name": "@electron-forge/maker-squirrel",
                     "config": {
                         "name": "my_electron_app"
