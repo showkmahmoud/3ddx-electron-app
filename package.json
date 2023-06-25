@@ -1,14 +1,11 @@
 {
     "name": "app",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "3ddx app development 3ddx app development",
     "productDescription": "3ddx app development 3ddx app development",
     "main": "index.js",
     "executableName": "3ddx",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/alwanlab/3ddx-electron-app.git"
-    },
+    "repository": "https://github.com/alwanlab/3ddx-electron-app",
     "scripts": {
         "start": "electron .",
         "build": "electron-packager . app --platform linux --arch x64 --out dist/",
@@ -26,31 +23,39 @@
         "electron-installer-windows": "^3.0.0"
     },
     "dependencies": {
+        "@electron-forge/publisher-github": "^6.2.1",
         "electron-updater": "^5.3.0",
-        "request": "^2.88.2"
+        "request": "^2.88.2",
+        "update-electron-app": "^2.0.1"
     },
     "config": {
         "forge": {
             "packagerConfig": {},
-            "makers": [{
-                    "name": "@electron-forge/maker-squirrel",
-                    "config": {
-                        "name": "my_electron_app"
-                    }
-                },
+            "makers": [
                 {
-                    "name": "@electron-forge/maker-zip",
-                    "platforms": [
-                        "darwin"
-                    ]
+                    "name": "@electron-forge/publisher-github",
+                    "config": {
+                        "repository": {
+                            "owner": "alwanlab",
+                            "name": "3ddx-electron-app"
+                        }
+                    }
                 },
                 {
                     "name": "@electron-forge/maker-deb",
                     "config": {}
-                },
+                }
+            ],
+            "publishers": [
                 {
-                    "name": "@electron-forge/maker-rpm",
-                    "config": {}
+                    "name": "@electron-forge/publisher-github",
+                    "config": {
+                        "repository": {
+                            "owner": "alwanlab",
+                            "name": "3ddx-electron-app"
+                        },
+                        "prerelease": true
+                    }
                 }
             ]
         }
