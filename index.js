@@ -45,17 +45,19 @@ let configData = {
     password: 'Sam1@234',
 };
 
-// let getArguments = () => {
-//     const array = process.argv;
+let getArguments = () => {
+    const array = process.argv;
 
-//     for (const item of array) {
-//         configData.name = item.replace('name=', '')
-//         if (item.includes('name')) {}
-//     }
-//     return array;
-// };
+    for (const item of array) {
+        if (item.includes('=')) {
+            const arr = item.split('=');
+            configData[arr[0]] = arr[1];
+        }
+    }
+    return array;
+};
 
-// console.log('arrges', getArguments());
+console.log('arrges', getArguments());
 
 //http
 const http = require('http');
@@ -79,14 +81,14 @@ const server = http.createServer((req, res) => {
             myfile: fs.createReadStream(JSON.parse(data).filePath),
         };
         res.statusCode = 200;
-        // res.setHeader('Content-Type', 'application/json');
-        res.end(formData);
+        res.setHeader('Content-Type', 'application/json');
+        // res.end(formData);
         // request.post({ url: 'http://localhost:2000/uploadjavatpoint', formData: formData },
         //     function(error, response, body) {
         //         if (!error && response.statusCode == 200) {
         //             res.statusCode = 200;
-        //             res.write('Done'); //write a response to the client
-        //             res.end();
+        res.write(formData); //write a response to the client
+        res.end();
         //         } else {
         //             res.statusCode = 200;
         //             res.write(error); //write a response to the client
