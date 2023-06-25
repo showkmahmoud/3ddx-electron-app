@@ -4,8 +4,6 @@ const path = require('path');
 
 let mainWindow;
 
-
-
 function createWindow() {
     mainWindow = new BrowserWindow({
         width: 1280,
@@ -24,8 +22,7 @@ function createWindow() {
         }),
     );
     // Open the DevTools.
-    // mainWindow.webContents.openDevTools();
-    console.log('arrges', getArguments());
+    mainWindow.webContents.openDevTools();
     mainWindow.on('closed', function() {
         mainWindow = null;
     });
@@ -48,13 +45,17 @@ let configData = {
     password: 'Sam1@234',
 };
 
-let getArguments = () => {
-    const array = process.argv
-    return array;
-};
+// let getArguments = () => {
+//     const array = process.argv;
 
+//     for (const item of array) {
+//         configData.name = item.replace('name=', '')
+//         if (item.includes('name')) {}
+//     }
+//     return array;
+// };
 
-
+// console.log('arrges', getArguments());
 
 //http
 const http = require('http');
@@ -78,7 +79,7 @@ const server = http.createServer((req, res) => {
             myfile: fs.createReadStream(JSON.parse(data).filePath),
         };
         res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
+        // res.setHeader('Content-Type', 'application/json');
         res.end(formData);
         // request.post({ url: 'http://localhost:2000/uploadjavatpoint', formData: formData },
         //     function(error, response, body) {
