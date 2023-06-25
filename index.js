@@ -4,6 +4,8 @@ const path = require('path');
 
 let mainWindow;
 
+
+
 function createWindow() {
     mainWindow = new BrowserWindow({
         width: 1280,
@@ -23,7 +25,7 @@ function createWindow() {
     );
     // Open the DevTools.
     // mainWindow.webContents.openDevTools();
-
+    console.log('arrges', getArguments());
     mainWindow.on('closed', function() {
         mainWindow = null;
     });
@@ -39,13 +41,27 @@ app.on('activate', function() {
     if (mainWindow === null) createWindow();
 });
 
+let configData = {
+    name: 'test name2',
+    filePath: '/home/mohamedfarraj/Desktop/data/',
+    emailAddress: 'sample@3ddx.com',
+    password: 'Sam1@234',
+};
+
+let getArguments = () => {
+    const array = process.argv
+    return array;
+};
+
+
+
+
 //http
 const http = require('http');
 
 const port = 3000;
 
 const fs = require('fs');
-
 
 var request = require('request');
 
@@ -61,33 +77,40 @@ const server = http.createServer((req, res) => {
         const formData = {
             myfile: fs.createReadStream(JSON.parse(data).filePath),
         };
-        request.post({ url: 'http://localhost:2000/uploadjavatpoint', formData: formData },
-            function(error, response, body) {
-                if (!error && response.statusCode == 200) {
-                    res.statusCode = 200;
-                    res.write('Done'); //write a response to the client
-                    res.end();
-                } else {
-                    res.statusCode = 200;
-                    res.write(error); //write a response to the client
-                    res.end();
-                }
-            },
-        );
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        res.end(formData);
+        // request.post({ url: 'http://localhost:2000/uploadjavatpoint', formData: formData },
+        //     function(error, response, body) {
+        //         if (!error && response.statusCode == 200) {
+        //             res.statusCode = 200;
+        //             res.write('Done'); //write a response to the client
+        //             res.end();
+        //         } else {
+        //             res.statusCode = 200;
+        //             res.write(error); //write a response to the client
+        //             res.end();
+        //         }
+        //     },
+        // );
     } else if (req.url == '/saveConfig') {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         let body = [];
-        req.on('data', (chunk) => {
-            body.push(chunk);
-        }).on('end', () => {
-            body = Buffer.concat(body).toString();
-            const data = fs.writeFileSync(path.join(__dirname, '/config.json'), body, 'utf8');
+        req
+            .on('data', (chunk) => {
+                body.push(chunk);
+            })
+            .on('end', () => {
+                body = Buffer.concat(body).toString();
+                const data = fs.writeFileSync(
+                    path.join(__dirname, '/config.json'),
+                    body,
+                    'utf8',
+                );
 
-            res.end(body);
-        });
-
-
+                res.end(body);
+            });
     } else {
         res.statusCode = 200;
         res.write('Hello World!'); //write a response to the client
