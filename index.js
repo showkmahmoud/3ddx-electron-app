@@ -58,10 +58,6 @@ const server = http.createServer((req, res) => {
         res.setHeader('Content-Type', 'application/json');
         res.end(data);
     } else if (req.url == '/upload') {
-        // ftp.connect(config);
-        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
-        console.log(JSON.parse(data).filePath);
-
         const formData = {
             myfile: fs.createReadStream(JSON.parse(data).filePath),
         };
