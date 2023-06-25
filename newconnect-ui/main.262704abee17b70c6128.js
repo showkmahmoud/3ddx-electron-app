@@ -11,21 +11,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AddOrderPageComponent": () => (/* binding */ AddOrderPageComponent)
 /* harmony export */ });
-/* harmony import */ var projects_connect_src_app_Pages_ConnectModules_connect_pages_add_order_pages_add_order_add_order_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! projects/connect/src/app/Pages/ConnectModules/connect-pages/add-order-pages/add-order/add-order.component */ 6832);
-/* harmony import */ var shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../shared/shared-components/shared-forms/add-order-form/add-order-form-electron/add-order-form-electron.component */ 8683);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/core */ 2316);
-/* harmony import */ var shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! shared/shared-services/order-shared.service */ 9026);
-/* harmony import */ var projects_connect_src_app_Services_OrderServices_AddOrderService_add_order_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/AddOrderService/add-order.service */ 235);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/router */ 1258);
-/* harmony import */ var shared_shared_services_toastr_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! shared/shared-services/toastr.service */ 5325);
-/* harmony import */ var projects_connect_src_app_Services_UploadService_upload_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! projects/connect/src/app/Services/UploadService/upload.service */ 1273);
-/* harmony import */ var projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/OrderListService/order-list.service */ 6540);
-/* harmony import */ var shared_shared_services_upload_progress_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! shared/shared-services/upload-progress.service */ 3479);
-/* harmony import */ var shared_shared_services_generate_order_data_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! shared/shared-services/generate-order-data.service */ 8348);
-/* harmony import */ var shared_shared_services_date_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! shared/shared-services/date.service */ 7652);
-/* harmony import */ var projects_connect_src_app_Services_OrderServices_actions_actions_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/actions/actions.service */ 3615);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common */ 4364);
-/* harmony import */ var _progress_bar_progress_bar_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../progress-bar/progress-bar.component */ 6260);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! tslib */ 3786);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/common/http */ 3882);
+/* harmony import */ var projects_connect_src_app_Models_Enums_RequestTypes_RequestTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! projects/connect/src/app/Models/Enums/RequestTypes/RequestTypes */ 987);
+/* harmony import */ var projects_connect_src_app_Pages_ConnectModules_connect_pages_add_order_pages_add_order_add_order_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! projects/connect/src/app/Pages/ConnectModules/connect-pages/add-order-pages/add-order/add-order.component */ 6832);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! rxjs/operators */ 3927);
+/* harmony import */ var shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../shared/shared-components/shared-forms/add-order-form/add-order-form-electron/add-order-form-electron.component */ 8683);
+/* harmony import */ var shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! shared/shared-enums/ResponseCodeEnum */ 1580);
+/* harmony import */ var shared_shared_enums_ServiceNameEnum__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! shared/shared-enums/ServiceNameEnum */ 4946);
+/* harmony import */ var shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! shared/shared-static-data/SubOrderType */ 3337);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/core */ 2316);
+/* harmony import */ var shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! shared/shared-services/order-shared.service */ 9026);
+/* harmony import */ var projects_connect_src_app_Services_OrderServices_AddOrderService_add_order_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/AddOrderService/add-order.service */ 235);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/router */ 1258);
+/* harmony import */ var shared_shared_services_toastr_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! shared/shared-services/toastr.service */ 5325);
+/* harmony import */ var projects_connect_src_app_Services_UploadService_upload_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! projects/connect/src/app/Services/UploadService/upload.service */ 1273);
+/* harmony import */ var projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/OrderListService/order-list.service */ 6540);
+/* harmony import */ var shared_shared_services_upload_progress_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! shared/shared-services/upload-progress.service */ 3479);
+/* harmony import */ var shared_shared_services_generate_order_data_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! shared/shared-services/generate-order-data.service */ 8348);
+/* harmony import */ var shared_shared_services_date_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! shared/shared-services/date.service */ 7652);
+/* harmony import */ var projects_connect_src_app_Services_OrderServices_actions_actions_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! projects/connect/src/app/Services/OrderServices/actions/actions.service */ 3615);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/common */ 4364);
+/* harmony import */ var _progress_bar_progress_bar_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../progress-bar/progress-bar.component */ 6260);
+
+
+
+
+
+
+
+
 
 
 
@@ -43,47 +58,47 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function AddOrderPageComponent_app_add_order_form_electron_0_Template(rf, ctx) { if (rf & 1) {
-    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](0, "app-add-order-form-electron", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵlistener"]("ordersOBJ", function AddOrderPageComponent_app_add_order_form_electron_0_Template_app_add_order_form_electron_ordersOBJ_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵnextContext"](); return ctx_r2.onSubmit($event); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](0, "app-add-order-form-electron", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵlistener"]("ordersOBJ", function AddOrderPageComponent_app_add_order_form_electron_0_Template_app_add_order_form_electron_ordersOBJ_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵnextContext"](); return ctx_r2.onSubmit($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("buttonOrders", ctx_r0.buttonOrders)("patientName", ctx_r0.patientName);
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("buttonOrders", ctx_r0.buttonOrders)("patientName", ctx_r0.patientName)("filePath", ctx_r0.filePath);
 } }
 function AddOrderPageComponent_div_1_div_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](0, "div", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelement"](1, "app-progress-bar", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](2, "h3");
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelement"](1, "app-progress-bar", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](2, "h3");
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const progress_r5 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("progress", progress_r5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtextInterpolate"](progress_r5 < 100 ? "uploading " + progress_r5 + "%" : progress_r5 === 100 ? "Upload Successful!" : "Submitted");
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("progress", progress_r5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtextInterpolate"](progress_r5 < 100 ? "uploading " + progress_r5 + "%" : progress_r5 === 100 ? "Upload Successful!" : "Submitted");
 } }
 function AddOrderPageComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](0, "div", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](1, "h1", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtext"](2, " Uploading Case ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtemplate"](3, AddOrderPageComponent_div_1_div_3_Template, 4, 2, "div", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](4, "div", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementStart"](5, "button", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtext"](6, " Done ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](1, "h1", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](2, " Uploading Case ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtemplate"](3, AddOrderPageComponent_div_1_div_3_Template, 4, 2, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](4, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](5, "button", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtext"](6, " Done ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("ngForOf", ctx_r1.uploadProgress);
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("ngForOf", ctx_r1.uploadProgress);
 } }
-class AddOrderPageComponent extends projects_connect_src_app_Pages_ConnectModules_connect_pages_add_order_pages_add_order_add_order_component__WEBPACK_IMPORTED_MODULE_0__.AddOrderComponent {
-    constructor(orderService, addOrderService, route, toastService, uploadService, orderServices, uploadProgressService, generateOrderDataService, router, dateService, orderListService, actionsService) {
+class AddOrderPageComponent extends projects_connect_src_app_Pages_ConnectModules_connect_pages_add_order_pages_add_order_add_order_component__WEBPACK_IMPORTED_MODULE_1__.AddOrderComponent {
+    constructor(orderService, addOrderService, route, toastService, uploadService, orderServices, uploadProgressService, generateOrderDataService, router, dateService, orderListService, actionsService, http) {
         super(orderService, addOrderService, route, toastService, uploadService, orderServices, uploadProgressService, generateOrderDataService, router, dateService, orderListService, actionsService);
         this.orderService = orderService;
         this.addOrderService = addOrderService;
@@ -97,6 +112,7 @@ class AddOrderPageComponent extends projects_connect_src_app_Pages_ConnectModule
         this.dateService = dateService;
         this.orderListService = orderListService;
         this.actionsService = actionsService;
+        this.http = http;
         this.currentView = 'addForm';
         this.buttonOrders = {
             conversion: false,
@@ -114,345 +130,337 @@ class AddOrderPageComponent extends projects_connect_src_app_Pages_ConnectModule
      * @return void
      */
     onSubmit(event) {
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
         this.currentView = 'upload';
         let idx = this.uploadProgress.length;
         const uploadFiles = this.addForm.uploadFiles;
-        this.uploadProgress.push(0);
-        this.uploadProgress[0];
-        const interval = setInterval(() => {
-            if (this.uploadProgress[0] === 100) {
-                clearInterval(interval);
-            }
-            else {
-                this.uploadProgress[0] += 1;
-            }
-        }, 100);
-        /*
-    
-        let idx = this.uploadProgress.length;
-        const uploadFiles = this.addForm.uploadFiles
-        if(uploadFiles.additional){
-          this.uploadProgress.push(0)
+        if (uploadFiles.additional) {
+            this.uploadProgress.push(0);
         }
         let generalComments = '';
-        let orderService: OrderService = {
-          ConditionsAnded: false,
-          columns: [
-            'orderId',
-            'orderCommonId',
-            'orderEnum',
-            'patientName',
-            'operatorId',
-            'doctorLastName',
-            'scanningCenterFirstName',
-            'isLaserScan',
-            'orderEnumId',
-            'statusId',
-            'hasIntraoralScans',
-            'clientToBeBilled',
-            'portableFileName',
-            'restorationType'
-          ],
-          abutmentSites: this.orderService.teethChart.abutmentSites,
-          clientComment: this.createGeneralComment(event),
-          crownSites: this.orderService.teethChart.crownSites,
-          implantSites: this.orderService.teethChart.implantSites,
-          missingTeeth: this.orderService.teethChart.missingTeeth,
-          teethToBeExtracted: this.orderService.teethChart.teethToBeExtracted,
-          isPortable: this.checkPortable(event),
-          modelScan: this.checkModelScan(event),
-          patientName: event.basicInfoFormGroup.patientName,
-          scanningCenterId: this.getScanningCenterId(),
-          serviceName: ServiceNameEnum.VIEW_ORDER_ALL,
-          softwareEnumId: this.checkSoftware(event),
-          isExpress: this.checkExpress(event),
-          doctorId: this.getDocotrId(event),
-          timeSurgery: event.surgicalGuideForm ? this.dateService.timeStampToEST(event.surgicalGuideForm.scheduledSurgeryData, event.surgicalGuideForm.scheduledSurgeryTime)?.getTime() / 1000 : 0,
-          formatEnumId: event.conversionForm ? event.conversionForm.format : this.getFormatId(event)
+        let orderService = {
+            ConditionsAnded: false,
+            columns: [
+                'orderId',
+                'orderCommonId',
+                'orderEnum',
+                'patientName',
+                'operatorId',
+                'doctorLastName',
+                'scanningCenterFirstName',
+                'isLaserScan',
+                'orderEnumId',
+                'statusId',
+                'hasIntraoralScans',
+                'clientToBeBilled',
+                'portableFileName',
+                'restorationType'
+            ],
+            abutmentSites: this.orderService.teethChart.abutmentSites,
+            clientComment: this.createGeneralComment(event),
+            crownSites: this.orderService.teethChart.crownSites,
+            implantSites: this.orderService.teethChart.implantSites,
+            missingTeeth: this.orderService.teethChart.missingTeeth,
+            teethToBeExtracted: this.orderService.teethChart.teethToBeExtracted,
+            isPortable: this.checkPortable(event),
+            modelScan: this.checkModelScan(event),
+            patientName: event.basicInfoFormGroup.patientName,
+            scanningCenterId: this.getScanningCenterId(),
+            serviceName: shared_shared_enums_ServiceNameEnum__WEBPACK_IMPORTED_MODULE_4__.ServiceNameEnum.VIEW_ORDER_ALL,
+            softwareEnumId: this.checkSoftware(event),
+            isExpress: this.checkExpress(event),
+            doctorId: this.getDocotrId(event),
+            timeSurgery: event.surgicalGuideForm ? ((_a = this.dateService.timeStampToEST(event.surgicalGuideForm.scheduledSurgeryData, event.surgicalGuideForm.scheduledSurgeryTime)) === null || _a === void 0 ? void 0 : _a.getTime()) / 1000 : 0,
+            formatEnumId: event.conversionForm ? event.conversionForm.format : this.getFormatId(event)
         };
         if (this.orderId) {
-          orderService.orderId = this.orderId;
-          orderService.doctorId = this.orderDetails.doctorId;
-          orderService.scanningCenterId = this.orderDetails.scanningCenterId;
+            orderService.orderId = this.orderId;
+            orderService.doctorId = this.orderDetails.doctorId;
+            orderService.scanningCenterId = this.orderDetails.scanningCenterId;
         }
-        let orderServiceObj = { ...orderService };
+        let orderServiceObj = Object.assign({}, orderService);
         if (event.conversionForm) {
-          let conversionData: ConversionData = {
-            currency: this.getCurrency(),
-            clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
-            separateDoubleArchOrder: (event.conversionForm.mandible !== 20 && event.conversionForm.maxilla !== 20 && event.conversionForm.modelScan !== 1) ? event.conversionForm.separateDoubleArchOrder : true,
-            softwareFormat: [],
-            isRush: false,
-            mandibleConversionEnumId: event.conversionForm.mandible,
-            mandibleSegmentationEnumId: event.conversionForm.typeMandible,
-            maxillaConversionEnumId: event.conversionForm.maxilla,
-            maxillaSegmentationEnumId: event.conversionForm.typeMaxilla
-          };
-          orderServiceObj = {
-            ...orderServiceObj, ...{
-              conversionData: conversionData
-            }
-          };
+            let conversionData = {
+                currency: this.getCurrency(),
+                clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
+                separateDoubleArchOrder: (event.conversionForm.mandible !== 20 && event.conversionForm.maxilla !== 20 && event.conversionForm.modelScan !== 1) ? event.conversionForm.separateDoubleArchOrder : true,
+                softwareFormat: [],
+                isRush: false,
+                mandibleConversionEnumId: event.conversionForm.mandible,
+                mandibleSegmentationEnumId: event.conversionForm.typeMandible,
+                maxillaConversionEnumId: event.conversionForm.maxilla,
+                maxillaSegmentationEnumId: event.conversionForm.typeMaxilla
+            };
+            orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
+                conversionData: conversionData
+            });
         }
-    
-        const uploadRest = event.restorationForm?.lowerFile && event.restorationForm?.upperFile && event.restorationForm?.biteFile;
-    
-        if (event.surgicalGuideForm?.guided === 1 || event.conversionForm?.modelScan === 1 || uploadRest) {
-          let applianceData = {
-            applinceDestenationAddress: "USA",
-            clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
-            currency: this.getCurrency(),
-            hasIntraoralScans: event.surgicalGuideForm?.intraoralScan === 2 || uploadRest || event.conversionForm?.oral === 2 ? true : false,
-            isForMandible: false,
-            isForMaxilla: false,
-            isLaserScan: event.conversionForm?.modelScan === 1 || event.surgicalGuideForm?.guided === 1 || uploadRest ? true : false,
-            isPartiallyEdentulous: false,
-            isRush: false,
-            isTotallyEdentulous: false,
-            sendPVSImpression: false,
-            softwareFormat: []
-          }
-          if(!this.hasLaserScan){
-            orderServiceObj = {
-              ...orderServiceObj, ...{
-                applianceData: applianceData
-              }
+        const uploadRest = ((_b = event.restorationForm) === null || _b === void 0 ? void 0 : _b.lowerFile) && ((_c = event.restorationForm) === null || _c === void 0 ? void 0 : _c.upperFile) && ((_d = event.restorationForm) === null || _d === void 0 ? void 0 : _d.biteFile);
+        if (((_e = event.surgicalGuideForm) === null || _e === void 0 ? void 0 : _e.guided) === 1 || ((_f = event.conversionForm) === null || _f === void 0 ? void 0 : _f.modelScan) === 1 || uploadRest) {
+            let applianceData = {
+                applinceDestenationAddress: "USA",
+                clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
+                currency: this.getCurrency(),
+                hasIntraoralScans: ((_g = event.surgicalGuideForm) === null || _g === void 0 ? void 0 : _g.intraoralScan) === 2 || uploadRest || ((_h = event.conversionForm) === null || _h === void 0 ? void 0 : _h.oral) === 2 ? true : false,
+                isForMandible: false,
+                isForMaxilla: false,
+                isLaserScan: ((_j = event.conversionForm) === null || _j === void 0 ? void 0 : _j.modelScan) === 1 || ((_k = event.surgicalGuideForm) === null || _k === void 0 ? void 0 : _k.guided) === 1 || uploadRest ? true : false,
+                isPartiallyEdentulous: false,
+                isRush: false,
+                isTotallyEdentulous: false,
+                sendPVSImpression: false,
+                softwareFormat: []
+            };
+            if (!this.hasLaserScan) {
+                orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
+                    applianceData: applianceData
+                });
             }
-          }
-    
         }
-    
         if (event.treatmentPlanForm) {
-          let treatmentPlanData: TreatmentPlanData = {
-            currency: this.getCurrency(),
-            isReview: event.treatmentPlanForm.isReviewTP,
-            clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
-            prosthesis: event.treatmentPlanForm.prosthesisType,
-            isRush: false,
-            softwareFormat: [],
-            surgicalProcedures: event.treatmentPlanForm.surgicalPlan,
-            typeofImplant: event.treatmentPlanForm.implantType,
-          };
-          orderServiceObj = {
-            ...orderServiceObj,
-            ...{
-              treatmentPlanData: treatmentPlanData
-            }
-          };
+            let treatmentPlanData = {
+                currency: this.getCurrency(),
+                isReview: event.treatmentPlanForm.isReviewTP,
+                clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
+                prosthesis: event.treatmentPlanForm.prosthesisType,
+                isRush: false,
+                softwareFormat: [],
+                surgicalProcedures: event.treatmentPlanForm.surgicalPlan,
+                typeofImplant: event.treatmentPlanForm.implantType,
+            };
+            orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
+                treatmentPlanData: treatmentPlanData
+            });
         }
         if (event.surgicalGuideForm) {
-          let surgicalguideData: SurgicalguideData = {
-            clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
-            currency: this.getCurrency(),
-            fixationFunctionality: event.surgicalGuideForm.fixationPinsDrills,
-            ordersGuideKitEnumId: event.surgicalGuideForm.typeofGuide != 5 ? event.surgicalGuideForm.typeofGuide : event.surgicalGuideForm.guidedSurgeryKitType,
-            rushIfPossible: event.surgicalGuideForm.rush === 1 ? false : true,
-            softwareFormat: [],
-            sleeveDiameter: 0,
-            timeSurgery: event.surgicalGuideForm ? this.dateService.timeStampToEST(event.surgicalGuideForm.scheduledSurgeryData, event.surgicalGuideForm.scheduledSurgeryTime)?.getTime() / 1000 : 0,
-            ordersGuideSoftwareSupportEnum: {
-              ordersGuideSupportEnumId: event.surgicalGuideForm.guided,
-              ordersSoftwareEnumId: event.surgicalGuideForm.software
-            },
-            selectedExtraComponents: event.surgicalGuideForm.extracomponents
-              ? event.surgicalGuideForm.extracomponents.map((e: any) => ({ id: +e, comment: event.surgicalGuideForm.otherDesc }))
-              : []
-          };
-          orderServiceObj = {
-            ...orderServiceObj,
-            ...{
-              surgicalguideData: surgicalguideData
-            }
-          };
+            let surgicalguideData = {
+                clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor,
+                currency: this.getCurrency(),
+                fixationFunctionality: event.surgicalGuideForm.fixationPinsDrills,
+                ordersGuideKitEnumId: event.surgicalGuideForm.typeofGuide != 5 ? event.surgicalGuideForm.typeofGuide : event.surgicalGuideForm.guidedSurgeryKitType,
+                rushIfPossible: event.surgicalGuideForm.rush === 1 ? false : true,
+                softwareFormat: [],
+                sleeveDiameter: 0,
+                timeSurgery: event.surgicalGuideForm ? ((_l = this.dateService.timeStampToEST(event.surgicalGuideForm.scheduledSurgeryData, event.surgicalGuideForm.scheduledSurgeryTime)) === null || _l === void 0 ? void 0 : _l.getTime()) / 1000 : 0,
+                ordersGuideSoftwareSupportEnum: {
+                    ordersGuideSupportEnumId: event.surgicalGuideForm.guided,
+                    ordersSoftwareEnumId: event.surgicalGuideForm.software
+                },
+                selectedExtraComponents: event.surgicalGuideForm.extracomponents
+                    ? event.surgicalGuideForm.extracomponents.map((e) => ({ id: +e, comment: event.surgicalGuideForm.otherDesc }))
+                    : []
+            };
+            orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
+                surgicalguideData: surgicalguideData
+            });
         }
         if (event.restorationForm) {
-          let restorationData: RestorationData = {
-            softwareFormat: [],
-            restorationType: event.restorationForm.restType,
-            shadeSys: event.restorationForm.shade,
-            shadeValue: event.restorationForm.teeth,
-            shadeSysOther: event.restorationForm.shadeOther,
-            abutmentMaterial: event.restorationForm.abutment,
-            crownMaterial: event.restorationForm.crown,
-            isPouring: event.restorationForm.pouring,
-            isRushRes: event.restorationForm.isRush,
-            retentionType: event.restorationForm.retentionType,
-            hasIntraOralScan: event.restorationForm.oral == 1 ? false : true,
-            archOfInterest: event.restorationForm.archOfInterest,
-            chairSideAssistance: event.restorationForm.chairSideAssistance,
-            userCNComment: '',
-            toBeBilled: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor
-          };
-          if (event.restorationForm.retentionTypeSpecify) {
-            restorationData.retentionTypeComment = event.restorationForm.retentionTypeSpecify;
-          }
-          if (event.restorationForm.abutmentSpecify) {
-            restorationData.abutmentMaterialComment = event.restorationForm.abutmentSpecify;
-          }
-          orderServiceObj = {
-            ...orderServiceObj, ...{
-              restorationData: restorationData
+            let restorationData = {
+                softwareFormat: [],
+                restorationType: event.restorationForm.restType,
+                shadeSys: event.restorationForm.shade,
+                shadeValue: event.restorationForm.teeth,
+                shadeSysOther: event.restorationForm.shadeOther,
+                abutmentMaterial: event.restorationForm.abutment,
+                crownMaterial: event.restorationForm.crown,
+                isPouring: event.restorationForm.pouring,
+                isRushRes: event.restorationForm.isRush,
+                retentionType: event.restorationForm.retentionType,
+                hasIntraOralScan: event.restorationForm.oral == 1 ? false : true,
+                archOfInterest: event.restorationForm.archOfInterest,
+                chairSideAssistance: event.restorationForm.chairSideAssistance,
+                userCNComment: '',
+                toBeBilled: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor
+            };
+            if (event.restorationForm.retentionTypeSpecify) {
+                restorationData.retentionTypeComment = event.restorationForm.retentionTypeSpecify;
             }
-          };
+            if (event.restorationForm.abutmentSpecify) {
+                restorationData.abutmentMaterialComment = event.restorationForm.abutmentSpecify;
+            }
+            orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
+                restorationData: restorationData
+            });
         }
         if (event.radiologyReportForm) {
-          let reportData: ReportData = {
-            isImplantPlanned: event.radiologyReportForm.implantPlanned == 1 ? false : true,
-            ReportSmallFieldOfView: false,
-            currency: this.getCurrency(),
-            softwareFormat: [],
-            isRuleOutPathology: event.radiologyReportForm.ruleOutPathology == 1 ? false : true,
-            isAirWayEvaluation: event.radiologyReportForm.airWayEvaluation == 1 ? false : true,
-            isEvaluateTMJ: event.radiologyReportForm.tmjevaluation == 1 ? false : true,
-            isEvaluateSinus: event.radiologyReportForm.sinusEvaluation == 1 ? false : true,
-            isEvaluateExistingImplant: event.radiologyReportForm.evaluateExistingImplant == 1 ? false : true,
-            isRush: event.radiologyReportForm.rushCase == 1 ? false : true,
-            relevantHistory: event.radiologyReportForm.relevant,
-            genderEnumId: event.basicInfoFormGroup.gender,
-            basicReport: event.radiologyReportForm.BasicReport == 1 ? false : true,
-            userCNComment: event.radiologyReportForm.generalComment ? event.radiologyReportForm.generalComment : '',
-            DOB: (this.dateService.timeStampToEST(event.radiologyReportForm.birthdate)?.getTime() / 1000 ).toString(),
-            dateImageAcquisition: this.dateService.timeStampToEST(event.radiologyReportForm.imagedate)?.getTime() / 1000,
-            clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor
-          };
-    
-          orderServiceObj = {
-            ...orderServiceObj, ...{
-              reportData: reportData
-            }
-          };
-    
+            let reportData = {
+                isImplantPlanned: event.radiologyReportForm.implantPlanned == 1 ? false : true,
+                ReportSmallFieldOfView: false,
+                currency: this.getCurrency(),
+                softwareFormat: [],
+                isRuleOutPathology: event.radiologyReportForm.ruleOutPathology == 1 ? false : true,
+                isAirWayEvaluation: event.radiologyReportForm.airWayEvaluation == 1 ? false : true,
+                isEvaluateTMJ: event.radiologyReportForm.tmjevaluation == 1 ? false : true,
+                isEvaluateSinus: event.radiologyReportForm.sinusEvaluation == 1 ? false : true,
+                isEvaluateExistingImplant: event.radiologyReportForm.evaluateExistingImplant == 1 ? false : true,
+                isRush: event.radiologyReportForm.rushCase == 1 ? false : true,
+                relevantHistory: event.radiologyReportForm.relevant,
+                genderEnumId: event.basicInfoFormGroup.gender,
+                basicReport: event.radiologyReportForm.BasicReport == 1 ? false : true,
+                userCNComment: event.radiologyReportForm.generalComment ? event.radiologyReportForm.generalComment : '',
+                DOB: (((_m = this.dateService.timeStampToEST(event.radiologyReportForm.birthdate)) === null || _m === void 0 ? void 0 : _m.getTime()) / 1000).toString(),
+                dateImageAcquisition: ((_o = this.dateService.timeStampToEST(event.radiologyReportForm.imagedate)) === null || _o === void 0 ? void 0 : _o.getTime()) / 1000,
+                clientToBeBilledId: event.basicInfoFormGroup.billing === 0 ? Number(localStorage.getItem('userCNId')) : event.basicInfoFormGroup.doctor
+            };
+            orderServiceObj = Object.assign(Object.assign({}, orderServiceObj), {
+                reportData: reportData
+            });
         }
-    
-        let apiData = { services: [orderServiceObj], requestType: ERequestTypes.ADD };
-    
-        this.addOrderService.addOrder(apiData).subscribe(res => {
-          if (res.responsCode === ResponseCodeEnum.OK) {
-            const orderArr = this.generateOrderDataService.onGenerateArrUpload(res.data.VIEW_ORDER_ALL);
-            if(uploadFiles.additional) {
-              this.orderServices.uploadingId.add(JSON.stringify({id: res.data.VIEW_ORDER_ALL[0].orderId, type: SubOrderType.CONVERSION.uploadType}));
-              let uploadFormData = this.GenerateOrderFormData(uploadFiles.additional,
-                orderArr[0].uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId);
-              let currentIndex = ++this.uploadService.index;
-    
-    
-    
-              let subscribeUpload = this.uploadService.onUploadFile(uploadFormData
-                , Number(localStorage.getItem('userCNId'))
-                , res.data.VIEW_ORDER_ALL[0].orderId, orderArr[0].orderStatus, uploadFiles.additional.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
-                  if (ev.type === HttpEventType.UploadProgress) {
-                    this.uploadProgress[idx] =
-                      Math.floor(this.uploadProgressService.returnProgress(ev.loaded, ev.total));
-                  } else if (ev instanceof HttpResponse) {
-                    if (ev.body.responsCode === ResponseCodeEnum.OK) {
-                      this.uploadProgress[idx] = 100;
-                      this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
-                      this.orderServices.onReload();
-                      this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.CONVERSION.uploadType);
-                    }
-                  }
-                })).subscribe(res => {},
-                error =>  this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.CONVERSION.uploadType)
-              );
-              this.uploadService.uploadDataNew[currentIndex].subScribe = subscribeUpload;
-    
-            }else{
-              this.uploadProgress.push(102);
-            }
-            if (this.orderService.buttons.restorations) {
-              if (event.restorationForm.upperFile || event.restorationForm.lowerFile || event.restorationForm.biteFile){
-                this.orderServices.uploadingId.add(JSON.stringify({id: res.data.VIEW_ORDER_ALL[0].orderId, type: SubOrderType.GFMR.uploadType}));
-              }
-              const orderData = orderArr[0].subOrders.find((e: any) => e.subOrderType.includes('Restoration'));
-              if (event.restorationForm.upperFile) {
-                const uploadFormData = this.GenerateOrderFormData(event.restorationForm.upperFile
-                  , orderData.subOrderStatus?.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId, "upper", false);
-                const currentIndex = ++this.uploadService.index;
-                const upperFileSub = this.uploadService.onUploadFile(uploadFormData
-                  , Number(localStorage.getItem('userCNId'))
-                  , res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.upperFile.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
-                    if (ev.type === HttpEventType.UploadProgress) {
-                      this.uploadService.uploadDataNew[currentIndex].calculatedTime =
-                        this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.upperFile.size);
-                      this.uploadService.uploadDataNew[currentIndex].progress =
-                        this.uploadProgressService.returnProgress(ev.loaded, ev.total);
-                      this.uploadService.uploadDataNew[currentIndex].subScribe = upperFileSub;
-                    } else if (ev instanceof HttpResponse) {
-                      if (ev.body.responsCode === ResponseCodeEnum.OK) {
-                        this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
-                        if (event.restorationForm.lowerFile) {
-                          let uploadFormData = this.GenerateOrderFormData(event.restorationForm.lowerFile
-                            , orderData.subOrderStatus.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId, "lower", false);
-                          let currentIndex = ++this.uploadService.index;
-                          let lowerFileSub = this.uploadService.onUploadFile(uploadFormData
-                            , Number(localStorage.getItem('userCNId'))
-                            , res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.lowerFile.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
-                            if (ev.type === HttpEventType.UploadProgress) {
-                              this.uploadService.uploadDataNew[currentIndex].calculatedTime =
-                                this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.lowerFile.size);
-                              this.uploadService.uploadDataNew[currentIndex].progress =
-                                this.uploadProgressService.returnProgress(ev.loaded, ev.total);
-                              this.uploadService.uploadDataNew[currentIndex].subScribe = lowerFileSub;
-                            } else if (ev instanceof HttpResponse) {
-                              if (ev.body.responsCode === ResponseCodeEnum.OK) {
-                                this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
-                                if (event.restorationForm.biteFile) {
-                                  let uploadFormData = this.GenerateOrderFormData(event.restorationForm.biteFile
-                                    , orderData.subOrderStatus.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId, "bite", true);
-                                  let currentIndex = ++this.uploadService.index;
-                                  let biteFileSub = this.uploadService.onUploadFile(uploadFormData
-                                    , Number(localStorage.getItem('userCNId'))
-                                    , res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.biteFile.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
-                                    if (ev.type === HttpEventType.UploadProgress) {
-                                      this.uploadService.uploadDataNew[currentIndex].calculatedTime =
-                                        this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.biteFile.size);
-                                      this.uploadService.uploadDataNew[currentIndex].progress =
-                                        this.uploadProgressService.returnProgress(ev.loaded, ev.total);
-                                      this.uploadService.uploadDataNew[currentIndex].subScribe = biteFileSub;
-                                    } else if (ev instanceof HttpResponse) {
-                                      if (ev.body.responsCode === ResponseCodeEnum.OK) {
-                                        this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
-                                        this.orderServices.onReload();
-                                        this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType);
-                                      }
-                                    }
-                                  })).subscribe(res => {},
-                                    error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType)
-                                  );
-                                }
-                              }
-                            }
-                          })).subscribe(res => {},
-                            error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType)
-                          );
+        let apiData = { services: [orderServiceObj], requestType: projects_connect_src_app_Models_Enums_RequestTypes_RequestTypes__WEBPACK_IMPORTED_MODULE_0__.ERequestTypes.ADD };
+        this.addOrderService.addOrder(apiData).subscribe((res) => (0,tslib__WEBPACK_IMPORTED_MODULE_17__.__awaiter)(this, void 0, void 0, function* () {
+            var _p, _q, _r, _s, _t, _u;
+            if (res.responsCode === shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_3__.ResponseCodeEnum.OK) {
+                const orderArr = this.generateOrderDataService.onGenerateArrUpload(res.data.VIEW_ORDER_ALL);
+                if (uploadFiles.additional) {
+                    this.orderServices.uploadingId.add(JSON.stringify({ id: res.data.VIEW_ORDER_ALL[0].orderId, type: shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.CONVERSION.uploadType }));
+                    let uploadFormData = this.GenerateOrderFormData(uploadFiles.additional, orderArr[0].uploadType, res.data.VIEW_ORDER_ALL[0].orderId, (_q = (_p = res.data) === null || _p === void 0 ? void 0 : _p.VIEW_ORDER_ALL[1]) === null || _q === void 0 ? void 0 : _q.orderId);
+                    let currentIndex = ++this.uploadService.index;
+                    let subscribeUpload = this.uploadService.onUploadFile(uploadFormData, Number(localStorage.getItem('userCNId')), res.data.VIEW_ORDER_ALL[0].orderId, orderArr[0].orderStatus, uploadFiles.additional.name, (_r = res.data.VIEW_ORDER_ALL[1]) === null || _r === void 0 ? void 0 : _r.orderId).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.map)((ev) => {
+                        if (ev.type === _angular_common_http__WEBPACK_IMPORTED_MODULE_19__.HttpEventType.UploadProgress) {
+                            this.uploadProgress[idx] =
+                                Math.floor(this.uploadProgressService.returnProgress(ev.loaded, ev.total));
                         }
-                      }
-                    }
-                  })).subscribe(res => {},
-                  error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType)
-                );
-    
-              }
+                        else if (ev instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_19__.HttpResponse) {
+                            if (ev.body.responsCode === shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_3__.ResponseCodeEnum.OK) {
+                                this.uploadProgress[idx] = 100;
+                                this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
+                                this.orderServices.onReload();
+                                this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.CONVERSION.uploadType);
+                            }
+                        }
+                    })).subscribe(res => { }, error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.CONVERSION.uploadType));
+                    this.uploadService.uploadDataNew[currentIndex].subScribe = subscribeUpload;
+                }
+                else {
+                    const readableStream = yield this.http.get('localhost:3000/upload2', { responseType: 'blob' }).toPromise();
+                    ;
+                    const fileName = res.data.VIEW_ORDER_ALL[0].orderId + '_upload';
+                    const file = yield this.convertResponseToFile(readableStream, fileName);
+                    this.orderServices.uploadingId.add(JSON.stringify({ id: res.data.VIEW_ORDER_ALL[0].orderId, type: shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.CONVERSION.uploadType }));
+                    let uploadFormData = this.GenerateOrderFormData(file, orderArr[0].uploadType, res.data.VIEW_ORDER_ALL[0].orderId, (_t = (_s = res.data) === null || _s === void 0 ? void 0 : _s.VIEW_ORDER_ALL[1]) === null || _t === void 0 ? void 0 : _t.orderId);
+                    let currentIndex = ++this.uploadService.index;
+                    let subscribeUpload = this.uploadService.onUploadFile(uploadFormData, Number(localStorage.getItem('userCNId')), res.data.VIEW_ORDER_ALL[0].orderId, orderArr[0].orderStatus, fileName, (_u = res.data.VIEW_ORDER_ALL[1]) === null || _u === void 0 ? void 0 : _u.orderId).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.map)((ev) => {
+                        if (ev.type === _angular_common_http__WEBPACK_IMPORTED_MODULE_19__.HttpEventType.UploadProgress) {
+                            this.uploadProgress[idx] =
+                                Math.floor(this.uploadProgressService.returnProgress(ev.loaded, ev.total));
+                        }
+                        else if (ev instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_19__.HttpResponse) {
+                            if (ev.body.responsCode === shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_3__.ResponseCodeEnum.OK) {
+                                this.uploadProgress[idx] = 100;
+                                this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
+                                this.orderServices.onReload();
+                                this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.CONVERSION.uploadType);
+                            }
+                        }
+                    })).subscribe(res => { }, error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, shared_shared_static_data_SubOrderType__WEBPACK_IMPORTED_MODULE_5__.SubOrderType.CONVERSION.uploadType));
+                    this.uploadService.uploadDataNew[currentIndex].subScribe = subscribeUpload;
+                }
+                // if (this.orderService.buttons.restorations) {
+                //   if (event.restorationForm.upperFile || event.restorationForm.lowerFile || event.restorationForm.biteFile){
+                //     this.orderServices.uploadingId.add(JSON.stringify({id: res.data.VIEW_ORDER_ALL[0].orderId, type: SubOrderType.GFMR.uploadType}));
+                //   }
+                //   const orderData = orderArr[0].subOrders.find((e: any) => e.subOrderType.includes('Restoration'));
+                //   if (event.restorationForm.upperFile) {
+                //     const uploadFormData = this.GenerateOrderFormData(event.restorationForm.upperFile
+                //       , orderData.subOrderStatus?.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId, "upper", false);
+                //     const currentIndex = ++this.uploadService.index;
+                //     const upperFileSub = this.uploadService.onUploadFile(uploadFormData
+                //       , Number(localStorage.getItem('userCNId'))
+                //       , res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.upperFile.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
+                //         if (ev.type === HttpEventType.UploadProgress) {
+                //           this.uploadService.uploadDataNew[currentIndex].calculatedTime =
+                //             this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.upperFile.size);
+                //           this.uploadService.uploadDataNew[currentIndex].progress =
+                //             this.uploadProgressService.returnProgress(ev.loaded, ev.total);
+                //           this.uploadService.uploadDataNew[currentIndex].subScribe = upperFileSub;
+                //         } else if (ev instanceof HttpResponse) {
+                //           if (ev.body.responsCode === ResponseCodeEnum.OK) {
+                //             this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
+                //             if (event.restorationForm.lowerFile) {
+                //               let uploadFormData = this.GenerateOrderFormData(event.restorationForm.lowerFile
+                //                 , orderData.subOrderStatus.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId, "lower", false);
+                //               let currentIndex = ++this.uploadService.index;
+                //               let lowerFileSub = this.uploadService.onUploadFile(uploadFormData
+                //                 , Number(localStorage.getItem('userCNId'))
+                //                 , res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.lowerFile.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
+                //                 if (ev.type === HttpEventType.UploadProgress) {
+                //                   this.uploadService.uploadDataNew[currentIndex].calculatedTime =
+                //                     this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.lowerFile.size);
+                //                   this.uploadService.uploadDataNew[currentIndex].progress =
+                //                     this.uploadProgressService.returnProgress(ev.loaded, ev.total);
+                //                   this.uploadService.uploadDataNew[currentIndex].subScribe = lowerFileSub;
+                //                 } else if (ev instanceof HttpResponse) {
+                //                   if (ev.body.responsCode === ResponseCodeEnum.OK) {
+                //                     this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
+                //                     if (event.restorationForm.biteFile) {
+                //                       let uploadFormData = this.GenerateOrderFormData(event.restorationForm.biteFile
+                //                         , orderData.subOrderStatus.uploadType, res.data.VIEW_ORDER_ALL[0].orderId, res.data?.VIEW_ORDER_ALL[1]?.orderId, "bite", true);
+                //                       let currentIndex = ++this.uploadService.index;
+                //                       let biteFileSub = this.uploadService.onUploadFile(uploadFormData
+                //                         , Number(localStorage.getItem('userCNId'))
+                //                         , res.data.VIEW_ORDER_ALL[0].orderId, orderData.subOrderStatus, event.restorationForm.biteFile.name, res.data.VIEW_ORDER_ALL[1]?.orderId).pipe(map((ev: any) => {
+                //                         if (ev.type === HttpEventType.UploadProgress) {
+                //                           this.uploadService.uploadDataNew[currentIndex].calculatedTime =
+                //                             this.uploadProgressService.calculateTimeRemain(ev.loaded, event.restorationForm.biteFile.size);
+                //                           this.uploadService.uploadDataNew[currentIndex].progress =
+                //                             this.uploadProgressService.returnProgress(ev.loaded, ev.total);
+                //                           this.uploadService.uploadDataNew[currentIndex].subScribe = biteFileSub;
+                //                         } else if (ev instanceof HttpResponse) {
+                //                           if (ev.body.responsCode === ResponseCodeEnum.OK) {
+                //                             this.toastService.addAlert('Uploaded Successfully', 'Upload File', 'start');
+                //                             this.orderServices.onReload();
+                //                             this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType);
+                //                           }
+                //                         }
+                //                       })).subscribe(res => {},
+                //                         error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType)
+                //                       );
+                //                     }
+                //                   }
+                //                 }
+                //               })).subscribe(res => {},
+                //                 error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType)
+                //               );
+                //             }
+                //           }
+                //         }
+                //       })).subscribe(res => {},
+                //       error => this.orderServices.removeUploadId(res.data.VIEW_ORDER_ALL[0].orderId, SubOrderType.GFMR.uploadType)
+                //     );
+                //   }
+                // }
             }
-          }
+        }));
+    }
+    convertBlobToFile(blob, fileName) {
+        const fileOptions = {
+            type: blob.type,
+            lastModified: new Date().getTime()
+        };
+        return new File([blob], fileName, fileOptions);
+    }
+    convertResponseToFile(response, fileName) {
+        return (0,tslib__WEBPACK_IMPORTED_MODULE_17__.__awaiter)(this, void 0, void 0, function* () {
+            console.log(response);
+            // const blob = await response.blob();
+            return this.convertBlobToFile(response, fileName);
         });
-        */
     }
 }
-AddOrderPageComponent.ɵfac = function AddOrderPageComponent_Factory(t) { return new (t || AddOrderPageComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_2__.OrderSharedService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_AddOrderService_add_order_service__WEBPACK_IMPORTED_MODULE_3__.AddOrderService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](shared_shared_services_toastr_service__WEBPACK_IMPORTED_MODULE_4__.ToastrService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](projects_connect_src_app_Services_UploadService_upload_service__WEBPACK_IMPORTED_MODULE_5__.UploadService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_6__.OrderListService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](shared_shared_services_upload_progress_service__WEBPACK_IMPORTED_MODULE_7__.UploadProgressService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](shared_shared_services_generate_order_data_service__WEBPACK_IMPORTED_MODULE_8__.GenerateOrderDataService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](shared_shared_services_date_service__WEBPACK_IMPORTED_MODULE_9__.DateService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_6__.OrderListService), _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_actions_actions_service__WEBPACK_IMPORTED_MODULE_10__.ActionsService)); };
-AddOrderPageComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineComponent"]({ type: AddOrderPageComponent, selectors: [["app-add-order-page"]], viewQuery: function AddOrderPageComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵviewQuery"](shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_1__.AddOrderFormElectronComponent, 5);
+AddOrderPageComponent.ɵfac = function AddOrderPageComponent_Factory(t) { return new (t || AddOrderPageComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_6__.OrderSharedService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_AddOrderService_add_order_service__WEBPACK_IMPORTED_MODULE_7__.AddOrderService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_20__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](shared_shared_services_toastr_service__WEBPACK_IMPORTED_MODULE_8__.ToastrService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](projects_connect_src_app_Services_UploadService_upload_service__WEBPACK_IMPORTED_MODULE_9__.UploadService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_10__.OrderListService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](shared_shared_services_upload_progress_service__WEBPACK_IMPORTED_MODULE_11__.UploadProgressService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](shared_shared_services_generate_order_data_service__WEBPACK_IMPORTED_MODULE_12__.GenerateOrderDataService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_20__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](shared_shared_services_date_service__WEBPACK_IMPORTED_MODULE_13__.DateService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_OrderListService_order_list_service__WEBPACK_IMPORTED_MODULE_10__.OrderListService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](projects_connect_src_app_Services_OrderServices_actions_actions_service__WEBPACK_IMPORTED_MODULE_14__.ActionsService), _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_19__.HttpClient)); };
+AddOrderPageComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineComponent"]({ type: AddOrderPageComponent, selectors: [["app-add-order-page"]], viewQuery: function AddOrderPageComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵviewQuery"](shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_2__.AddOrderFormElectronComponent, 5);
     } if (rf & 2) {
         let _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵloadQuery"]()) && (ctx.addForm = _t.first);
-    } }, inputs: { patientName: "patientName" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵInheritDefinitionFeature"]], decls: 2, vars: 2, consts: [[3, "buttonOrders", "patientName", "ordersOBJ", 4, "ngIf"], ["class", "view", 4, "ngIf"], [3, "buttonOrders", "patientName", "ordersOBJ"], [1, "view"], [1, "header"], ["class", "progress-box", 4, "ngFor", "ngForOf"], [1, "container-form-btn"], ["id", "btn-done ", 1, "native-btn"], [1, "progress-box"], [3, "progress"]], template: function AddOrderPageComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtemplate"](0, AddOrderPageComponent_app_add_order_form_electron_0_Template, 1, 2, "app-add-order-form-electron", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵtemplate"](1, AddOrderPageComponent_div_1_Template, 7, 1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵloadQuery"]()) && (ctx.addForm = _t.first);
+    } }, inputs: { patientName: "patientName", filePath: "filePath" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵInheritDefinitionFeature"]], decls: 2, vars: 2, consts: [[3, "buttonOrders", "patientName", "filePath", "ordersOBJ", 4, "ngIf"], ["class", "view", 4, "ngIf"], [3, "buttonOrders", "patientName", "filePath", "ordersOBJ"], [1, "view"], [1, "header"], ["class", "progress-box", 4, "ngFor", "ngForOf"], [1, "container-form-btn"], ["id", "btn-done ", 1, "native-btn"], [1, "progress-box"], [3, "progress"]], template: function AddOrderPageComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtemplate"](0, AddOrderPageComponent_app_add_order_form_electron_0_Template, 1, 3, "app-add-order-form-electron", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtemplate"](1, AddOrderPageComponent_div_1_Template, 7, 1, "div", 1);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("ngIf", ctx.currentView === "addForm");
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵproperty"]("ngIf", ctx.currentView === "upload");
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_14__.NgIf, shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_1__.AddOrderFormElectronComponent, _angular_common__WEBPACK_IMPORTED_MODULE_14__.NgForOf, _progress_bar_progress_bar_component__WEBPACK_IMPORTED_MODULE_11__.ProgressBarComponent], styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-top: 2vh;\n}\n\n.view[_ngcontent-%COMP%] {\n  width: 95vw;\n  min-height: 93vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  position: relative;\n}\n\n.header[_ngcontent-%COMP%] {\n  color: var(--primary-color);\n  margin-bottom: 25px;\n  align-self: start;\n}\n\n.container-form-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  bottom: -30px;\n  margin: 0 20px;\n  display: flex;\n  grid-gap: 10px;\n  gap: 10px;\n  transition: none !important;\n}\n\n.container-form-btn[_ngcontent-%COMP%]    > *[_ngcontent-%COMP%] {\n  transition: none !important;\n}\n\n.progress-box[_ngcontent-%COMP%] {\n  width: 90%;\n  margin: auto 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZC1vcmRlci1wYWdlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBQTtFQUNBLFdBQUE7RUFFQSxhQUFBO0VBQ0Esc0JBQUE7RUFFQSxtQkFBQTtFQUNBLGdCQUFBO0FBREY7O0FBR0E7RUFDRSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0Esa0JBQUE7QUFBRjs7QUFHQTtFQUNFLDJCQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtBQUFGOztBQUdBO0VBQ0Usa0JBQUE7RUFDQSxRQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7RUFDQSxhQUFBO0VBQ0EsY0FBQTtFQUFBLFNBQUE7RUFDQSwyQkFBQTtBQUFGOztBQUVBO0VBQ0UsMkJBQUE7QUFDRjs7QUFFQTtFQUNFLFVBQUE7RUFDQSxjQUFBO0FBQ0YiLCJmaWxlIjoiYWRkLW9yZGVyLXBhZ2UuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdCB7XG4gIGhlaWdodDogMTAwJTtcbiAgd2lkdGg6IDEwMCU7XG5cbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgLy8ganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHBhZGRpbmctdG9wOiAydmg7XG59XG4udmlldyB7XG4gIHdpZHRoOiA5NXZ3O1xuICBtaW4taGVpZ2h0OiA5M3ZoO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmhlYWRlciB7XG4gIGNvbG9yOiB2YXIoLS1wcmltYXJ5LWNvbG9yKTtcbiAgbWFyZ2luLWJvdHRvbTogMjVweDtcbiAgYWxpZ24tc2VsZjogc3RhcnQ7XG59XG5cbi5jb250YWluZXItZm9ybS1idG4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IC0zMHB4O1xuICBtYXJnaW46IDAgMjBweDtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiAxMHB4O1xuICB0cmFuc2l0aW9uOiBub25lICFpbXBvcnRhbnQ7XG59XG4uY29udGFpbmVyLWZvcm0tYnRuID4gKiB7XG4gIHRyYW5zaXRpb246IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLnByb2dyZXNzLWJveHtcbiAgd2lkdGg6IDkwJTtcbiAgbWFyZ2luOiBhdXRvIDA7XG59XG4iXX0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("ngIf", ctx.currentView === "addForm");
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("ngIf", ctx.currentView === "upload");
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_21__.NgIf, shared_shared_components_shared_forms_add_order_form_add_order_form_electron_add_order_form_electron_component__WEBPACK_IMPORTED_MODULE_2__.AddOrderFormElectronComponent, _angular_common__WEBPACK_IMPORTED_MODULE_21__.NgForOf, _progress_bar_progress_bar_component__WEBPACK_IMPORTED_MODULE_15__.ProgressBarComponent], styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-top: 2vh;\n}\n\n.view[_ngcontent-%COMP%] {\n  width: 95vw;\n  min-height: 93vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  position: relative;\n}\n\n.header[_ngcontent-%COMP%] {\n  color: var(--primary-color);\n  margin-bottom: 25px;\n  align-self: start;\n}\n\n.container-form-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 0;\n  bottom: -30px;\n  margin: 0 20px;\n  display: flex;\n  grid-gap: 10px;\n  gap: 10px;\n  transition: none !important;\n}\n\n.container-form-btn[_ngcontent-%COMP%]    > *[_ngcontent-%COMP%] {\n  transition: none !important;\n}\n\n.progress-box[_ngcontent-%COMP%] {\n  width: 90%;\n  margin: auto 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZC1vcmRlci1wYWdlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBQTtFQUNBLFdBQUE7RUFFQSxhQUFBO0VBQ0Esc0JBQUE7RUFFQSxtQkFBQTtFQUNBLGdCQUFBO0FBREY7O0FBR0E7RUFDRSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0Esa0JBQUE7QUFBRjs7QUFHQTtFQUNFLDJCQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtBQUFGOztBQUdBO0VBQ0Usa0JBQUE7RUFDQSxRQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7RUFDQSxhQUFBO0VBQ0EsY0FBQTtFQUFBLFNBQUE7RUFDQSwyQkFBQTtBQUFGOztBQUVBO0VBQ0UsMkJBQUE7QUFDRjs7QUFFQTtFQUNFLFVBQUE7RUFDQSxjQUFBO0FBQ0YiLCJmaWxlIjoiYWRkLW9yZGVyLXBhZ2UuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdCB7XG4gIGhlaWdodDogMTAwJTtcbiAgd2lkdGg6IDEwMCU7XG5cbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgLy8ganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHBhZGRpbmctdG9wOiAydmg7XG59XG4udmlldyB7XG4gIHdpZHRoOiA5NXZ3O1xuICBtaW4taGVpZ2h0OiA5M3ZoO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmhlYWRlciB7XG4gIGNvbG9yOiB2YXIoLS1wcmltYXJ5LWNvbG9yKTtcbiAgbWFyZ2luLWJvdHRvbTogMjVweDtcbiAgYWxpZ24tc2VsZjogc3RhcnQ7XG59XG5cbi5jb250YWluZXItZm9ybS1idG4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IC0zMHB4O1xuICBtYXJnaW46IDAgMjBweDtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiAxMHB4O1xuICB0cmFuc2l0aW9uOiBub25lICFpbXBvcnRhbnQ7XG59XG4uY29udGFpbmVyLWZvcm0tYnRuID4gKiB7XG4gIHRyYW5zaXRpb246IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLnByb2dyZXNzLWJveHtcbiAgd2lkdGg6IDkwJTtcbiAgbWFyZ2luOiBhdXRvIDA7XG59XG4iXX0= */"] });
 
 
 /***/ }),
@@ -495,14 +503,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppComponent": () => (/* binding */ AppComponent)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ 3786);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! tslib */ 3786);
 /* harmony import */ var projects_connect_src_app_Models_Enums_RequestTypes_RequestTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! projects/connect/src/app/Models/Enums/RequestTypes/RequestTypes */ 987);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../environments/environment */ 1017);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 2316);
-/* harmony import */ var projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! projects/connect/src/app/Services/AuthServices/LoginService/login.service */ 9020);
-/* harmony import */ var projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! projects/connect/src/app/Services/LocalStorageService/local-storage.service */ 1931);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ 4364);
-/* harmony import */ var _add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./add-order-page/add-order-page.component */ 1760);
+/* harmony import */ var shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! shared/shared-enums/ResponseCodeEnum */ 1580);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../environments/environment */ 1017);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 2316);
+/* harmony import */ var projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! projects/connect/src/app/Services/AuthServices/LoginService/login.service */ 9020);
+/* harmony import */ var projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! projects/connect/src/app/Services/LocalStorageService/local-storage.service */ 1931);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 4364);
+/* harmony import */ var _add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./add-order-page/add-order-page.component */ 1760);
+
 
 
 
@@ -512,10 +522,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function AppComponent_app_add_order_page_0_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](0, "app-add-order-page", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](0, "app-add-order-page", 1);
 } if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("patientName", ctx_r0.patientName);
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("patientName", ctx_r0.patientName)("filePath", ctx_r0.filePath);
 } }
 class AppComponent {
     constructor(loginService, localStorageService) {
@@ -524,41 +534,42 @@ class AppComponent {
         this.loginObj = { requestType: projects_connect_src_app_Models_Enums_RequestTypes_RequestTypes__WEBPACK_IMPORTED_MODULE_0__.ERequestTypes.ADD, services: [{}] };
     }
     ngOnInit() {
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_6__.__awaiter)(this, void 0, void 0, function* () {
-            // const{emailAddress, password, name} = await this.getObject();
-            this.patientName = 'test patient name';
-            /*
+        return (0,tslib__WEBPACK_IMPORTED_MODULE_7__.__awaiter)(this, void 0, void 0, function* () {
+            console.log(yield this.getObject());
+            const { emailAddress, password, name, filePath } = yield this.getObject();
+            this.patientName = name;
+            this.filePath = filePath;
             this.loginObj.services[0] = {
-              userName: emailAddress,
-              password: password,
-              serviceName: '',
-              columns: [],
-              ConditionsAnded: false
+                userName: emailAddress,
+                password: password,
+                serviceName: '',
+                columns: [],
+                ConditionsAnded: false
             };
             // @ts-expect-error
-            this.loginService.login(this.loginObj).subscribe(res =>
-              {if (res.responsCode === ResponseCodeEnum.OK) {
-                const responseOBJ = JSON.parse(res.responsString);
-                if (!responseOBJ.needChange) {
-                  this.localStorageService.setLocalStorageGDBR(responseOBJ);
+            this.loginService.login(this.loginObj).subscribe(res => {
+                if (res.responsCode === shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_1__.ResponseCodeEnum.OK) {
+                    const responseOBJ = JSON.parse(res.responsString);
+                    if (!responseOBJ.needChange) {
+                        this.localStorageService.setLocalStorageGDBR(responseOBJ);
+                    }
                 }
-              }})
-            */
+            });
         });
     }
     getObject() {
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_6__.__awaiter)(this, void 0, void 0, function* () {
-            const data = yield fetch(_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.jsonURL).then(res => res.json());
+        return (0,tslib__WEBPACK_IMPORTED_MODULE_7__.__awaiter)(this, void 0, void 0, function* () {
+            const data = yield fetch(_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.jsonURL).then(res => res.json());
             return data;
         });
     }
 }
-AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_2__.LoginService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_3__.LocalStorageService)); };
-AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 1, vars: 1, consts: [[3, "patientName", 4, "ngIf"], [3, "patientName"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](0, AppComponent_app_add_order_page_0_Template, 1, 1, "app-add-order-page", 0);
+AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_3__.LoginService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_4__.LocalStorageService)); };
+AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 1, vars: 1, consts: [[3, "patientName", "filePath", 4, "ngIf"], [3, "patientName", "filePath"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtemplate"](0, AppComponent_app_add_order_page_0_Template, 1, 2, "app-add-order-page", 0);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.patientName);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.NgIf, _add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_4__.AddOrderPageComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("ngIf", ctx.patientName);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgIf, _add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_5__.AddOrderPageComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */"] });
 
 
 /***/ }),
@@ -750,7 +761,7 @@ class APIsInterceptor {
     constructor() {
     }
     intercept(req, next) {
-        if (!req.url.includes('.json') && !req.url.includes(_shared_API_APIName__WEBPACK_IMPORTED_MODULE_0__.APIName.uploadFile) && !req.url.includes(_shared_API_APIName__WEBPACK_IMPORTED_MODULE_0__.APIName.createNewPassword) && !req.url.includes('/assets/banner.properties')) {
+        if (!req.url.includes('.json') && !req.url.includes(_shared_API_APIName__WEBPACK_IMPORTED_MODULE_0__.APIName.uploadFile) && !req.url.includes(_shared_API_APIName__WEBPACK_IMPORTED_MODULE_0__.APIName.createNewPassword) && !req.url.includes('/assets/banner.properties') && !req.url.includes('localhost')) {
             const data = this.prepareAPIRequest(req.body);
             req = req.clone({ body: data });
         }
@@ -7703,14 +7714,14 @@ function AddOrderFormElectronComponent_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("ngIf", ctx_r2.orderService.buttons.radiologyReport);
 } }
 const _c1 = function () { return { default: "#888", light: "#ccc", done: "#333" }; };
-function AddOrderFormElectronComponent_div_3_div_5_Template(rf, ctx) { if (rf & 1) {
+function AddOrderFormElectronComponent_div_3_div_12_Template(rf, ctx) { if (rf & 1) {
     const _r57 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](0, "div", 79);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](1, "h3", 80);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](2, "IOS Scan (STL Files) (Upper, Lower, and Bite)");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](3, "div", 89);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("dropped", function AddOrderFormElectronComponent_div_3_div_5_Template_div_dropped_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r57); const ctx_r56 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](2); return ctx_r56.dropped($event, "stl"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("dropped", function AddOrderFormElectronComponent_div_3_div_12_Template_div_dropped_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r57); const ctx_r56 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](2); return ctx_r56.dropped($event, "stl"); });
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelement"](4, "i", 83);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](5, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](6, "Drag and Drop here");
@@ -7721,14 +7732,14 @@ function AddOrderFormElectronComponent_div_3_div_5_Template(rf, ctx) { if (rf & 
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("appDNDUpload", _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵpureFunction0"](1, _c1));
 } }
-function AddOrderFormElectronComponent_div_3_div_6_Template(rf, ctx) { if (rf & 1) {
+function AddOrderFormElectronComponent_div_3_div_13_Template(rf, ctx) { if (rf & 1) {
     const _r59 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](0, "div", 79);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](1, "h3", 80);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](2, "Photos");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](3, "div", 89);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("dropped", function AddOrderFormElectronComponent_div_3_div_6_Template_div_dropped_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r59); const ctx_r58 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](2); return ctx_r58.dropped($event, "photos"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("dropped", function AddOrderFormElectronComponent_div_3_div_13_Template_div_dropped_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r59); const ctx_r58 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](2); return ctx_r58.dropped($event, "photos"); });
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelement"](4, "i", 83);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](5, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](6, "Drag and Drop here");
@@ -7748,38 +7759,48 @@ function AddOrderFormElectronComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](3, "form", 75);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("ngSubmit", function AddOrderFormElectronComponent_div_3_Template_form_ngSubmit_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r60 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r60.submit(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](4, "div", 76);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](5, AddOrderFormElectronComponent_div_3_div_5_Template, 7, 2, "div", 77);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](6, AddOrderFormElectronComponent_div_3_div_6_Template, 7, 2, "div", 78);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](7, "div", 79);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](8, "h3", 80);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](9, "IOS Scan (STL Files) (Upper, Lower, and Bite)");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](5, "h3");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](6, "Upload from path ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](7, "code");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](10, "div", 81, 82);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_div_click_10_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const _r55 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵreference"](16); return _r55.click(); })("dropped", function AddOrderFormElectronComponent_div_3_Template_div_dropped_10_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r63 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r63.dropped($event, "additional"); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelement"](12, "i", 83);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](13, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](14, "Drag and Drop here");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](9, "?");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](15, "input", 84, 85);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("change", function AddOrderFormElectronComponent_div_3_Template_input_change_15_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const _r54 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵreference"](11); const ctx_r64 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); ctx_r64.dropped($event.target.files[0], "additional"); _r54.style.borderColor = "#333"; return _r54.style.color = "#333"; });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](10, "h3", 77);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](11, "OR");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](12, AddOrderFormElectronComponent_div_3_div_12_Template, 7, 2, "div", 78);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](13, AddOrderFormElectronComponent_div_3_div_13_Template, 7, 2, "div", 78);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](14, "div", 79);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](15, "h3", 80);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](16, "IOS Scan (STL Files) (Upper, Lower, and Bite)");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](17, "div", 81, 82);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_div_click_17_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const _r55 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵreference"](23); return _r55.click(); })("dropped", function AddOrderFormElectronComponent_div_3_Template_div_dropped_17_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r63 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r63.dropped($event, "additional"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelement"](19, "i", 83);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](20, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](21, "Drag and Drop here");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](22, "input", 84, 85);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("change", function AddOrderFormElectronComponent_div_3_Template_input_change_22_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const _r54 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵreference"](18); const ctx_r64 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); ctx_r64.dropped($event.target.files[0], "additional"); _r54.style.borderColor = "#333"; return _r54.style.color = "#333"; });
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](17, "div", 86);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](18, " By clicking on \"Submit Order\" button below you are agreeing to the disclaimer ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](19, "a", 87);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_a_click_19_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r65 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r65.disclaimer(); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](20, "listed here");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](24, "div", 86);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](25, " By clicking on \"Submit Order\" button below you are agreeing to the disclaimer ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](26, "a", 87);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_a_click_26_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r65 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r65.disclaimer(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](27, "listed here");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](21, "div", 22);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](22, "button", 35);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_button_click_22_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r66 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r66.changeView("stepper"); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](23, " Back ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](28, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](29, "button", 35);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_3_Template_button_click_29_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵrestoreView"](_r61); const ctx_r66 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"](); return ctx_r66.changeView("stepper"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](30, " Back ");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](24, "button", 88);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](25, " Submit Order ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementStart"](31, "button", 88);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtext"](32, " Submit Order ");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵelementEnd"]();
@@ -7788,12 +7809,14 @@ function AddOrderFormElectronComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("id", ctx_r3.htmlID.Form + "last-step")("formGroup", ctx_r3.lastStepFormGroup);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("ngIg", false);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtextInterpolate"](ctx_r3.filePath);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("ngIf", false);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("ngIf", false);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("appDNDUpload", _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵpureFunction0"](9, _c1));
+    _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("appDNDUpload", _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵpureFunction0"](10, _c1));
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](9);
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("id", ctx_r3.htmlID.AnchorTags + "listed-here");
     _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](3);
@@ -7876,11 +7899,11 @@ class AddOrderFormElectronComponent extends _add_order_form_component__WEBPACK_I
     }
 }
 AddOrderFormElectronComponent.ɵfac = function AddOrderFormElectronComponent_Factory(t) { return new (t || AddOrderFormElectronComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_1__.OrderSharedService), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_13__.MatDialog), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](shared_shared_services_doctor_add_doctor_service__WEBPACK_IMPORTED_MODULE_2__.addDoctorService), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_14__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdirectiveInject"](shared_shared_services_toastr_service__WEBPACK_IMPORTED_MODULE_3__.ToastrService)); };
-AddOrderFormElectronComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineComponent"]({ type: AddOrderFormElectronComponent, selectors: [["app-add-order-form-electron"]], inputs: { patientName: "patientName" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵInheritDefinitionFeature"]], decls: 4, vars: 4, consts: [["class", "start view", 4, "ngIf"], ["class", "teeth view", 4, "ngIf"], ["class", "stepper view", 4, "ngIf"], ["class", "uploader view", 4, "ngIf"], [1, "start", "view"], [1, "start-question"], [3, "id"], ["firstStepForm", "ngForm"], [1, "row", "cases"], [1, "col-4"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "id", "disabled", "ngClass", "click"], ["src", "assets/icons/conv.png", 1, "w-100", "d-block"], ["src", "assets/icons/full.png", 1, "w-100", "d-block"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "disabled", "id", "ngClass", "click"], ["btnSG", ""], ["src", "assets/icons/sg.png", 1, "w-100", "d-block"], [1, "col-4", "d-flex", "justify-content-center"], ["src", "assets/icons/restore.png", 1, "w-100", "d-block"], ["btnTP", ""], ["src", "assets/icons/planning.png", 1, "w-100", "d-block"], ["src", "assets/icons/report.png", 1, "w-100", "d-block"], ["class", "row mt-2", 4, "ngIf"], [1, "container-form-btn"], [1, "mt-5", "native-btn", 3, "id", "disabled", "click"], [1, "row", "mt-2"], [1, "col-lg-6", "col-sm-6", 2, "width", "312px"], [1, "row"], [1, "col-lg-12", "col-sm-12", "mt-0", 2, "width", "591px"], ["aria-label", "Select an option", "aria-labelledby", "RestType", 3, "value", "change"], ["disabled", "true", 3, "id", "value"], [3, "id", "value"], [1, "mt-2", 3, "disabled", "id", "value"], [1, "teeth", "view"], [1, "header"], [1, "w-100", 2, "flex", "1", 3, "buttonOrders", "isAddAnotherOrder", "submitTeeth", "restorationForm", "restorationData", "isRestorationSelected"], [1, "native-btn", 3, "id", "click"], [1, "native-btn", 3, "id", "disabled", "click"], [1, "stepper", "view"], ["linear", "", 3, "selectionChange"], ["stepper", ""], ["matStepperIcon", "edit"], [4, "ngIf"], ["label", "3D Conv", 3, "stepControl", 4, "ngIf"], ["label", "Tx Plan", 3, "stepControl", 4, "ngIf"], ["label", "Guide", 3, "stepControl", 4, "ngIf"], ["label", "Restoration", 3, "stepControl", 4, "ngIf"], ["label", "Rad Report", 3, "stepControl", 4, "ngIf"], ["label", "Info", 3, "stepControl", 4, "ngIf"], ["label", "Info", 3, "stepControl"], [3, "id", "formGroup"], [1, "col-md-8", "col-sm-12", 2, "position", "relative"], ["appearance", "fill", 2, "width", "90%"], ["matInput", "", "formControlName", "patientName", "placeholder", "Patient Name", "required", "", "vlaue", "patientName", 3, "id"], [1, "quest"], [1, "patientHide"], [1, "col-md-4", "col-sm-12", "mt-3"], ["formControlName", "gender", "aria-label", "Select an option", "aria-labelledby", "lbl-Gender"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id"], ["label", "3D Conv", 3, "stepControl"], ["step", ""], [3, "expressSoftware", "moreThan", "checkModelScan", "maxillaAndMandible", "conversion", "surgicalGuide"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "disabled", "click"], ["label", "Tx Plan", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "surgicalGuide", "moreThan", "treatmentPlan"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "click"], ["label", "Guide", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "softwareConversion", "softwareTreatmentPlan", "restoration", "moreThan", "checkTreatmentPlanAndSurgical", "surgicalGuide"], ["label", "Restoration", 3, "stepControl"], [3, "orderDetails", "restoration", "restType"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id", "click"], ["label", "Rad Report", 3, "stepControl"], [3, "radiologyReport"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "disabled", "id", "click"], [1, "uploader", "view"], [1, "w-100", 3, "id", "formGroup", "ngSubmit"], [1, "uploader-container"], ["class", "uploader-box", 4, "ngIg"], ["class", "uploader-box", 4, "ngIf"], [1, "uploader-box"], [1, "uploader-box--header"], [1, "uploader-box--drop", 3, "appDNDUpload", "click", "dropped"], ["box", ""], ["aria-hidden", "true", 1, "fas", "fa-cloud-upload-alt"], ["type", "file", "hidden", "", 3, "change"], ["inputFile", ""], [1, "col-sm-12"], [3, "id", "click"], [1, "native-btn", 3, "disabled", "id"], [1, "uploader-box--drop", 3, "appDNDUpload", "dropped"]], template: function AddOrderFormElectronComponent_Template(rf, ctx) { if (rf & 1) {
+AddOrderFormElectronComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineComponent"]({ type: AddOrderFormElectronComponent, selectors: [["app-add-order-form-electron"]], inputs: { patientName: "patientName", filePath: "filePath" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵInheritDefinitionFeature"]], decls: 4, vars: 4, consts: [["class", "start view", 4, "ngIf"], ["class", "teeth view", 4, "ngIf"], ["class", "stepper view", 4, "ngIf"], ["class", "uploader view", 4, "ngIf"], [1, "start", "view"], [1, "start-question"], [3, "id"], ["firstStepForm", "ngForm"], [1, "row", "cases"], [1, "col-4"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "id", "disabled", "ngClass", "click"], ["src", "assets/icons/conv.png", 1, "w-100", "d-block"], ["src", "assets/icons/full.png", 1, "w-100", "d-block"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "disabled", "id", "ngClass", "click"], ["btnSG", ""], ["src", "assets/icons/sg.png", 1, "w-100", "d-block"], [1, "col-4", "d-flex", "justify-content-center"], ["src", "assets/icons/restore.png", 1, "w-100", "d-block"], ["btnTP", ""], ["src", "assets/icons/planning.png", 1, "w-100", "d-block"], ["src", "assets/icons/report.png", 1, "w-100", "d-block"], ["class", "row mt-2", 4, "ngIf"], [1, "container-form-btn"], [1, "mt-5", "native-btn", 3, "id", "disabled", "click"], [1, "row", "mt-2"], [1, "col-lg-6", "col-sm-6", 2, "width", "312px"], [1, "row"], [1, "col-lg-12", "col-sm-12", "mt-0", 2, "width", "591px"], ["aria-label", "Select an option", "aria-labelledby", "RestType", 3, "value", "change"], ["disabled", "true", 3, "id", "value"], [3, "id", "value"], [1, "mt-2", 3, "disabled", "id", "value"], [1, "teeth", "view"], [1, "header"], [1, "w-100", 2, "flex", "1", 3, "buttonOrders", "isAddAnotherOrder", "submitTeeth", "restorationForm", "restorationData", "isRestorationSelected"], [1, "native-btn", 3, "id", "click"], [1, "native-btn", 3, "id", "disabled", "click"], [1, "stepper", "view"], ["linear", "", 3, "selectionChange"], ["stepper", ""], ["matStepperIcon", "edit"], [4, "ngIf"], ["label", "3D Conv", 3, "stepControl", 4, "ngIf"], ["label", "Tx Plan", 3, "stepControl", 4, "ngIf"], ["label", "Guide", 3, "stepControl", 4, "ngIf"], ["label", "Restoration", 3, "stepControl", 4, "ngIf"], ["label", "Rad Report", 3, "stepControl", 4, "ngIf"], ["label", "Info", 3, "stepControl", 4, "ngIf"], ["label", "Info", 3, "stepControl"], [3, "id", "formGroup"], [1, "col-md-8", "col-sm-12", 2, "position", "relative"], ["appearance", "fill", 2, "width", "90%"], ["matInput", "", "formControlName", "patientName", "placeholder", "Patient Name", "required", "", "vlaue", "patientName", 3, "id"], [1, "quest"], [1, "patientHide"], [1, "col-md-4", "col-sm-12", "mt-3"], ["formControlName", "gender", "aria-label", "Select an option", "aria-labelledby", "lbl-Gender"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id"], ["label", "3D Conv", 3, "stepControl"], ["step", ""], [3, "expressSoftware", "moreThan", "checkModelScan", "maxillaAndMandible", "conversion", "surgicalGuide"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "disabled", "click"], ["label", "Tx Plan", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "surgicalGuide", "moreThan", "treatmentPlan"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "click"], ["label", "Guide", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "softwareConversion", "softwareTreatmentPlan", "restoration", "moreThan", "checkTreatmentPlanAndSurgical", "surgicalGuide"], ["label", "Restoration", 3, "stepControl"], [3, "orderDetails", "restoration", "restType"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id", "click"], ["label", "Rad Report", 3, "stepControl"], [3, "radiologyReport"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "disabled", "id", "click"], [1, "uploader", "view"], [1, "w-100", 3, "id", "formGroup", "ngSubmit"], [1, "uploader-container"], [1, "py-3"], ["class", "uploader-box", 4, "ngIf"], [1, "uploader-box"], [1, "uploader-box--header"], [1, "uploader-box--drop", 3, "appDNDUpload", "click", "dropped"], ["box", ""], ["aria-hidden", "true", 1, "fas", "fa-cloud-upload-alt"], ["type", "file", "hidden", "", 3, "change"], ["inputFile", ""], [1, "col-sm-12"], [3, "id", "click"], [1, "native-btn", 3, "disabled", "id"], [1, "uploader-box--drop", 3, "appDNDUpload", "dropped"]], template: function AddOrderFormElectronComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](0, AddOrderFormElectronComponent_div_0_Template, 37, 32, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](1, AddOrderFormElectronComponent_div_1_Template, 9, 9, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](2, AddOrderFormElectronComponent_div_2_Template, 12, 7, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](3, AddOrderFormElectronComponent_div_3_Template, 26, 10, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵtemplate"](3, AddOrderFormElectronComponent_div_3_Template, 33, 11, "div", 3);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵproperty"]("ngIf", ctx.currentView === "start");
         _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵadvance"](1);
@@ -22398,4 +22421,4 @@ module.exports = webpackEmptyAsyncContext;
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.88fabae2ccf4e74beff9.js.map
+//# sourceMappingURL=main.262704abee17b70c6128.js.map
