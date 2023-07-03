@@ -68,9 +68,7 @@
     <div id="notification" class="hidden">
       <p id="message"></p>
       <button id="close-button" onClick="closeNotification()">Close</button>
-      <button id="update-button" onClick="updateApp()" >
-        Update
-      </button>
+      <button id="update-button" onClick="updateApp()">Update</button>
       <button id="restart-button" onClick="restartApp()" class="hidden">
         Restart
       </button>
@@ -87,14 +85,14 @@
       });
 
       //get Data
-      fetch('http://localhost:3000/config.json')
-        .then((response) => response.json())
-        .then((data) => {
-          document.getElementById('name').value = data.name;
-          document.getElementById('filePath').value = data.filePath;
-          document.getElementById('emailAddress').value = data.emailAddress;
-          document.getElementById('password').value = data.password;
-        });
+      ipcRenderer.send('get_data');
+      ipcRenderer.on('get_data', (event, data) => {
+        // ipcRenderer.removeAllListeners('get_data');
+        document.getElementById('name').value = data.name;
+        document.getElementById('filePath').value = data.filePath;
+        document.getElementById('emailAddress').value = data.emailAddress;
+        document.getElementById('password').value = data.password;
+      });
 
       function save() {
         let obj = {};
@@ -107,18 +105,7 @@
         document.getElementById('btn').style.display = 'block';
         console.log(obj);
 
-        fetch('http://localhost:3000/saveConfig', {
-          method: 'POST',
-          headers: {
-            Accept: 'application.json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(obj),
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log('data', data);
-          });
+        localStorage.obj = obj;
       }
 
       // auto update

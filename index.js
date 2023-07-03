@@ -12,6 +12,7 @@ function createWindow() {
             nodeIntegration: true,
             contextIsolation: false,
         },
+        autoHideMenuBar: true,
     });
 
     mainWindow.loadURL(
@@ -127,6 +128,12 @@ ipcMain.on('app_version', (event) => {
     event.sender.send('app_version', { version: app.getVersion() });
 });
 
+
+ipcMain.on('get_data', (event) => {
+    event.sender.send('get_data', configData);
+});
+
+
 let updateUrl = null;
 let checkNewUpdates = () => {
     const host = 'https://alwanlab.com';
@@ -147,6 +154,5 @@ let checkNewUpdates = () => {
 
 
 ipcMain.on('update_app', () => {
-    console.log(updateUrl);
     mainWindow.webContents.downloadURL(updateUrl);
 });
