@@ -11,6 +11,7 @@ function createWindow() {
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
+            
         },
         autoHideMenuBar: true,
     });
@@ -128,6 +129,30 @@ ipcMain.on('app_version', (event) => {
     event.sender.send('app_version', { version: app.getVersion() });
 });
 
+// Back Btn
+ipcMain.on('back', (event) => {
+    mainWindow.loadURL(
+        url.format({
+            pathname: path.join(__dirname, `/index.html`),
+            protocol: 'file:',
+            slashes: true,
+        }),
+    );
+});
+
+//Done
+ipcMain.on('done', (event) => {
+    mainWindow.close()
+});
+
+ipcMain.on('upload', (event, args) => {
+    console.log(event);
+    console.log(args);
+    // event.sender.send('get_data', configData);
+    const file = fs.readFileSync('./test.jpg');
+    const base64Data = file.toString('base64');
+    event.sender.send('uploadFile', {fileName: 'test.jpg', fileContent: base64Data})
+});
 
 ipcMain.on('get_data', (event) => {
     event.sender.send('get_data', configData);
