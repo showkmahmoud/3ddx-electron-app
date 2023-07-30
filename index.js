@@ -3,6 +3,7 @@ const url = require("url");
 const path = require("path");
 
 let mainWindow;
+const { autoUpdater } = require("electron-updater");
 
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -26,6 +27,10 @@ function createWindow() {
   // mainWindow.webContents.openDevTools();
   mainWindow.on("closed", function () {
     mainWindow = null;
+  });
+
+  mainWindow.once("ready-to-show", () => {
+    autoUpdater.checkForUpdatesAndNotify();
   });
 }
 
@@ -96,10 +101,8 @@ ipcMain.on("get_data", (event) => {
 });
 
 // update
-const { autoUpdater } = require("electron-updater");
-mainWindow.once("ready-to-show", () => {
-  autoUpdater.checkForUpdatesAndNotify();
-});
+
+
 
 autoUpdater.on("update-available", () => {
   mainWindow.webContents.send("update_available");
