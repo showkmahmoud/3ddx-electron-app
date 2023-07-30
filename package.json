@@ -1,63 +1,66 @@
 {
-    "name": "app",
-    "version": "1.0.2",
-    "description": "3ddx app development 3ddx app development",
-    "productDescription": "3ddx app development 3ddx app development",
-    "main": "index.js",
-    "executableName": "3ddx",
-    "repository": "https://github.com/alwanlab/3ddx-electron-app",
-    "scripts": {
-        "start": "electron .",
-        "build": "electron-packager . app --platform linux --arch x64 --out dist/",
-        "buildwin": "electron-packager . app --platform win32 --arch x64 --out dist/",
-        "buildmac": "electron-packager . app --platform darwin --arch x64 --out dist/",
-        "deb64": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64",
-        "exe": "electron-installer-windows --src dist/app-win32-x64/ --dest dist/installers/",
-        "mac": "electron-installer-dmg ./dist/app-darwin-x64/app.app app --out dist/installers/"
-    },
-    "author": "3ddx",
-    "license": "ISC",
-    "devDependencies": {
-        "electron": "^24.3.1",
-        "electron-installer-dmg": "^4.0.0",
-        "electron-installer-windows": "^3.0.0"
-    },
-    "dependencies": {
-        "@electron-forge/publisher-github": "^6.2.1",
-        "electron-updater": "^5.3.0",
-        "request": "^2.88.2",
-        "update-electron-app": "^2.0.1"
-    },
-    "config": {
-        "forge": {
-            "packagerConfig": {},
-            "makers": [
-                {
-                    "name": "@electron-forge/publisher-github",
-                    "config": {
-                        "repository": {
-                            "owner": "alwanlab",
-                            "name": "3ddx-electron-app"
-                        }
-                    }
-                },
-                {
-                    "name": "@electron-forge/maker-deb",
-                    "config": {}
-                }
-            ],
-            "publishers": [
-                {
-                    "name": "@electron-forge/publisher-github",
-                    "config": {
-                        "repository": {
-                            "owner": "alwanlab",
-                            "name": "3ddx-electron-app"
-                        },
-                        "prerelease": true
-                    }
-                }
-            ]
+  "name": "app",
+  "version": "1.0.0",
+  "description": "3ddx app development 3ddx app development",
+  "productDescription": "3ddx app development 3ddx app development",
+  "main": "index.js",
+  "executableName": "3ddx",
+  "repository": "https://github.com/alwanlab/3ddx-electron-app",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build  --win --publish never",
+    "deploy": "electron-builder build  --win --publish always"
+  },
+  "author": "3ddx",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.6.5",
+    "electron-builder": "^24.6.3",
+    "electron-installer-dmg": "^4.0.0",
+    "electron-installer-windows": "^3.0.0"
+  },
+  "dependencies": {
+    "@electron-forge/publisher-github": "^6.2.1",
+    "electron-updater": "^5.3.0",
+    "request": "^2.88.2",
+    "update-electron-app": "^2.0.1"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "alwanlab",
+              "name": "3ddx-electron-app"
+            }
+          }
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
         }
+      ],
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "alwanlab",
+              "name": "3ddx-electron-app"
+            },
+            "prerelease": true
+          }
+        }
+      ]
     }
+  },
+  "build": {
+    "appId": "3ddx.id",
+    "mac": {
+      "category": "3ddx.category.type"
+    }
+  }
 }
