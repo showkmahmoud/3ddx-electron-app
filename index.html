@@ -7,20 +7,31 @@
 
     <title>3ddx</title>
     <link href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css " rel="stylesheet " integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous " />
+    <link rel="shortcut icon" href="./newconnect-ui/favicon.ico" type="image/x-icon">
     <style>
-        #notification {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            width: 200px;
-            padding: 20px;
-            border-radius: 5px;
-            background-color: white;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-        
+       #notification {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          top: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          background-color: rgba(0,0,0,.9);
+          align-items: center;
+          color: white;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      #notification button{
+        width: 20em;
+        font-weight: 500;
+      }
+      
         .hidden {
-            display: none;
+            display: none !important;
         }
     </style>
 </head>
@@ -65,11 +76,11 @@
       <p id="version" style="margin-top: 20px"></p>
     </div>
 
-    <div id="notification" class="hidden">
+    <div id="notification" >
       <p id="message"></p>
-      <button id="close-button" onClick="closeNotification()">Close</button>
-      <button id="update-button" onClick="updateApp()">Update</button>
-      <button id="restart-button" onClick="restartApp()" class="hidden">
+      <button id="close-button" class="btn btn-info" onClick="closeNotification()">Close</button>
+      <button id="update-button" class="btn btn-info" onClick="updateApp()">Update</button>
+      <button id="restart-button" class="btn btn-info" onClick="restartApp()" class="hidden">
         Restart
       </button>
     </div>

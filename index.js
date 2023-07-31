@@ -5,6 +5,12 @@ const path = require("path");
 let mainWindow;
 const { autoUpdater } = require("electron-updater");
 
+// Object.defineProperty(app, 'isPackaged', {
+//     get() {
+//       return true;
+//     }
+//   });
+
 function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1280,
