@@ -9,7 +9,13 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder build  --win --publish never",
-    "deploy": "electron-builder build  --win --publish always"
+    "deploy": "electron-builder build  --win --publish always",
+    "builddeb": "electron-packager . app --platform linux --arch x64 --out dist/",
+    "buildwin": "electron-packager . app --platform win32 --arch x64 --out dist/",
+    "buildmac": "electron-packager . app --platform darwin --arch x64 --out dist/",
+    "deb64": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64",
+    "exe": "electron-installer-windows --src dist/app-win32-x64/ --dest dist/installers/",
+    "mac": "electron-installer-dmg ./dist/app-darwin-x64/app.app app --out dist/installers/"
   },
   "author": "3ddx",
   "license": "ISC",
