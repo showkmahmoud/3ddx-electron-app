@@ -5,11 +5,11 @@ const path = require("path");
 let mainWindow;
 const { autoUpdater } = require("electron-updater");
 
-// Object.defineProperty(app, 'isPackaged', {
-//     get() {
-//       return true;
-//     }
-//   });
+Object.defineProperty(app, 'isPackaged', {
+    get() {
+      return true;
+    }
+  });
 
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -94,7 +94,7 @@ ipcMain.on("done", (event) => {
 });
 
 ipcMain.on("upload", (event, args) => {
-  const file = fs.readFileSync("./test.jpg");
+  const file = fs.readFileSync("./TEST.txt");
   const base64Data = file.toString("base64");
   event.sender.send("uploadFile", {
     fileName: "test.jpg",
