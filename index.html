@@ -8,6 +8,7 @@
     <title>3ddx</title>
     <link href=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css " rel="stylesheet " integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous " />
     <link rel="shortcut icon" href="./newconnect-ui/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
     <style>
        #notification {
           position: fixed;
@@ -65,16 +66,24 @@
             <button class="btn btn-primary" onclick="save()">Save</button>
         </div>
     </div>
-    <div class="container text-center pt-5" id="btn" style="display: none">
-        <h1>3DDX Switcher</h1>
-        <div class="d-grid gap-2">
-            <a class="btn btn-primary" href="newconnect-ui/index.html">Connect (SG)</a
-        >
-        <a class="btn btn-info" href=""
-          >ISMile (Aligners)</a
-        >
-      </div>
-      <p id="version" style="margin-top: 20px"></p>
+    <div class="service" id="btn" style="display: none">
+        <div class="service-chooser connect-chooser">
+          <a class="service-chooser--link" href="newconnect-ui/index.html">
+            <label for="connect-service-icon" class="service-chooser--label">
+              Connect
+            </label>
+            <img src="./assets/icons/connect-service.png" alt="Connect" id="connect-service-icon" class="service-chooser--icon">
+          </a>
+        </div>
+        <div class="service-chooser ismile-chooser">
+          <a class="service-chooser--link" href="">
+            <label for="ismile-service-icon" class="service-chooser--label">
+              iSmile Aligner
+            </label>
+            <img src="./assets/icons/ismile-service.png" alt="Connect" id="ismile-service-icon" class="service-chooser--icon">
+          </a>
+        </div>
+        <p id="version"></p>
     </div>
 
     <div id="notification"  class=" hidden">
@@ -90,7 +99,7 @@
       const back = localStorage.getItem("back");
       if(back === "true"){
         document.getElementById('from').style.display = 'none';
-        document.getElementById('btn').style.display = 'block';
+        document.getElementById('btn').style.display = 'grid';
       }
       localStorage.back = false;
       const { ipcRenderer } = require('electron');
@@ -121,7 +130,7 @@
         obj.password = document.getElementById('password').value;
 
         document.getElementById('from').style.display = 'none';
-        document.getElementById('btn').style.display = 'block';
+        document.getElementById('btn').style.display = 'grid';
 
         localStorage.obj = JSON.stringify(obj);
       }

@@ -30,7 +30,9 @@ function createWindow() {
     })
   );
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools();
+
+  mainWindow.webContents.openDevTools();
+  
   mainWindow.on("closed", function () {
     mainWindow = null;
   });
@@ -94,7 +96,7 @@ ipcMain.on("done", (event) => {
 });
 
 ipcMain.on("upload", (event, args) => {
-  const file = fs.readFileSync("./TEST.txt");
+  const file = fs.readFileSync("./index.html");
   const base64Data = file.toString("base64");
   event.sender.send("uploadFile", {
     fileName: "test.jpg",
@@ -107,9 +109,6 @@ ipcMain.on("get_data", (event) => {
 });
 
 // update
-
-
-
 autoUpdater.on("update-available", () => {
   mainWindow.webContents.send("update_available");
 });
