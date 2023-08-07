@@ -96,7 +96,7 @@ ipcMain.on("done", (event) => {
 });
 
 ipcMain.on("upload", (event, args) => {
-  const file = fs.readFileSync("./index.html");
+  const file = fs.readFileSync("./newconnect-ui/assets/Images/connectLog-transparent.png");
   const base64Data = file.toString("base64");
   event.sender.send("uploadFile", {
     fileName: "test.jpg",
