@@ -1,0 +1,24 @@
+[
+  {
+    "voucherId": 12345,
+    "credit": 1300,
+    "amountBilled": 1500,
+    "voucherType": "iSmile Planning",
+    "voucherDetails": [
+      {
+        "orderId": 363596,
+        "patientName": "TEST 1",
+        "type": "iSmile Planning",
+        "costDetectedFromVoucher": 100,
+        "remaining": 0
+      },
+      {
+        "orderId": 363532,
+        "patientName": "TEST 1",
+        "type": "iSmile Planning",
+        "costDetectedFromVoucher": 100,
+        "remaining": 0
+      }
+    ]
+  }
+]
