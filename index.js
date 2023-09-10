@@ -95,6 +95,12 @@ ipcMain.on("done", (event) => {
   mainWindow.close();
 });
 
+// Open Link
+ipcMain.on("link", (event, args) => {
+  const shell = require('electron').shell;
+  shell.openExternal(args);
+});
+
 ipcMain.on("upload", (event, args) => {
   const file = fs.readFileSync("./newconnect-ui/assets/Images/connectLog-transparent.png");
   const base64Data = file.toString("base64");
