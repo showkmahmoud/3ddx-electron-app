@@ -62,7 +62,7 @@ function AddOrderPageComponent_app_add_order_form_electron_0_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("buttonOrders", ctx_r0.buttonOrders)("patientName", ctx_r0.patientName)("filePath", ctx_r0.filePath);
+    _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("buttonOrders", ctx_r0.buttonOrders)("patientName", ctx_r0.patientName)("filePath", ctx_r0.filePath)("softwareList", ctx_r0.softwareList)("printersList", ctx_r0.printersList)("userPreferences", ctx_r0.userPreferences);
 } }
 function AddOrderPageComponent_div_1_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵelementStart"](0, "div", 12);
@@ -127,6 +127,10 @@ class AddOrderPageComponent extends projects_connect_src_app_Pages_ConnectModule
         this.back = new _angular_core__WEBPACK_IMPORTED_MODULE_16__.EventEmitter();
         this.done = new _angular_core__WEBPACK_IMPORTED_MODULE_16__.EventEmitter();
         this.link = new _angular_core__WEBPACK_IMPORTED_MODULE_16__.EventEmitter();
+        this.userPreferences = {
+            printerBrand: -1,
+            printerModel: -1
+        };
         this.currentView = 'addForm';
         this.buttonOrders = {
             conversion: false,
@@ -523,8 +527,8 @@ AddOrderPageComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
     } if (rf & 2) {
         let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵloadQuery"]()) && (ctx.addForm = _t.first);
-    } }, inputs: { patientName: "patientName", filePath: "filePath" }, outputs: { back: "back", done: "done", link: "link" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵInheritDefinitionFeature"]], decls: 2, vars: 2, consts: [[3, "buttonOrders", "patientName", "filePath", "ordersOBJ", "back", 4, "ngIf"], ["class", "view", 4, "ngIf"], [3, "buttonOrders", "patientName", "filePath", "ordersOBJ", "back"], ["addForm", ""], [1, "view"], [1, "header"], ["class", "progress-box", 4, "ngFor", "ngForOf"], [1, "fs-4", "align-self-start"], [1, "fas", "fa-info-circle"], ["target", "_blank", "rel", "noopener noreferrer", 1, "link-underline", "link-underline-opacity-0", 2, "text-decoration", "none", "cursor", "pointer", 3, "click"], [1, "container-form-btn"], ["id", "btn-done ", 1, "native-btn", 3, "disabled", "click"], [1, "progress-box"], [3, "progress"]], template: function AddOrderPageComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtemplate"](0, AddOrderPageComponent_app_add_order_form_electron_0_Template, 2, 3, "app-add-order-form-electron", 0);
+    } }, inputs: { patientName: "patientName", filePath: "filePath", softwareList: "softwareList", printersList: "printersList" }, outputs: { back: "back", done: "done", link: "link" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵInheritDefinitionFeature"]], decls: 2, vars: 2, consts: [[3, "buttonOrders", "patientName", "filePath", "softwareList", "printersList", "userPreferences", "ordersOBJ", "back", 4, "ngIf"], ["class", "view", 4, "ngIf"], [3, "buttonOrders", "patientName", "filePath", "softwareList", "printersList", "userPreferences", "ordersOBJ", "back"], ["addForm", ""], [1, "view"], [1, "header"], ["class", "progress-box", 4, "ngFor", "ngForOf"], [1, "fs-4", "align-self-start"], [1, "fas", "fa-info-circle"], ["target", "_blank", "rel", "noopener noreferrer", 1, "link-underline", "link-underline-opacity-0", 2, "text-decoration", "none", "cursor", "pointer", 3, "click"], [1, "container-form-btn"], ["id", "btn-done ", 1, "native-btn", 3, "disabled", "click"], [1, "progress-box"], [3, "progress"]], template: function AddOrderPageComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtemplate"](0, AddOrderPageComponent_app_add_order_form_electron_0_Template, 2, 6, "app-add-order-form-electron", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵtemplate"](1, AddOrderPageComponent_div_1_Template, 12, 2, "div", 1);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵproperty"]("ngIf", ctx.currentView === "addForm");
@@ -573,13 +577,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppComponent": () => (/* binding */ AppComponent)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 3786);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! tslib */ 3786);
 /* harmony import */ var projects_connect_src_app_Models_Enums_RequestTypes_RequestTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! projects/connect/src/app/Models/Enums/RequestTypes/RequestTypes */ 987);
 /* harmony import */ var shared_shared_enums_ResponseCodeEnum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! shared/shared-enums/ResponseCodeEnum */ 1580);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 2316);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 2316);
 /* harmony import */ var projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! projects/connect/src/app/Services/AuthServices/LoginService/login.service */ 9020);
 /* harmony import */ var projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! projects/connect/src/app/Services/LocalStorageService/local-storage.service */ 1931);
-/* harmony import */ var _add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./add-order-page/add-order-page.component */ 1760);
+/* harmony import */ var _services_SoftwareListService_software_list_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/SoftwareListService/software-list.service */ 5923);
+/* harmony import */ var _services_PrintersList_printers_list_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/PrintersList/printers-list.service */ 3365);
+/* harmony import */ var _add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./add-order-page/add-order-page.component */ 1760);
+
+
 
 
 
@@ -588,13 +596,293 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class AppComponent {
-    constructor(loginService, localStorageService) {
+    constructor(loginService, localStorageService, softwareListService, printersListService) {
         this.loginService = loginService;
         this.localStorageService = localStorageService;
+        this.softwareListService = softwareListService;
+        this.printersListService = printersListService;
         this.loginObj = { requestType: projects_connect_src_app_Models_Enums_RequestTypes_RequestTypes__WEBPACK_IMPORTED_MODULE_0__.ERequestTypes.ADD, services: [{}] };
     }
     ngOnInit() {
-        return (0,tslib__WEBPACK_IMPORTED_MODULE_5__.__awaiter)(this, void 0, void 0, function* () {
+        return (0,tslib__WEBPACK_IMPORTED_MODULE_7__.__awaiter)(this, void 0, void 0, function* () {
+            this.softwareListService.getSofwareListData().subscribe((res) => {
+                this.softwares = [
+                    {
+                        id: 1,
+                        text: 'coDiagnostiX',
+                    },
+                    {
+                        id: 2,
+                        text: 'RealGuide',
+                    },
+                    {
+                        id: 3,
+                        text: 'exocad',
+                    },
+                    {
+                        id: 4,
+                        text: 'Blue Sky Bio',
+                    },
+                    {
+                        id: 5,
+                        text: 'DWOS',
+                    },
+                    {
+                        id: 6,
+                        text: 'Maestro 3D',
+                    },
+                    {
+                        id: 7,
+                        text: '3Shape',
+                    },
+                    {
+                        id: 8,
+                        text: 'Implant Studio',
+                    },
+                    {
+                        id: 9,
+                        text: 'CARES',
+                    },
+                    {
+                        id: 10,
+                        text: 'Ortho Aligners',
+                    },
+                    {
+                        id: 11,
+                        text: '3Shape Ortho Aligners',
+                    },
+                ];
+            });
+            this.printersListService.getPrintersListData().subscribe((res) => {
+                this.brands = [
+                    {
+                        Models: [
+                            {
+                                id: 1,
+                                text: 'J5 DentaJet',
+                            },
+                            {
+                                id: 2,
+                                text: 'Objet30 Dental Prime',
+                            },
+                            {
+                                id: 3,
+                                text: 'Stratasys J700 & J720 Dental',
+                            },
+                            {
+                                id: 4,
+                                text: 'Origin One Dental',
+                            },
+                        ],
+                        id: 1,
+                        text: 'Stratasys',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 5,
+                                text: 'Pro95 S',
+                            },
+                            {
+                                id: 6,
+                                text: 'Pro55 S',
+                            },
+                        ],
+                        id: 2,
+                        text: 'SprintRay',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 7,
+                                text: 'Einstein Series',
+                            },
+                        ],
+                        id: 3,
+                        text: 'Desktop Health',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 8,
+                                text: 'D10',
+                            },
+                            {
+                                id: 9,
+                                text: 'D20',
+                            },
+                            {
+                                id: 10,
+                                text: 'D30',
+                            },
+                            {
+                                id: 11,
+                                text: 'D40',
+                            },
+                            {
+                                id: 12,
+                                text: 'D70',
+                            },
+                            {
+                                id: 13,
+                                text: 'D90',
+                            },
+                            {
+                                id: 14,
+                                text: 'D100',
+                            },
+                        ],
+                        id: 4,
+                        text: 'Rapid Shape',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 15,
+                                text: 'MAX series',
+                            },
+                            {
+                                id: 16,
+                                text: 'Pro 4K',
+                            },
+                        ],
+                        id: 5,
+                        text: 'Asiga',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 17,
+                                text: 'Cara Print 4.0',
+                            },
+                        ],
+                        id: 6,
+                        text: 'Kulzer',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 18,
+                                text: 'Form 3B+',
+                            },
+                            {
+                                id: 19,
+                                text: 'Form 3BL',
+                            },
+                        ],
+                        id: 7,
+                        text: 'Formlabs',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 20,
+                                text: 'Inkspire',
+                            },
+                        ],
+                        id: 8,
+                        text: 'Zortrax',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 21,
+                                text: 'IMD',
+                            },
+                        ],
+                        id: 9,
+                        text: 'Carima',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 22,
+                                text: 'NextDent 5100',
+                            },
+                            {
+                                id: 23,
+                                text: 'ProX 800 for Dental',
+                            },
+                            {
+                                id: 24,
+                                text: 'ProJet MJP 2500 Plus for Dental',
+                            },
+                            {
+                                id: 25,
+                                text: 'ProJet MJP 3600 Dental',
+                            },
+                            {
+                                id: 26,
+                                text: 'DMP Dental 100',
+                            },
+                        ],
+                        id: 10,
+                        text: '3D Systems',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 27,
+                                text: 'AccuFab-D1s',
+                            },
+                            {
+                                id: 28,
+                                text: 'AccuFab-L4D',
+                            },
+                        ],
+                        id: 11,
+                        text: 'Shining 3D',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 29,
+                                text: 'L1',
+                            },
+                            {
+                                id: 30,
+                                text: 'M2',
+                            },
+                            {
+                                id: 31,
+                                text: 'M2d',
+                            },
+                        ],
+                        id: 12,
+                        text: 'Carbon',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 32,
+                                text: 'NXD 200',
+                            },
+                        ],
+                        id: 13,
+                        text: 'Nexa3D',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 33,
+                                text: '3Demax',
+                            },
+                        ],
+                        id: 14,
+                        text: 'DMG',
+                    },
+                    {
+                        Models: [
+                            {
+                                id: 34,
+                                text: 'Varseo XS',
+                            },
+                        ],
+                        id: 15,
+                        text: 'Bego',
+                    },
+                ];
+            });
             const { emailAddress, password, name, filePath } = JSON.parse(localStorage.getItem('obj'));
             this.patientName = name;
             this.filePath = filePath;
@@ -619,8 +907,7 @@ class AppComponent {
             });
         });
     }
-    test() {
-    }
+    test() { }
     back() {
         localStorage.back = true;
         ipcRenderer.send('back');
@@ -632,14 +919,14 @@ class AppComponent {
         ipcRenderer.send('link', 'http://connect.3ddx.com/');
     }
 }
-AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_2__.LoginService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_3__.LocalStorageService)); };
-AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 1, vars: 2, consts: [[2, "overflow-x", "clip", 3, "patientName", "filePath", "back", "done", "link"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](0, "app-add-order-page", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("back", function AppComponent_Template_app_add_order_page_back_0_listener() { return ctx.back(); })("done", function AppComponent_Template_app_add_order_page_done_0_listener() { return ctx.done(); })("link", function AppComponent_Template_app_add_order_page_link_0_listener() { return ctx.link(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdirectiveInject"](projects_connect_src_app_Services_AuthServices_LoginService_login_service__WEBPACK_IMPORTED_MODULE_2__.LoginService), _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdirectiveInject"](projects_connect_src_app_Services_LocalStorageService_local_storage_service__WEBPACK_IMPORTED_MODULE_3__.LocalStorageService), _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdirectiveInject"](_services_SoftwareListService_software_list_service__WEBPACK_IMPORTED_MODULE_4__.SoftwareListService), _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdirectiveInject"](_services_PrintersList_printers_list_service__WEBPACK_IMPORTED_MODULE_5__.PrintersListService)); };
+AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 1, vars: 4, consts: [[2, "overflow-x", "clip", 3, "patientName", "softwareList", "printersList", "filePath", "back", "done", "link"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementStart"](0, "app-add-order-page", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵlistener"]("back", function AppComponent_Template_app_add_order_page_back_0_listener() { return ctx.back(); })("done", function AppComponent_Template_app_add_order_page_done_0_listener() { return ctx.done(); })("link", function AppComponent_Template_app_add_order_page_link_0_listener() { return ctx.link(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("patientName", ctx.patientName)("filePath", ctx.filePath);
-    } }, directives: [_add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_4__.AddOrderPageComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵproperty"]("patientName", ctx.patientName)("softwareList", ctx.softwares)("printersList", ctx.brands)("filePath", ctx.filePath);
+    } }, directives: [_add_order_page_add_order_page_component__WEBPACK_IMPORTED_MODULE_6__.AddOrderPageComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */"] });
 
 
 /***/ }),
@@ -758,6 +1045,166 @@ ProgressBarComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODUL
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](1, _c0).constructor(ctx.progress));
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.NgForOf], styles: ["[_nghost-%COMP%] {\n  width: 100%;\n}\n\n.elctron-progress-bar[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: row;\n  justify-content: start;\n  align-items: center;\n  width: 100%;\n  height: 30px;\n  border: 1px solid #333;\n  box-sizing: border-box;\n}\n\n.step[_ngcontent-%COMP%] {\n  box-sizing: border-box;\n  width: 1%;\n  text-align: center;\n  background-color: #377fae;\n  border: 1px solid #333;\n  height: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2dyZXNzLWJhci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQUE7QUFDRjs7QUFDQTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHNCQUFBO0VBQ0EsbUJBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLHNCQUFBO0VBQ0Esc0JBQUE7QUFFRjs7QUFDQTtFQUNFLHNCQUFBO0VBQ0EsU0FBQTtFQUNBLGtCQUFBO0VBQ0EseUJBQUE7RUFDQSxzQkFBQTtFQUNBLFlBQUE7QUFFRiIsImZpbGUiOiJwcm9ncmVzcy1iYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdHtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG4uZWxjdHJvbi1wcm9ncmVzcy1iYXIge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHN0YXJ0O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiAzMHB4O1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkICMzMzM7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxufVxyXG5cclxuLnN0ZXAge1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgd2lkdGg6IDElO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMzc3ZmFlO1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkICMzMzM7XHJcbiAgaGVpZ2h0OiAxMDAlXHJcbn1cclxuIl19 */"] });
+
+
+/***/ }),
+
+/***/ 1087:
+/*!********************************************************************************!*\
+  !*** ./projects/connect-electron/src/app/services/DataService/data.service.ts ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DataService": () => (/* binding */ DataService)
+/* harmony export */ });
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../environments/environment */ 1017);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2316);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ 3882);
+
+
+
+class DataService {
+    /**
+     * The Requirements For The Construction Of The service
+     * @param httpClient for performing http requests
+     */
+    constructor(httpClient) {
+        this.httpClient = httpClient;
+    }
+    /**
+     * post method
+     * @param APIPath
+     * @param OBJ posted object
+     * @return any
+     */
+    // tslint:disable-next-line:typedef
+    post(APIPath, OBJ) {
+        return this.httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.cpRootURL}${APIPath}`, OBJ, { withCredentials: true });
+    }
+    // tslint:disable-next-line:typedef
+    postDownload(APIPath, OBJ) {
+        return this.httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.cpRootURL}${APIPath}`, OBJ, { observe: 'response', responseType: 'blob', withCredentials: true });
+    }
+}
+DataService.ɵfac = function DataService_Factory(t) { return new (t || DataService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__.HttpClient)); };
+DataService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: DataService, factory: DataService.ɵfac, providedIn: 'root' });
+
+
+/***/ }),
+
+/***/ 3365:
+/*!******************************************************************************************!*\
+  !*** ./projects/connect-electron/src/app/services/PrintersList/printers-list.service.ts ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PrintersListService": () => (/* binding */ PrintersListService)
+/* harmony export */ });
+/* harmony import */ var shared_API_APIName__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! shared/API/APIName */ 3645);
+/* harmony import */ var _DataService_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../DataService/data.service */ 1087);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2316);
+
+
+
+
+_DataService_data_service__WEBPACK_IMPORTED_MODULE_1__.DataService;
+class PrintersListService {
+    /**
+     * The Requirements For The Construction Of The service
+     * @param dataService for managing Http methods
+     */
+    constructor(dataService) {
+        this.dataService = dataService;
+    }
+    /**
+   * @summary get printers list
+   * @return Observable<any>
+   */
+    getPrintersListData() {
+        const printersListBody = {
+            "requestType": "VIEW",
+            "loginToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FtcGxlQDNkZHguY29tIiwicm9sZSI6ImNvbm5lY3RVc2VyIiwidUlEIjoyMDc3LCJpYXQiOjE2OTU4MjQwNzJ9.XvS_uVR90iF0OGQ17JK5NDs6yC2I2YGcREEWSjr2eRo",
+            "services": [
+                {
+                    "serviceName": "VIEW_PRINTERS_BRANDS_MODELS",
+                    "pageNumber": -1,
+                    "pageSize": -1,
+                    "sortedByColumnsIndices": [
+                        0
+                    ],
+                    "has": false,
+                    "columns": [],
+                    "ConditionsAnded": false
+                }
+            ]
+        };
+        return this.dataService.post(shared_API_APIName__WEBPACK_IMPORTED_MODULE_0__.APIName.PrintersList, printersListBody);
+    }
+}
+PrintersListService.ɵfac = function PrintersListService_Factory(t) { return new (t || PrintersListService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_DataService_data_service__WEBPACK_IMPORTED_MODULE_1__.DataService)); };
+PrintersListService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({ token: PrintersListService, factory: PrintersListService.ɵfac, providedIn: 'root' });
+
+
+/***/ }),
+
+/***/ 5923:
+/*!*************************************************************************************************!*\
+  !*** ./projects/connect-electron/src/app/services/SoftwareListService/software-list.service.ts ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SoftwareListService": () => (/* binding */ SoftwareListService)
+/* harmony export */ });
+/* harmony import */ var shared_API_APIName__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! shared/API/APIName */ 3645);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2316);
+/* harmony import */ var _DataService_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../DataService/data.service */ 1087);
+
+
+
+class SoftwareListService {
+    /**
+     * The Requirements For The Construction Of The service
+     * @param dataService for managing Http methods
+     */
+    constructor(dataService) {
+        this.dataService = dataService;
+    }
+    /**
+    * @summary get sofware list
+    * @return Observable<any>
+    */
+    getSofwareListData() {
+        const softwareListBody = {
+            "requestType": "VIEW",
+            "loginToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FtcGxlQDNkZHguY29tIiwicm9sZSI6ImNvbm5lY3RVc2VyIiwidUlEIjoyMDc3LCJpYXQiOjE2OTU4MjQwNzJ9.XvS_uVR90iF0OGQ17JK5NDs6yC2I2YGcREEWSjr2eRo",
+            "services": [
+                {
+                    "serviceName": "VIEW_SOFTWARE_LIST",
+                    "pageNumber": -1,
+                    "pageSize": -1,
+                    "sortedByColumnsIndices": [
+                        0
+                    ],
+                    "has": false,
+                    "columns": [],
+                    "ConditionsAnded": false
+                }
+            ]
+        };
+        return this.dataService.post(shared_API_APIName__WEBPACK_IMPORTED_MODULE_0__.APIName.softwareList, softwareListBody);
+    }
+}
+SoftwareListService.ɵfac = function SoftwareListService_Factory(t) { return new (t || SoftwareListService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_DataService_data_service__WEBPACK_IMPORTED_MODULE_1__.DataService)); };
+SoftwareListService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({ token: SoftwareListService, factory: SoftwareListService.ɵfac, providedIn: 'root' });
 
 
 /***/ }),
@@ -8220,7 +8667,7 @@ function AddOrderFormElectronComponent_div_2_mat_step_9_Template(rf, ctx) { if (
     const ctx_r34 = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("stepControl", ctx_r34.surgicalGuideForm);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("expressSoftware", ctx_r34.orderService.buttons.surgicalGuide || ctx_r34.orderService.buttons.treatmentPlan)("buttonOrders", ctx_r34.buttonOrders)("softwareConversion", ctx_r34.conversionForm ? ctx_r34.conversionForm.controls.software.value : null)("softwareTreatmentPlan", ctx_r34.treatmentPlanForm ? ctx_r34.treatmentPlanForm.controls.software.value : null)("restoration", ctx_r34.restoration)("restorationRestType", ctx_r34.tempRestorationForm ? ctx_r34.tempRestorationForm.controls.restType.value : 0)("moreThan", ctx_r34.moreThanForm)("checkTreatmentPlanAndSurgical", ctx_r34.checkTreatmentPlanAndSurgical)("surgicalGuide", ctx_r34.surgicalGuideForm);
+    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("expressSoftware", ctx_r34.orderService.buttons.surgicalGuide || ctx_r34.orderService.buttons.treatmentPlan)("buttonOrders", ctx_r34.buttonOrders)("softwareConversion", ctx_r34.conversionForm ? ctx_r34.conversionForm.controls.software.value : null)("softwareTreatmentPlan", ctx_r34.treatmentPlanForm ? ctx_r34.treatmentPlanForm.controls.software.value : null)("restoration", ctx_r34.restoration)("softwareList", ctx_r34.softwareList)("printersList", ctx_r34.printersList)("userPreferences", ctx_r34.userPreferences)("restorationRestType", ctx_r34.tempRestorationForm ? ctx_r34.tempRestorationForm.controls.restType.value : 0)("moreThan", ctx_r34.moreThanForm)("checkTreatmentPlanAndSurgical", ctx_r34.checkTreatmentPlanAndSurgical)("surgicalGuide", ctx_r34.surgicalGuideForm);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("id", ctx_r34.htmlID.Button + "surgical-back");
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵadvance"](2);
@@ -8235,19 +8682,19 @@ function AddOrderFormElectronComponent_div_2_mat_step_10_app_gfmr_restoration_2_
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r52 = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵnextContext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("orderDetails", ctx_r52.orderDetails)("restoration", ctx_r52.tempRestorationForm);
+    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("orderDetails", ctx_r52.orderDetails)("restoration", ctx_r52.tempRestorationForm)("softwareList", ctx_r52.softwareList)("printersList", ctx_r52.printersList)("userPreferences", ctx_r52.userPreferences);
 } }
 function AddOrderFormElectronComponent_div_2_mat_step_10_app_restoration_form_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelement"](0, "app-restoration-form", 83);
 } if (rf & 2) {
     const ctx_r53 = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵnextContext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("restoration", ctx_r53.tempRestorationForm);
+    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("restoration", ctx_r53.tempRestorationForm)("softwareList", ctx_r53.softwareList)("printersList", ctx_r53.printersList)("userPreferences", ctx_r53.userPreferences);
 } }
 function AddOrderFormElectronComponent_div_2_mat_step_10_Template(rf, ctx) { if (rf & 1) {
     const _r58 = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelementStart"](0, "mat-step", 77, 69);
-    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](2, AddOrderFormElectronComponent_div_2_mat_step_10_app_gfmr_restoration_2_Template, 1, 2, "app-gfmr-restoration", 78);
-    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](3, AddOrderFormElectronComponent_div_2_mat_step_10_app_restoration_form_3_Template, 1, 1, "app-restoration-form", 79);
+    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](2, AddOrderFormElectronComponent_div_2_mat_step_10_app_gfmr_restoration_2_Template, 1, 5, "app-gfmr-restoration", 78);
+    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](3, AddOrderFormElectronComponent_div_2_mat_step_10_app_restoration_form_3_Template, 1, 4, "app-restoration-form", 79);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelementStart"](4, "div", 26);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelementStart"](5, "button", 80);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_2_mat_step_10_Template_button_click_5_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵrestoreView"](_r58); const ctx_r57 = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵnextContext"](2); return ctx_r57.submitTeeth = false; });
@@ -8275,12 +8722,12 @@ function AddOrderFormElectronComponent_div_2_mat_step_11_app_restoration_form_2_
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelement"](0, "app-restoration-form", 86);
 } if (rf & 2) {
     const ctx_r61 = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵnextContext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("restoration", ctx_r61.finalRestorationForm)("requiringFinalRestoration", ctx_r61.requiringFinalRestoration);
+    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("restoration", ctx_r61.finalRestorationForm)("softwareList", ctx_r61.softwareList)("printersList", ctx_r61.printersList)("userPreferences", ctx_r61.userPreferences)("requiringFinalRestoration", ctx_r61.requiringFinalRestoration);
 } }
 function AddOrderFormElectronComponent_div_2_mat_step_11_Template(rf, ctx) { if (rf & 1) {
     const _r63 = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelementStart"](0, "mat-step", 84, 69);
-    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](2, AddOrderFormElectronComponent_div_2_mat_step_11_app_restoration_form_2_Template, 1, 2, "app-restoration-form", 85);
+    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](2, AddOrderFormElectronComponent_div_2_mat_step_11_app_restoration_form_2_Template, 1, 5, "app-restoration-form", 85);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelementStart"](3, "div", 26);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelementStart"](4, "button", 80);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵlistener"]("click", function AddOrderFormElectronComponent_div_2_mat_step_11_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵrestoreView"](_r63); const ctx_r62 = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵnextContext"](2); return ctx_r62.submitTeeth = false; });
@@ -8320,7 +8767,7 @@ function AddOrderFormElectronComponent_div_2_mat_step_12_Template(rf, ctx) { if 
     const ctx_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("stepControl", ctx_r37.otherServicesForm);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("otherServicesForm", ctx_r37.otherServicesForm);
+    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("otherServicesForm", ctx_r37.otherServicesForm)("softwareList", ctx_r37.softwareList)("printersList", ctx_r37.printersList)("userPreferences", ctx_r37.userPreferences);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵproperty"]("id", ctx_r37.htmlID.Button + "otherServices-back");
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵadvance"](2);
@@ -8364,10 +8811,10 @@ function AddOrderFormElectronComponent_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](6, AddOrderFormElectronComponent_div_2_mat_step_6_Template, 26, 14, "mat-step", 46);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](7, AddOrderFormElectronComponent_div_2_mat_step_7_Template, 8, 11, "mat-step", 47);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](8, AddOrderFormElectronComponent_div_2_mat_step_8_Template, 8, 10, "mat-step", 48);
-    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](9, AddOrderFormElectronComponent_div_2_mat_step_9_Template, 8, 14, "mat-step", 49);
+    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](9, AddOrderFormElectronComponent_div_2_mat_step_9_Template, 8, 17, "mat-step", 49);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](10, AddOrderFormElectronComponent_div_2_mat_step_10_Template, 9, 5, "mat-step", 50);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](11, AddOrderFormElectronComponent_div_2_mat_step_11_Template, 8, 4, "mat-step", 51);
-    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](12, AddOrderFormElectronComponent_div_2_mat_step_12_Template, 8, 4, "mat-step", 52);
+    _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](12, AddOrderFormElectronComponent_div_2_mat_step_12_Template, 8, 7, "mat-step", 52);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](13, AddOrderFormElectronComponent_div_2_mat_step_13_Template, 8, 6, "mat-step", 53);
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵelementEnd"]();
@@ -8644,7 +9091,7 @@ AddOrderFormElectronComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPOR
     } if (rf & 2) {
         let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵloadQuery"]()) && (ctx.stepper = _t.first);
-    } }, inputs: { patientName: "patientName", filePath: "filePath" }, outputs: { back: "back" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵInheritDefinitionFeature"]], decls: 4, vars: 4, consts: [["class", "start view", 4, "ngIf"], ["class", "teeth view", 4, "ngIf"], ["class", "stepper view", 4, "ngIf"], ["class", "uploader view", 4, "ngIf"], [1, "start", "view"], [1, "start-question"], [2, "min-height", "75vh", 3, "id"], ["firstStepForm", "ngForm"], [1, "row", "cases", "justify-content-center"], [1, "col-4", "d-flex", "align-items-center", "justify-content-start", "flex-column"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "id", "disabled", "ngClass", "click"], ["src", "assets/icons/full.png", 1, "w-75", "d-block", "px-2"], [1, "row", "cases"], ["src", "assets/icons/conv.png", 1, "w-75", "d-block", "px-2"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "disabled", "id", "ngClass", "click"], ["src", "assets/icons/report.png", 1, "w-75", "d-block", "px-2"], ["btnTP", ""], ["src", "assets/icons/planning.png", 1, "w-75", "d-block", "px-2"], ["btnSG", ""], ["src", "assets/icons/sg.png", 1, "w-75", "d-block", "px-2"], ["class", "question", 4, "ngIf"], ["src", "assets/icons/restore.png", 1, "w-75", "d-block", "px-2"], ["class", "mt-2 d-flex flex-column align-items-start", 4, "ngIf"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "id", "ngClass", "click"], ["btnFinalRest", ""], ["src", "assets/icons/other.png", 1, "w-75", "d-block", 2, "opacity", ".8"], [1, "container-form-btn"], [1, "native-btn", 3, "id", "click"], [1, "native-btn", 3, "id", "disabled", "click"], [1, "question"], [1, "question-text", "py-2"], ["name", "dds-answer", "aria-label", "Select an option", "aria-labelledby", "lbl-dds", 1, "d-flex", "flex-column", "align-items-center", 3, "ngModel", "ngModelChange", "change"], ["name", "no", 1, "d-block", "mt-1", 2, "width", "50px", 3, "id", "value"], ["name", "yes", 1, "d-block", "mt-1", 2, "width", "50px", 3, "id", "value"], [1, "mt-2", "d-flex", "flex-column", "align-items-start"], [1, "d-block", "mx-auto", 3, "id"], ["aria-label", "Select an option", "aria-labelledby", "RestType", 1, "d-flex", "flex-column", 2, "padding-left", "calc(50% - 77.5px) !important", 3, "value", "change"], [1, "my-1", 3, "id", "value"], [1, "my-1", 3, "disabled", "id", "value"], [1, "teeth", "view"], [1, "header"], [1, "w-100", 2, "flex", "1", 3, "buttonOrders", "isAddAnotherOrder", "orderDetails", "tempRestorationForm", "isGFMRRestorationSelected"], [1, "stepper", "view"], [3, "linear", "selectionChange"], ["stepper", ""], ["matStepperIcon", "edit"], ["label", "Info", 3, "stepControl", 4, "ngIf"], ["label", "3D Conv", 3, "stepControl", 4, "ngIf"], ["label", "Tx Plan", 3, "stepControl", 4, "ngIf"], ["label", "Guide", 3, "stepControl", 4, "ngIf"], ["label", "Temp Restoration", 3, "stepControl", 4, "ngIf"], ["label", "Final Restoration", 3, "stepControl", 4, "ngIf"], ["label", "Other Services", 3, "stepControl", 4, "ngIf"], ["label", "Rad Report", 3, "stepControl", 4, "ngIf"], ["label", "Info", 3, "stepControl"], [3, "id", "formGroup"], [1, "row"], [1, "col-12", 2, "position", "relative"], ["appearance", "fill", 2, "width", "90%"], [3, "id"], ["matInput", "", "formControlName", "patientName", "placeholder", "Patient Name", "required", "", "vlaue", "patientName", 3, "id"], [4, "ngIf"], [1, "quest"], [1, "patientHide"], [1, "col-12", "mt-3"], ["formControlName", "gender", "aria-label", "Select an option", "aria-labelledby", "lbl-Gender"], [3, "id", "value"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "disabled"], ["label", "3D Conv", 3, "stepControl"], ["step", ""], [3, "expressSoftware", "moreThan", "checkModelScan", "maxillaAndMandible", "conversion", "surgicalGuide"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "disabled", "click"], ["label", "Tx Plan", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "surgicalGuide", "moreThan", "treatmentPlan"], ["label", "Guide", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "softwareConversion", "softwareTreatmentPlan", "restoration", "restorationRestType", "moreThan", "checkTreatmentPlanAndSurgical", "surgicalGuide"], ["label", "Temp Restoration", 3, "stepControl"], [3, "orderDetails", "restoration", "restType", "changeValue", 4, "ngIf"], [3, "restoration", 4, "ngIf"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id", "click"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "click"], [3, "orderDetails", "restoration", "restType", "changeValue"], [3, "restoration"], ["label", "Final Restoration", 3, "stepControl"], [3, "restoration", "requiringFinalRestoration", 4, "ngIf"], [3, "restoration", "requiringFinalRestoration"], ["label", "Other Services", 3, "stepControl"], [3, "otherServicesForm"], ["label", "Rad Report", 3, "stepControl"], [3, "radiologyReport"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "disabled", "id", "click"], [1, "uploader", "view"], [1, "w-100", "p-0", "px-5", 3, "id", "formGroup", "ngSubmit"], [1, "uploader-container"], [2, "margin-top", "20px"], [1, "uploader-box", "mx-0", 2, "margin-top", "5em"], [1, "uploader-box--header"], [1, "uploader-box--drop", 3, "appDNDUpload", "dropped", "click"], ["box2", ""], ["class", "fas  fa-cloud-upload-alt", "aria-hidden", "true", 4, "ngIf"], ["class", "fas fa-file-archive", 4, "ngIf"], ["type", "file", "hidden", "", 3, "change"], ["inputFile2", ""], ["class", "uploader-box", 4, "ngIf"], [1, "uploader-box", "mx-0"], [1, "uploader-box--drop", 3, "appDNDUpload", "click", "dropped"], ["box", ""], ["inputFile", ""], [1, "col-sm-12"], [3, "id", "click"], [1, "native-btn", 3, "disabled", "id"], ["aria-hidden", "true", 1, "fas", "fa-cloud-upload-alt"], [1, "fas", "fa-file-archive"], [1, "uploader-box"], [1, "uploader-box--drop", 3, "appDNDUpload", "dropped"]], template: function AddOrderFormElectronComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { patientName: "patientName", filePath: "filePath" }, outputs: { back: "back" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵInheritDefinitionFeature"]], decls: 4, vars: 4, consts: [["class", "start view", 4, "ngIf"], ["class", "teeth view", 4, "ngIf"], ["class", "stepper view", 4, "ngIf"], ["class", "uploader view", 4, "ngIf"], [1, "start", "view"], [1, "start-question"], [2, "min-height", "75vh", 3, "id"], ["firstStepForm", "ngForm"], [1, "row", "cases", "justify-content-center"], [1, "col-4", "d-flex", "align-items-center", "justify-content-start", "flex-column"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "id", "disabled", "ngClass", "click"], ["src", "assets/icons/full.png", 1, "w-75", "d-block", "px-2"], [1, "row", "cases"], ["src", "assets/icons/conv.png", 1, "w-75", "d-block", "px-2"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "disabled", "id", "ngClass", "click"], ["src", "assets/icons/report.png", 1, "w-75", "d-block", "px-2"], ["btnTP", ""], ["src", "assets/icons/planning.png", 1, "w-75", "d-block", "px-2"], ["btnSG", ""], ["src", "assets/icons/sg.png", 1, "w-75", "d-block", "px-2"], ["class", "question", 4, "ngIf"], ["src", "assets/icons/restore.png", 1, "w-75", "d-block", "px-2"], ["class", "mt-2 d-flex flex-column align-items-start", 4, "ngIf"], ["color", "warn", "mat-stroked-button", "", "type", "button", 1, "suborderwidth", 3, "id", "ngClass", "click"], ["btnFinalRest", ""], ["src", "assets/icons/other.png", 1, "w-75", "d-block", 2, "opacity", ".8"], [1, "container-form-btn"], [1, "native-btn", 3, "id", "click"], [1, "native-btn", 3, "id", "disabled", "click"], [1, "question"], [1, "question-text", "py-2"], ["name", "dds-answer", "aria-label", "Select an option", "aria-labelledby", "lbl-dds", 1, "d-flex", "flex-column", "align-items-center", 3, "ngModel", "ngModelChange", "change"], ["name", "no", 1, "d-block", "mt-1", 2, "width", "50px", 3, "id", "value"], ["name", "yes", 1, "d-block", "mt-1", 2, "width", "50px", 3, "id", "value"], [1, "mt-2", "d-flex", "flex-column", "align-items-start"], [1, "d-block", "mx-auto", 3, "id"], ["aria-label", "Select an option", "aria-labelledby", "RestType", 1, "d-flex", "flex-column", 2, "padding-left", "calc(50% - 77.5px) !important", 3, "value", "change"], [1, "my-1", 3, "id", "value"], [1, "my-1", 3, "disabled", "id", "value"], [1, "teeth", "view"], [1, "header"], [1, "w-100", 2, "flex", "1", 3, "buttonOrders", "isAddAnotherOrder", "orderDetails", "tempRestorationForm", "isGFMRRestorationSelected"], [1, "stepper", "view"], [3, "linear", "selectionChange"], ["stepper", ""], ["matStepperIcon", "edit"], ["label", "Info", 3, "stepControl", 4, "ngIf"], ["label", "3D Conv", 3, "stepControl", 4, "ngIf"], ["label", "Tx Plan", 3, "stepControl", 4, "ngIf"], ["label", "Guide", 3, "stepControl", 4, "ngIf"], ["label", "Temp Restoration", 3, "stepControl", 4, "ngIf"], ["label", "Final Restoration", 3, "stepControl", 4, "ngIf"], ["label", "Other Services", 3, "stepControl", 4, "ngIf"], ["label", "Rad Report", 3, "stepControl", 4, "ngIf"], ["label", "Info", 3, "stepControl"], [3, "id", "formGroup"], [1, "row"], [1, "col-12", 2, "position", "relative"], ["appearance", "fill", 2, "width", "90%"], [3, "id"], ["matInput", "", "formControlName", "patientName", "placeholder", "Patient Name", "required", "", "vlaue", "patientName", 3, "id"], [4, "ngIf"], [1, "quest"], [1, "patientHide"], [1, "col-12", "mt-3"], ["formControlName", "gender", "aria-label", "Select an option", "aria-labelledby", "lbl-Gender"], [3, "id", "value"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "disabled"], ["label", "3D Conv", 3, "stepControl"], ["step", ""], [3, "expressSoftware", "moreThan", "checkModelScan", "maxillaAndMandible", "conversion", "surgicalGuide"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "disabled", "click"], ["label", "Tx Plan", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "surgicalGuide", "moreThan", "treatmentPlan"], ["label", "Guide", 3, "stepControl"], [3, "expressSoftware", "buttonOrders", "softwareConversion", "softwareTreatmentPlan", "restoration", "softwareList", "printersList", "userPreferences", "restorationRestType", "moreThan", "checkTreatmentPlanAndSurgical", "surgicalGuide"], ["label", "Temp Restoration", 3, "stepControl"], [3, "orderDetails", "restoration", "softwareList", "printersList", "userPreferences", "restType", "changeValue", 4, "ngIf"], [3, "restoration", "softwareList", "printersList", "userPreferences", 4, "ngIf"], ["color", "warn", "matStepperPrevious", "", 1, "native-btn", 3, "id", "click"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "id", "click"], [3, "orderDetails", "restoration", "softwareList", "printersList", "userPreferences", "restType", "changeValue"], [3, "restoration", "softwareList", "printersList", "userPreferences"], ["label", "Final Restoration", 3, "stepControl"], [3, "restoration", "softwareList", "printersList", "userPreferences", "requiringFinalRestoration", 4, "ngIf"], [3, "restoration", "softwareList", "printersList", "userPreferences", "requiringFinalRestoration"], ["label", "Other Services", 3, "stepControl"], [3, "otherServicesForm", "softwareList", "printersList", "userPreferences"], ["label", "Rad Report", 3, "stepControl"], [3, "radiologyReport"], ["color", "warn", "matStepperNext", "", 1, "native-btn", 3, "disabled", "id", "click"], [1, "uploader", "view"], [1, "w-100", "p-0", "px-5", 3, "id", "formGroup", "ngSubmit"], [1, "uploader-container"], [2, "margin-top", "20px"], [1, "uploader-box", "mx-0", 2, "margin-top", "5em"], [1, "uploader-box--header"], [1, "uploader-box--drop", 3, "appDNDUpload", "dropped", "click"], ["box2", ""], ["class", "fas  fa-cloud-upload-alt", "aria-hidden", "true", 4, "ngIf"], ["class", "fas fa-file-archive", 4, "ngIf"], ["type", "file", "hidden", "", 3, "change"], ["inputFile2", ""], ["class", "uploader-box", 4, "ngIf"], [1, "uploader-box", "mx-0"], [1, "uploader-box--drop", 3, "appDNDUpload", "click", "dropped"], ["box", ""], ["inputFile", ""], [1, "col-sm-12"], [3, "id", "click"], [1, "native-btn", 3, "disabled", "id"], ["aria-hidden", "true", 1, "fas", "fa-cloud-upload-alt"], [1, "fas", "fa-file-archive"], [1, "uploader-box"], [1, "uploader-box--drop", 3, "appDNDUpload", "dropped"]], template: function AddOrderFormElectronComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](0, AddOrderFormElectronComponent_div_0_Template, 51, 42, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](1, AddOrderFormElectronComponent_div_1_Template, 9, 8, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵtemplate"](2, AddOrderFormElectronComponent_div_2_Template, 14, 10, "div", 2);
@@ -17768,11 +18215,19 @@ function GFMRRestorationComponent_ng_container_13_Template(rf, ctx) { if (rf & 1
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](1, "app-custom-deliver-as", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("softwareList", ctx_r1.softwareList);
 } }
 function GFMRRestorationComponent_ng_container_14_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](1, "app-custom-printer-form", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("printersList", ctx_r2.printersList)("userPreferences", ctx_r2.userPreferences);
 } }
 function GFMRRestorationComponent_mat_error_19_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "mat-error");
@@ -18149,7 +18604,7 @@ class GFMRRestorationComponent {
     }
 }
 GFMRRestorationComponent.ɵfac = function GFMRRestorationComponent_Factory(t) { return new (t || GFMRRestorationComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](shared_shared_services_order_shared_service__WEBPACK_IMPORTED_MODULE_3__.OrderSharedService), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_projects_connect_src_app_Services_OrderServices_actions_actions_service__WEBPACK_IMPORTED_MODULE_4__.ActionsService)); };
-GFMRRestorationComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineComponent"]({ type: GFMRRestorationComponent, selectors: [["app-gfmr-restoration"]], inputs: { restoration: "restoration", orderDetails: "orderDetails" }, outputs: { changeValue: "changeValue", restType: "restType" }, decls: 58, vars: 36, consts: [[3, "formGroup", "id"], [1, "row"], [4, "ngIf"], [1, "row", "mb-2"], [1, "col-md-5", "mb-3", "col-sm-12"], [3, "id"], [1, "col-md-7", "mb-3", "col-sm-12"], ["formControlName", "finalRestoration", "aria-label", "Select an option", "aria-labelledby", "lbl-finalRestoration", 3, "change"], [3, "id", "value"], [1, "row", "mb-1"], ["aria-label", "Select an option", "aria-labelledby", "lbl-archOfInterest", "formControlName", "archOfInterest"], [1, "col-md-5", "mt-3", "mb-3", "col-sm-12"], ["appearance", "fill", "aria-labelledby", "lbl-shadeSystem", 1, "w-100"], ["formControlName", "shade", "aria-labelledby", "lbl-shadeSystem-select", 3, "id"], ["appearance", "fill", 1, "example-full-width", "w-100"], ["formControlName", "teeth", "aria-labelledby", "shadeSystem", 3, "id", 4, "ngIf"], ["formControlName", "teeth", "type", "text", "matInput", "", "aria-labelledby", "lbl-teethShade", 3, "id", 4, "ngIf"], [1, "row", "my-2"], [1, "form-group"], ["placeholder", "Comments and Special Requests", "formControlName", "generalComment", 1, "form-control", 3, "id"], ["aria-label", "Select an option", "aria-labelledby", "lbl-dds", "formControlName", "dds"], [3, "id", "value", "change"], ["formGroupName", "deliverablesgroup", "labelWidth", "5", "checkBoxes", "3"], ["formGroupName", "printerGroup", "labelWidth", "5", "fieldBoxes", "6"], ["formControlName", "chairSideAssistance", "aria-label", "Select an option", "aria-labelledby", "lbl-chairSideAssistance", 3, "change"], ["formControlName", "shadeOther", "matInput", ""], ["formControlName", "teeth", "aria-labelledby", "shadeSystem", 3, "id"], [3, "id", "value", 4, "ngFor", "ngForOf"], ["formControlName", "teeth", "type", "text", "matInput", "", "aria-labelledby", "lbl-teethShade", 3, "id"]], template: function GFMRRestorationComponent_Template(rf, ctx) { if (rf & 1) {
+GFMRRestorationComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineComponent"]({ type: GFMRRestorationComponent, selectors: [["app-gfmr-restoration"]], inputs: { restoration: "restoration", softwareList: "softwareList", printersList: "printersList", userPreferences: "userPreferences", orderDetails: "orderDetails" }, outputs: { changeValue: "changeValue", restType: "restType" }, decls: 58, vars: 36, consts: [[3, "formGroup", "id"], [1, "row"], [4, "ngIf"], [1, "row", "mb-2"], [1, "col-md-5", "mb-3", "col-sm-12"], [3, "id"], [1, "col-md-7", "mb-3", "col-sm-12"], ["formControlName", "finalRestoration", "aria-label", "Select an option", "aria-labelledby", "lbl-finalRestoration", 3, "change"], [3, "id", "value"], [1, "row", "mb-1"], ["aria-label", "Select an option", "aria-labelledby", "lbl-archOfInterest", "formControlName", "archOfInterest"], [1, "col-md-5", "mt-3", "mb-3", "col-sm-12"], ["appearance", "fill", "aria-labelledby", "lbl-shadeSystem", 1, "w-100"], ["formControlName", "shade", "aria-labelledby", "lbl-shadeSystem-select", 3, "id"], ["appearance", "fill", 1, "example-full-width", "w-100"], ["formControlName", "teeth", "aria-labelledby", "shadeSystem", 3, "id", 4, "ngIf"], ["formControlName", "teeth", "type", "text", "matInput", "", "aria-labelledby", "lbl-teethShade", 3, "id", 4, "ngIf"], [1, "row", "my-2"], [1, "form-group"], ["placeholder", "Comments and Special Requests", "formControlName", "generalComment", 1, "form-control", 3, "id"], ["aria-label", "Select an option", "aria-labelledby", "lbl-dds", "formControlName", "dds"], [3, "id", "value", "change"], ["formGroupName", "deliverablesgroup", "labelWidth", "5", "checkBoxes", "3", 3, "softwareList"], ["formGroupName", "printerGroup", "labelWidth", "5", "fieldBoxes", "6", 3, "printersList", "userPreferences"], ["formControlName", "chairSideAssistance", "aria-label", "Select an option", "aria-labelledby", "lbl-chairSideAssistance", 3, "change"], ["formControlName", "shadeOther", "matInput", ""], ["formControlName", "teeth", "aria-labelledby", "shadeSystem", 3, "id"], [3, "id", "value", 4, "ngFor", "ngForOf"], ["formControlName", "teeth", "type", "text", "matInput", "", "aria-labelledby", "lbl-teethShade", 3, "id"]], template: function GFMRRestorationComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "form", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](2, GFMRRestorationComponent_ng_container_2_Template, 11, 5, "ng-container", 2);
@@ -18171,8 +18626,8 @@ GFMRRestorationComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_M
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](13, GFMRRestorationComponent_ng_container_13_Template, 2, 0, "ng-container", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](14, GFMRRestorationComponent_ng_container_14_Template, 2, 0, "ng-container", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](13, GFMRRestorationComponent_ng_container_13_Template, 2, 1, "ng-container", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](14, GFMRRestorationComponent_ng_container_14_Template, 2, 2, "ng-container", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](15, "div", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](16, "div", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](17, "label", 5);
@@ -32906,4 +33361,4 @@ module.exports = webpackEmptyAsyncContext;
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.1572bd839238292637c5.js.map
+//# sourceMappingURL=main.89c3418b8c053b69c8a4.js.map
